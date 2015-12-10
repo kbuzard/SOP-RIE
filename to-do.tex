@@ -47,6 +47,41 @@
 RIE R$\&$R of SOP
 \end{center}
 
-\vskip.3in
+\vskip.1in
+Editor
+\begin{enumerate}
+	\item The introduction needs improvement and the rest of the paper needs substantial overhaul. 
+		\begin{itemize}
+			\item An efficient introduction formula starts with saying what the paper does and what it finds (two paragraphs) and then says how it achieves this and how it contributes to the extant literature. Do not overreach. In particular, I agree with Referee 1 that you do not solve the PFS empirical puzzle of high weights to social welfare.
+			\item (Referee) In the absence of any empirical estimates, I would refrain from such strong statements. Suffice to say that the paper is providing additional insights into an empirical puzzle by tailoring the political process more carefully.
+				\begin{itemize}
+					\item 8. Again, (5) makes it clear that your setting is definitely not PFS, for contributions are not specified (and need be to make the comparison).
+				\end{itemize}
+		\end{itemize}
+	\item Structure sections 2 and following. Right now, it is a seemingly random bag of assumptions, results, and discussions of both.
+	\item Define the game much more formally and more clearly. 
+		\begin{enumerate}
+			\item players, their strategy sets, the payoffs, and the timing. Right now, these ingredients are scattered all over the place.
+			\item A figure with the extensive form of the game would also come in handy.
+		\end{enumerate}
+	\item You need quasi-linear preferences in X and Y as well as in an outside good, Z. Preferences should be linear in Z, increasing and concave in Y and Y. Z should be produced with CRS and be freely traded. Otherwise, Foreign’s decisions have an impact on Home’s via the balance of trade condition. This problem is currently hidden by the fact that you impose symmetric countries (so that trade in X balances trade in Y in the symmetric equilibrium) but it remains true that X and Y are related (this is most visible off the symmetric equilibrium path).
+	\item The LHS term and the term in the last square bracket of the RHS of Equation 3 need different notations (you use the same notation for both).
+	\item The fact that $\gamma_E$ is a constant does not imply that protection is not for sale to the executive, as you write on page 10. It actually is, by the second equality of Assumption 1.
+		\begin{itemize}
+			\item Assumption 1 confusingly gets relabeled Ass. 4 later.
+			\item You actually impose these inequalities (in Assumption 1, I think) for all $\theta$ and for all e (not just $\theta$).
+		\end{itemize}
+	\item You need to set out the sufficient SOCs in the text. But I really don’t understand all the fuss you are making about these around Lemma 1 and (4). Indeed, the second order condition requires that the sum of the second derivatives of CS, PS, and TR wrt $\tau$ is negative. Thus, totally differentiating the FOC wrt to $\tau$ and $\gamma$ yields $\frac{d\tau}{d\gamma} = - \frac{\frac{\partial PS}{\partial\tau}}{SOC}$, which is positive (PS is increasing in prices and thus in $\tau$, “SOC”<0 by the SOC). In turn, the FOC to the lobbying effort decision can be written as $\frac{\partial PS}{\partial\tau} \cdot \frac{d\tau}{d\gamma} \frac{ d\gamma}{de} = 1$, which implies $\frac{d\tau}{d e} = - \frac{\frac{\partial PS}{ \partial\tau}}{ SOC} * \gamma_e$, which is larger than zero by assumption, $\gamma_e>0$, and by the SOCs.
+	\addtocounter{enumi}{1}
+	\item Since the game is symmetric, assuming that the other legislature is not being lobbied and/or does not risk making a ‘break’ decision is not the most natural one. I can leave with it, but then I would simply assume this explicitly and openly when writing the extensive form of the game, without the current, twisted discussion of it.
+	\item I am not sure that section 6 adds much to the paper.
+\end{enumerate}
 
+\vskip.4in
+Referee 1
+\begin{enumerate}
+	\item The paper is derailing at the start. It initially reads like political uncertainty will be incorporated into Grossman and Helpman (1994) framework through modelling separation of powers in that setting. But later it comes up that the paper is actually about ratification of free trade agreements, in particular, the lobbying process that aims to prevent the agreement from being ratified. A better start that is consistent with the main contribution of the paper is in order. The author can relate the main contribution to the ‘unrealistic’ PFS estimates  following the introduction of the main contribution.
+	\item Also, because the main contribution of the paper is the introduction of political uncertainty into the lobbying process, some more intuition in the Introduction about political uncertainty would be helpful.
+	\item While researchers have found high estimates in the case of the US, they also found high estimates for Turkey (Mitra, Thomakos and Ulubasoglu 2002) and Australia (McCalman 2004). The issue is that both Turkey and Australia are parliamentary democracies. Additionally, in Turkey the legislative organ is uni-cameral, but in Australia it is bi-cameral. The point here is that these parliamentary democracies do not exhibit strict separation of powers as does the US, but still the PFS model in these countries delivers high empirical estimates. I expect that the author provide some insights into this issue.
+\end{enumerate}
 \end{document}
