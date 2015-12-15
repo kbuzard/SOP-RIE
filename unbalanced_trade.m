@@ -73,3 +73,8 @@ gamma = 1.25 + (c_star_).^a
 %e =[.00:.01:.25];
 %t =[.113 .111 .109 .107 .105 .104 .104 .104 .105 .106 .107 .108 .109 .111 .096 .096 .091 .09 .086 .087 .083 .081 .08 .08 .078 .078];
 %plot(e,t);
+
+PX = (4+4*ta_star)/7; %price of X at trade agreement tariff
+MX = 1 - 1.5*PX       %imports of X at trade agreement tariff
+PY = (4-3*ta_star)/7; %price of Y at trade agreement tariff
+EY = 2*PY - 1         %exports of Y at trade agreement tariff
