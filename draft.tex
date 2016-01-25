@@ -624,47 +624,16 @@ That lobbying and tariff levels are related in systematic ways to the amount of 
 
 \section{Appendix}
 \label{sec:appendix}
-\begin{lemma*}[\textbf{0}]
-  When prices are linear in tariffs, the second-order condition for the legislature's problem when setting trade-war tariffs holds for all non-prohibitive tariffs given that the tariff elasticity of supply is less than unity.
-  \label{res:l1}
-\end{lemma*}
-Proof: The first order condition can be rewritten as
+\noindent \textbf{\hypertarget{tninc}{Proof of Lemma~\ref{res:tninc}}}:\\
+Expand the first order condition for the legislature's problem as follows:
    \begin{equation}
         - D(P_{X}) \frac{\partial P_X}{\partial \tau} + \ga(e_n,\ve_n) Q_X(P_{X}) \frac{\partial P_X}{\partial \tau}
 	    + \left[ D(P_{X})- Q_X(P_{X})\right] + \tau \left(\frac{\partial D(P_X)}{\partial \tau} - \frac{\partial Q_X(P_X)}{\partial \tau} \right) = 0
 			\label{eq:foc}
 	 \end{equation}
-	 
-	 \vskip.1in
-	 \noindent The required second order condition is that the following is negative:
-	 \begin{multline*}
-	    	- D(P_{X}) \frac{\partial^2 P_X}{\partial \tau^2} - \frac{\partial D(P_{X})}{\partial \tau}  \frac{\partial P_X}{\partial \tau} 
-	    	+ \ga(e_n,\ve_n) Q_X(P_{X}) \frac{\partial^2 P_X}{\partial \tau^2} + \ga(e_n,\ve_n) \frac{\partial Q_X(P_{X})}{\partial \tau} \frac{\partial P_X}{\partial \tau} \\
-	    + 2 \left[ \frac{\partial D(P_{X})}{\partial \tau} - \frac{\partial Q_X(P_{X})}{\partial \tau}\right] 
-	    + \tau \left(\frac{\partial^2 D(P_X)}{\partial \tau^2} - \frac{\partial^2 Q_X(P_X)}{\partial \tau^2} \right)
-	  \end{multline*} 
-	
-	\vskip.1in  
-	\noindent $\ga(e_n,\ve_n)$ is endogenous, so we must find a way to bound it. Because the lobby receives no gains if the tariff is raised beyond its prohibitive level (that is when $D(P_{X}) = Q_X(P_{X})$), it has no incentive to exert effort above the level that induces the $\ga(e_n,\ve_n)$ that leads to the prohibitive tariff. Setting $D(P_{X}) = Q_X(P_{X})$ in the first order condition, this is
-    \[
-	     \ga(e_n,\ve_n) = 1 - \frac{\tau \left(\frac{\partial D(P_X)}{\partial \tau} - \frac{\partial Q_X(P_X)}{\partial \tau} \right)}{Q_X(P_{X}) \frac{\partial P_X}{\partial \tau}}
-	  \]
-	
-	\noindent If prices are linear in tariffs, the second order terms are zero, and substituting the above expression for $\ga(e_n,\ve_n)$, we arrive at
-    \[
-	    	- \frac{\partial D(P_{X})}{\partial \tau}  \frac{\partial P_X}{\partial \tau} + \frac{\partial Q_X(P_{X})}{\partial \tau} \frac{\partial P_X}{\partial \tau} - \tau \left(\frac{\partial D(P_X)}{\partial \tau} - \frac{\partial Q_X(P_X)}{\partial \tau} \right) \frac{ \frac{\partial Q_X(P_{X})}{\partial \tau}}{Q_X(P_{X})} + 2 \left[ \frac{\partial D(P_{X})}{\partial \tau} - \frac{\partial Q_X(P_{X})}{\partial \tau}\right]
-	  \]
-	  Because $P_X = P_X^W + \tau$, $\frac{\partial P_X}{\partial \tau} = \frac{\partial P_X^W}{\partial \tau} + 1$; together with $\frac{\partial P_X^W}{\partial \tau} < 0,$ this implies $\frac{\partial P_X}{\partial \tau} < 1$. Therefore the previous expression is bounded above by
-	  \[
-	    - \tau \left(\frac{\partial D(P_X)}{\partial \tau} - \frac{\partial Q_X(P_X)}{\partial \tau} \right) \frac{ \frac{\partial Q_X(P_{X})}{\partial \tau}}{Q_X(P_{X})} + \left[ \frac{\partial D(P_{X})}{\partial \tau} - \frac{\partial Q_X(P_{X})}{\partial \tau}\right]
-	  \]
-	 Since $\frac{\partial D(P_{X})}{\partial \tau} - \frac{\partial Q_X(P_{X})}{\partial \tau}<0$, the second order condition is negative as long as $\frac{\tau}{Q_X(P_{X})}\frac{\partial Q_X(P_{X})}{\partial \tau} < 1.$
-	 If prices are not linear in the tariff, additional conditions are required. $\hfill\blacksquare$
-	 
-	 
-\vskip.4in	 
-\noindent \textbf{\hypertarget{tninc}{Proof of Lemma~\ref{res:tninc}}}:\\
-By the implicit function theorem, $\frac{\partial \tau^n}{\partial \ga} = - \frac{\frac{\partial FOC}{\partial \ga}}{\frac{\partial FOC}{\partial \tau^n}}$ where \textit{FOC} is the first order condition for the legislature's problem, expanded in Equation~\ref{eq:foc}. We have $\frac{\partial FOC}{\partial \ga} = Q_X(P_{X}) \frac{\partial P_X}{\partial \tau}$ from the proof of Lemma 0. This is always positive. Lemma 0 also shows that $\frac{\partial FOC}{\partial \tau^n}$ is negative everywhere. Thus $\frac{\partial \tau^n}{\partial \ga}\geq 0$. $\hfill\blacksquare$
+I will refer to this equation as \textit{FOC}.
+
+By the implicit function theorem, $\frac{\partial \tau^n}{\partial \ga} = - \frac{\frac{\partial FOC}{\partial \ga}}{\frac{\partial FOC}{\partial \tau^n}}$. We have $\frac{\partial FOC}{\partial \ga} = Q_X(P_{X}) \frac{\partial P_X}{\partial \tau}$ from the proof of Lemma 0. This is always positive. Lemma 0 also shows that $\frac{\partial FOC}{\partial \tau^n}$ is negative everywhere. Thus $\frac{\partial \tau^n}{\partial \ga}\geq 0$. $\hfill\blacksquare$
 
 
 \vskip.4in
