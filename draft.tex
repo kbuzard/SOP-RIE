@@ -198,26 +198,32 @@ Although the political process here most closely matches that of the United Stat
 To understand how the executives optimally structure trade agreements, we must first examine the incentives of the lobbies and how the legislatures make decisions regarding breach of the trade agreement, including how trade-war tariffs are set. The symmetric structure of the model permits restriction of attention to the home country.
 
 \subsection{Trade-War Tariffs}
+\label{sec:twt}
 In the event that the trade agreement is broken, the legislature sets its tariff $\tau$ unilaterally by maximizing Equation~\ref{eq:ml} given $\tau^*$. Because there are no interactions between the home and foreign tariffs, the home and foreign trade-war tariffs are independent and the home country's tariff in a trade war maximizes weighted home-country welfare in the $X$-sector only. The foreign legislature's decision problem is analogous, and unilateral optimization leads to what I refer to as the (expected) Nash or trade-war tariffs $\tau^n$ as the solution to the following first order condition:\footnote{Note that the random variable in the median legislator's weight on import profits is written as $\ta_n$ at this stage to distinguish it from $\ta_b$ at the break stage: as two separate votes are taken, there are two distinct realizations of uncertainty. It is not necessary to restrict them to come from the same distribution, although in applications it would seem unlikely that the distribution would change.}
-\[
-		\frac{\partial \mathit{CS}_X(\tau)}{\partial \tau^n} + \ga(e_n,\ve_n) \cdot \frac{\partial \mathit{PS}_X(\tau)}{\partial \tau^n} +  \frac{\partial \mathit{TR}(\tau)}{\partial \tau^n} = 0
-\]
-Conditions under which the second order condition is satisfied are contained in Lemma 0 in the Appendix.
-
-In accordance with intuition, because profits are increasing in the tariff, trade war tariffs are increasing in the weight attached to the profits of the import-competing industry, as the following result shows:
-
-\begin{lemma}
-  If prices are linear in tariffs, $\tau^n(\ga(e_n,\ve_n))$ is increasing in $\ga(e_n,\ve_n)$.
-  \label{res:tninc}
-\end{lemma}
-All proofs are in the Appendix. Weaker conditions for this lemma are possible, but most examples in the literature satisfy this condition. The linearity serves to guarantee that the second order condition is satisifed. 
-
-\noindent In the event of a trade war, the lobby chooses its effort $e_n$ given this tariff-setting behavior by maximizing its profits net of effort: $\pi\left(\tau^n\left(\ga\left(e_n,\ve_n\right)\right)\right) - e_n$. (Note this is Equation~\ref{eq:lv} simplified by the resolution of uncertainty over the legislature's decision on the trade agreement). This implies a first order condition of
 \begin{equation}
-	\frac{\partial \pi(\tau^n(\ga(e_n,\ve_n)))}{\partial e_n} = 1
+		\frac{\partial \mathit{CS}_X(\tau)}{\partial \tau^n} + \ga(e_n,\ve_n) \cdot \frac{\partial \mathit{PS}_X(\tau)}{\partial \tau^n} +  \frac{\partial \mathit{TR}(\tau)}{\partial \tau^n} = 0 .
+		\label{eq:legfoc}
+\end{equation}
+
+In the event of a trade war, the lobby chooses its effort $e_n$ given this tariff-setting behavior by maximizing its profits net of effort: $\pi\left(\tau^n\left(\ga\left(e_n,\ve_n\right)\right)\right) - e_n$. (Note this is Equation~\ref{eq:lv} simplified by the resolution of uncertainty over the legislature's decision on the trade agreement). This implies a first order condition for the lobby of
+\begin{equation}
+	\frac{\partial \pi(\tau^n)}{\partial \tau^n}\frac{\partial \tau^n}{\partial \ga} \frac{\partial \ga}{\partial e_n} = 1
   \label{eq:lobtw}
 \end{equation}
 That is, at this stage, the lobby chooses the level of effort that equates its expected marginal increase in profits with its marginal payment. Further details about the political weighting function $\ga$ and assumed structure of uncertainty are provided in the next section.
+
+In accordance with intuition, because profits are increasing in the tariff, trade war tariffs are increasing in the weight attached to the profits of the import-competing industry. This can be seen by rearranging Equation~\ref{eq:lobtw} as 
+\begin{equation}
+  \frac{\partial \tau^n}{\partial \ga} = \frac{1}{\frac{\partial \pi(\tau^n)}{\partial \tau^n} \frac{\partial \ga}{\partial e_n}}
+	\label{eq:lem1}
+\end{equation}
+since $\frac{\partial \ga}{\partial e_n}$ is positive by Assumption~\ref{as:ga_c} and profits are increasing in prices which are in turn increasing in the tariff. This expression can also demonstrate that the second order condition for the legislature's problem is always satisfied. By the implicit function theorem, $\frac{\partial \tau^n}{\partial \ga} = -\frac{\frac{\partial \text{Equation}~\ref{eq:legfoc}}{\partial \ga}}{\frac{\partial \text{Equation}~\ref{eq:legfoc}}{\partial \tau^n}} = -\frac{\frac{\partial \pi(\tau^n)}{\partial \tau^n}}{SOC}$ where ``SOC'' stands for `Second Order Condition', the second derivative of the legislature's objective function which should be everywhere negative. Setting this expression equal to Equation~\ref{eq:lem1}, the second order condition must be satisfied since $\frac{\partial \ga}{\partial e_n}$ is positive by Assumption~\ref{as:ga_c}.
+
+\begin{lemma}
+  $\tau^n(\ga(e_n,\ve_n))$ is increasing in $\ga(e_n,\ve_n)$.
+  \label{res:tninc}
+\end{lemma}
+All proofs are in the Appendix. 
 
 \bigskip
 \subsection{To Break or Not to Break?}
