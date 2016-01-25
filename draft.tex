@@ -219,11 +219,6 @@ In accordance with intuition, because profits are increasing in the tariff, trad
 \end{equation}
 since $\frac{\partial \ga}{\partial e_n}$ is positive by Assumption~\ref{as:ga_c} and profits are increasing in prices which are in turn increasing in the tariff. This expression can also demonstrate that the second order condition for the legislature's problem is always satisfied. By the implicit function theorem, $\frac{\partial \tau^n}{\partial \ga} = -\frac{\frac{\partial \text{Equation}~\ref{eq:legfoc}}{\partial \ga}}{\frac{\partial \text{Equation}~\ref{eq:legfoc}}{\partial \tau^n}} = -\frac{\frac{\partial \pi(\tau^n)}{\partial \tau^n}}{SOC}$ where ``SOC'' stands for `Second Order Condition', the second derivative of the legislature's objective function which should be everywhere negative. Setting this expression equal to Equation~\ref{eq:lem1}, the second order condition must be satisfied since $\frac{\partial \ga}{\partial e_n}$ is positive by Assumption~\ref{as:ga_c}.
 
-\begin{lemma}
-  $\tau^n(\ga(e_n,\ve_n))$ is increasing in $\ga(e_n,\ve_n)$.
-  \label{res:tninc}
-\end{lemma}
-All proofs are in the Appendix. 
 
 \bigskip
 \subsection{To Break or Not to Break?}
@@ -269,7 +264,9 @@ We are now in a position to examine the legislature's decision more closely. Of 
   \label{res:bincC}
 \end{result}
 
-\noindent Lobbying affects only the weight the legislature places on the profits of the import-competing industry. These profits are higher in a trade war than under a trade agreement, so given Assumption~\ref{as:ga_c}, the expectation of $\ga$ is increasing in lobbying effort, implying that the legislature becomes more favorably inclined toward the high trade-war tariff and associated profits as lobbying increases and therefore more likely to break the trade agreement. However, there are decreasing returns for the lobby: increasing effort leads to less than proportional increases in the probability that the trade agreement will be broken.
+\noindent All proofs are in the Appendix. 
+
+Lobbying affects only the weight the legislature places on the profits of the import-competing industry. These profits are higher in a trade war than under a trade agreement, so given Assumption~\ref{as:ga_c}, the expectation of $\ga$ is increasing in lobbying effort, implying that the legislature becomes more favorably inclined toward the high trade-war tariff and associated profits as lobbying increases and therefore more likely to break the trade agreement. However, there are decreasing returns for the lobby: increasing effort leads to less than proportional increases in the probability that the trade agreement will be broken.
 
 The probability of a trade war, just like the trade-war tariffs, is increasing in $\ga$, so it's the natural assumption that $\ga$ is increasing in lobbying effort that implies that the lobby can increase both its trade war tariff and the probability of a trade war by raising its lobbying effort.
 
@@ -625,19 +622,6 @@ That lobbying and tariff levels are related in systematic ways to the amount of 
 
 \section{Appendix}
 \label{sec:appendix}
-\noindent \textbf{\hypertarget{tninc}{Proof of Lemma~\ref{res:tninc}}}:\\
-Expand the first order condition for the legislature's problem as follows:
-   \begin{equation}
-        - D(P_{X}) \frac{\partial P_X}{\partial \tau} + \ga(e_n,\ve_n) Q_X(P_{X}) \frac{\partial P_X}{\partial \tau}
-	    + \left[ D(P_{X})- Q_X(P_{X})\right] + \tau \left(\frac{\partial D(P_X)}{\partial \tau} - \frac{\partial Q_X(P_X)}{\partial \tau} \right) = 0
-			\label{eq:foc}
-	 \end{equation}
-I will refer to this equation as \textit{FOC}.
-
-By the implicit function theorem, $\frac{\partial \tau^n}{\partial \ga} = - \frac{\frac{\partial FOC}{\partial \ga}}{\frac{\partial FOC}{\partial \tau^n}}$. We have $\frac{\partial FOC}{\partial \ga} = Q_X(P_{X}) \frac{\partial P_X}{\partial \tau}$ from the proof of Lemma 0. This is always positive. Lemma 0 also shows that $\frac{\partial FOC}{\partial \tau^n}$ is negative everywhere. Thus $\frac{\partial \tau^n}{\partial \ga}\geq 0$. $\hfill\blacksquare$
-
-
-\vskip.4in
 \noindent \textbf{\hypertarget{Pr_bincC}{Proof of Result~\ref{res:bincC}}}:\\
 Substituting from Equation~\ref{eq:ml}, Equation~\ref{eq:b} can be re-written as
 \begin{multline}  
