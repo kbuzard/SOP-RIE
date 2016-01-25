@@ -52,7 +52,7 @@ res <- Map(l, ta = param$ta, c = param$c)
 soln <- lapply(seq_along(res), function(x) res[[x]]$value)
 soln <- do.call("rbind", soln)
 
-
+#lobby's profits
 l = b;
 l2 = 4/49*((1+tn).^2);
 l3 = l.*l2;
@@ -69,6 +69,7 @@ for j=1:tad
   B(j) = b(I(j),j);
 end
 
+#exec utility with ga=1 and tn=tns
 E=B;
 E2 = 21/49*(2-2*tn^2);
 E3 = E*E2;
