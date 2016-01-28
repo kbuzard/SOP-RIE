@@ -22,6 +22,16 @@
 \usepackage{caption}
 \usepackage{subcaption}
 
+\usepackage{tikz}
+\tikzset{
+  treenode/.style = {shape=rectangle, rounded corners,
+                     draw, align=center,
+                     top color=white, bottom color=blue!20},
+  root/.style     = {treenode, font=\Large, bottom color=red!30},
+  env/.style      = {treenode, font=\ttfamily\normalsize},
+  dummy/.style    = {circle,draw}
+}
+
 % disables chapter, section and subsection numbering
 %\setcounter{secnumdepth}{-1} 
 
@@ -128,6 +138,41 @@ $$E_Y(P_Y)=Q_Y(P_Y)-D(P_Y) = D(P_Y^*)-Q_Y^*(P_Y) = M_Y^*(P_Y^*)$$
 where $M_X$ are home-county imports and $E_X^*$ are foreign exports of good $X$ and $E_Y$ are home-county exports and $M_Y^*$ are foreign imports of good $Y$. \textbf{Given the production technology and no trade taxes, the price of the numeraire is equal to one in both countries and on the world market.}
 
 $P_X^W$ and $P_Y^W$ are decreasing in $\tau$ and $\tau^*$ respectively, while $P_X$ and $P_Y^*$ are increasing in the respective domestic tariff. This gives rise to a standard terms-of-trade externality. As profits and producer surplus (identical in this model) in a sector are increasing in the price of its good, profits in the import-competing sector are also increasing in the domestic tariff. This economic fact, combined with the assumptions on specific factor ownership, is what motivates political activity.
+
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}
+  [
+    grow                    = right,
+    sibling distance        = 6em,
+    level distance          = 10em,
+    edge from parent/.style = {draw, -latex},
+    every node/.style       = {font=\footnotesize},
+    sloped
+  ]
+  \node [root] {Formula}
+    child { node [env] {equation}
+      edge from parent node [below] {single-line?} }
+    child { node [dummy] {}
+      child { node [dummy] {}
+        child { node [env] {align\\flalign}
+          edge from parent node [below] {at relation sign?} }
+        child { node [env] {alignat}
+          edge from parent node [above] {at several}
+                           node [below] {places?} }
+        child { node [env] {gather}
+                edge from parent node [above] {centered?} }
+        edge from parent node [below] {aligned?} }
+      child { node [env] {multline}
+              edge from parent node [above, align=center]
+                {first left,\\centered,}
+              node [below] {last right}}
+              edge from parent node [above] {multi-line?} };
+\end{tikzpicture}
+
+\end{center}
+\caption{Extensive Form\label{fig:ext}}
+\end{figure}
 
 I next describe the politically-relevant actors. In order to focus attention on protectionist political forces, I assume that only the import-competing industry in each country is politically-organized and able to lobby and that it is represented by a single lobbying organization (see Footnote~\ref{fn:lobby} for discussion of additional lobbies). Each country's government is composed of two branches: an executive who can conclude trade agreements and a legislature that has final say on trade policy. In summary, the political process is modeled as involving three players in each country: the lobby, the executive, and the legislature.
 
