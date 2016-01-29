@@ -1,0 +1,112 @@
+\documentclass[10pt]{article}
+
+\addtolength{\textwidth}{1.3in}
+\addtolength{\oddsidemargin}{-.65in} %left margin
+\addtolength{\evensidemargin}{-.65in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.5in}
+\setlength{\headheight}{0.0in}
+\setlength{\footskip}{.375in}
+\renewcommand{\baselinestretch}{1.0}
+%\linespread{1.5}
+\usepackage{setspace}
+\doublespacing
+
+\usepackage{titling}
+
+\usepackage[pdftex]{graphicx}
+
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{cite}
+\usepackage{times, verbatim,bm,pifont,pdfsync}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage{tikz}
+
+% disables chapter, section and subsection numbering
+%\setcounter{secnumdepth}{-1} 
+
+\usepackage{amsbsy,amssymb, amsmath, amsthm, MnSymbol,bbding}
+\usepackage[hang,flushmargin]{footmisc} 
+
+\usepackage[pdftex,
+bookmarks=true,
+bookmarksnumbered=false,
+pdfview=fitH,
+bookmarksopen=true]{hyperref}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{assumption}{Assumption}
+\newtheorem{fact}{Fact}
+\newtheorem{result}{Result}
+
+\newcommand{\ve}{\theta}
+\newcommand{\ta}{\theta}
+\newcommand{\ov}{\overline}
+\newcommand{\un}{\underline}
+\newcommand{\al}{\alpha}
+\newcommand{\Ta}{\Theta}
+\newcommand{\expect}{\mathbb{E}}
+\newcommand{\Bt}{B(\bm{\tau^a})}
+\newcommand{\bta}{\bm{\tau^a}}
+\newcommand{\bte}{\bm{\tau^E}}
+\newcommand{\btn}{\bm{\tau^n}}
+\newcommand{\ga}{\gamma}
+
+
+\begin{document}
+
+\tikzset{
+% Two node styles for game trees: solid and hollow
+solid node/.style={circle,draw,inner sep=1.5,fill=black},
+hollow node/.style={circle,draw,inner sep=1.5,fill=white}
+%non node/.style={circle,draw,inner sep=.1,fill=black}
+}
+\begin{tikzpicture}[scale=1.5,font=\footnotesize, grow=right]
+% Specify spacing for each level of the tree
+\tikzstyle{level 1}=[level distance=10mm,sibling distance=10mm]
+\tikzstyle{level 2}=[level distance=10mm,sibling distance=10mm]
+% The Tree
+\node(0)[solid node,label=above:{$E,E^*$}]{} 
+child{node(1)[solid node,label=below:{$0$}]{}
+}
+child{[white] node(2)[solid node,xshift=12]{}  %note that you need to adjust the yshift if you change the sibling distance
+child{[black] node(4)[solid node,label=below:{$0$}]{}
+}
+child{[white] node(5)[hollow node,xshift=12]{}  %note that you need to adjust the yshift if you change the sibling distance
+child{[black] node(7)[solid node,label=below:{$0$}]{} 
+}
+child{[white] node(8)[solid node,xshift=12]{}  %note that you need to adjust the yshift if you change the sibling distance
+child{[black] node(10)[solid node,label=below:{}]{} }
+child{[black] node(11)[solid node]{} 
+}
+child{[white] node(12)[solid node,xshift=12]{}  %note that you need to adjust the yshift if you change the sibling distance
+child{[black] node(13)[solid node,label=below:{}]{} }
+child{[black] node(14)[solid node,label=above:{$\infty$}]{} }
+}
+ edge from parent node[black, xshift=23]{$\ta$} %note that you need to adjust the yshift if you change the level distance
+}
+child{[black] node(9)[solid node,label=above:{$\infty$}]{} }
+ edge from parent node[black, xshift=23]{$e_b$} %note that you need to adjust the yshift if you change the level distance
+}
+child{[black] node(6)[solid node,label=above:{$\infty$}]{}}
+ edge from parent node[black, xshift=23]{$\bta$} %note that you need to adjust the yshift if you change the level distance
+}
+child{node(3)[solid node,label=above:{$\infty$}]{}
+}
+;
+% information set
+    \draw[solid,bend right](1)to(3);
+		\draw[solid,bend right](4)to(6);
+		\draw[solid,bend right](7)to(9);
+\end{tikzpicture}
+
+\end{document}
+
+%child{[black] node(4)[solid node,label=below:{$0$}]{} edge from parent node[left]{$C$}}
+%child{[black] node(6)[solid node,label=above:{$\infty$}]{} edge from parent node[right]{$D$}}

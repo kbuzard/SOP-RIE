@@ -24,12 +24,10 @@
 
 \usepackage{tikz}
 \tikzset{
-  treenode/.style = {shape=rectangle, rounded corners,
-                     draw, align=center,
-                     top color=white, bottom color=blue!20},
-  root/.style     = {treenode, font=\Large, bottom color=red!30},
-  env/.style      = {treenode, font=\ttfamily\normalsize},
-  dummy/.style    = {circle,draw}
+% Two node styles for game trees: solid and hollow
+solid node/.style={circle,draw,inner sep=1.5,fill=black},
+hollow node/.style={circle,draw,inner sep=1.5,fill=white}
+%non node/.style={circle,draw,inner sep=.1,fill=black}
 }
 
 % disables chapter, section and subsection numbering
@@ -141,33 +139,33 @@ $P_X^W$ and $P_Y^W$ are decreasing in $\tau$ and $\tau^*$ respectively, while $P
 
 \begin{figure}
 \begin{center}
-\begin{tikzpicture}
-  [
-    grow                    = right,
-    sibling distance        = 6em,
-    level distance          = 10em,
-    edge from parent/.style = {draw, -latex},
-    every node/.style       = {font=\footnotesize},
-    sloped
-  ]
-  \node [root] {Formula}
-    child { node [env] {equation}
-      edge from parent node [below] {single-line?} }
-    child { node [dummy] {}
-      child { node [dummy] {}
-        child { node [env] {align\\flalign}
-          edge from parent node [below] {at relation sign?} }
-        child { node [env] {alignat}
-          edge from parent node [above] {at several}
-                           node [below] {places?} }
-        child { node [env] {gather}
-                edge from parent node [above] {centered?} }
-        edge from parent node [below] {aligned?} }
-      child { node [env] {multline}
-              edge from parent node [above, align=center]
-                {first left,\\centered,}
-              node [below] {last right}}
-              edge from parent node [above] {multi-line?} };
+\begin{tikzpicture}[scale=1.5,font=\footnotesize, grow=right]
+% Specify spacing for each level of the tree
+\tikzstyle{level 1}=[level distance=10mm,sibling distance=10mm]
+\tikzstyle{level 2}=[level distance=10mm,sibling distance=10mm]
+% The Tree
+\node(0)[solid node,label=above:{$E,E^*$}]{} 
+child{node(1)[solid node,label=below:{$0$}]{}
+}
+child{[white] node(2)[solid node,xshift=12]{}  %note that you need to adjust the yshift if you change the sibling distance
+child{[black] node(4)[solid node,label=below:{$0$}]{}
+}
+child{[white] node(7)[hollow node,xshift=12]{}  %note that you need to adjust the yshift if you change the sibling distance
+child{[black] node(9)[solid node,label=below:{$0$}]{} }
+child{[black] node(11)[solid node,label=above:{$\infty$}]{} }
+ edge from parent node[black, xshift=23]{$e_b$} %note that you need to adjust the yshift if you change the level distance
+}
+child{[black] node(6)[solid node,label=above:{$\infty$}]{}}
+ edge from parent node[black, xshift=23]{$\bta$} %note that you need to adjust the yshift if you change the level distance
+}
+child{node(3)[solid node,label=above:{$\infty$}]{}
+}
+;
+% information set
+    \draw[solid,bend right](1)to(3);
+		\draw[solid,bend right](4)to(6);
+		\draw[solid,bend right](9)to(11);
+  
 \end{tikzpicture}
 
 \end{center}
