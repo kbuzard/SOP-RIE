@@ -71,14 +71,19 @@ child{[white] node(2)[solid node,xshift=12,label=above:{L}]{}
 			child{[black] node(12)[solid node]{}  
 				child[sibling distance=5mm]{[black] node(13)[solid node,label=below:{$0$}]{}}
 				child{[white] node(15)[solid node,xshift=7]{} 
-					child[sibling distance=5mm]{[black] node(16)[solid node,label=below:{$0$}]{} }
-					child{[white] node(18)[hollow node,xshift=12,label=left:{}]{}  }
-					child[sibling distance=5mm]{[black] node(17)[solid node,label=above:{$\infty$}]{} }
+					child[sibling distance=5mm]{[black] node(19)[solid node,label=below:{$-\infty$}]{}}
+					child{[white] node(21)[solid node,xshift=7]{} 
+						child[sibling distance=5mm]{[black] node(16)[solid node,label=below:{$0$}]{} }
+						child{[white] node(18)[hollow node,xshift=12,label=left:{}]{}  }
+						child[sibling distance=5mm]{[black] node(17)[solid node,label=above:{$\infty$}]{} }
+						edge from parent node[black, xshift=20]{$\ta_n$} 
+						}
+					child[sibling distance=5mm]{[black] node(21)[solid node,label=above:{$\infty$}]{} }
 					edge from parent node[black, xshift=20]{$e_n$} 
-					}
+				}
 				child[sibling distance=5mm]{[black] node(14)[solid node,label=above:{$\infty$}]{} }
 				}
-			edge from parent node[black, xshift=23]{$\ta$} 
+			edge from parent node[black, xshift=23]{$\ta_b$} 
 			}
 		child{[black] node(9)[solid node,label=above:{$\infty$}]{} }
 		edge from parent node[black, xshift=23]{$e_b$} 
@@ -95,12 +100,14 @@ child{node(3)[solid node,label=above:{$\infty$}]{}
 		\draw[solid,bend right](7)to(9);
 		\draw[solid,bend right](13)to(14);
 		\draw[solid,bend right](16)to(17);
+		\draw[solid,bend right](19)to(21);
 % labels
 		\node[above,xshift=5,yshift=5]at(2){$L$}; 
 		\node[above,xshift=5,yshift=5]at(5){$N$}; 
 		\node[above,xshift=8,yshift=5]at(8){$Leg$}; 
-		\node[above,xshift=5,yshift=5]at(12){$L$}; 
-		\node[above,xshift=7,yshift=5]at(15){$Leg$}; 
+		\node[above,xshift=5,yshift=5]at(12){$L$};
+		\node[above,xshift=15,yshift=-17]at(21){$Leg$}; 
+		\node[above,xshift=7,yshift=5]at(15){$N$}; 
 		\node[left, xshift=-2]at(18){$\tau^n$}; 
 		\node[below left,yshift=-10]at(12){Break}; 
 		\node[below left,yshift=1]at(10){Abide}; 
