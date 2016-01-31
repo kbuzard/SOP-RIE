@@ -153,74 +153,10 @@ $P_X^W$ and $P_Y^W$ are decreasing in $\tau$ and $\tau^*$ respectively, while $P
 
 
 \begin{figure}
-\begin{center}
-\tikzset{
-% Two node styles for game trees: solid and hollow
-solid node/.style={circle,draw,inner sep=1.5,fill=black},
-hollow node/.style={circle,draw,inner sep=1.5,fill=white}
-%non node/.style={circle,draw,inner sep=.1,fill=black}
-}
-\begin{tikzpicture}[scale=1.5,font=\footnotesize, grow=right]
-% Specify spacing for each level of the tree
-\tikzstyle{level 1}=[level distance=10mm,sibling distance=10mm]
-\tikzstyle{level 2}=[level distance=10mm,sibling distance=10mm]
-% The Tree
-\node(0)[solid node,label=above:{$E,E^*$}]{} 
-child{node(1)[solid node,label=below:{$0$}]{}}
-child{[white] node(2)[solid node,xshift=12,label=above:{L}]{}  
-	child{[black] node(4)[solid node,label=below:{$0$}]{}}
-	child{[white] node(5)[hollow node,xshift=12]{} 
-		child{[black] node(7)[solid node,label=below:{$-\infty$}]{}}
-		child{[white] node(8)[solid node,xshift=12]{}  
-			child{[black] node(10)[solid node]{}  }
-			child{[black] node(12)[solid node]{}  
-				child[sibling distance=5mm]{[black] node(13)[solid node,label=below:{$0$}]{}}
-				child{[white] node(15)[solid node,xshift=7]{} 
-					child[sibling distance=5mm]{[black] node(16)[solid node,label=below:{$0$}]{} }
-					child{[white] node(18)[hollow node,xshift=12,label=left:{}]{}  }
-					child[sibling distance=5mm]{[black] node(17)[solid node,label=above:{$\infty$}]{} }
-					edge from parent node[black, xshift=20]{$e_n$} 
-					}
-				child[sibling distance=5mm]{[black] node(14)[solid node,label=above:{$\infty$}]{} }
-				}
-			edge from parent node[black, xshift=23]{$\ta$} 
-			}
-		child{[black] node(9)[solid node,label=above:{$\infty$}]{} }
-		edge from parent node[black, xshift=23]{$e_b$} 
-		}
-	child{[black] node(6)[solid node,label=above:{$\infty$}]{}}
-	edge from parent node[black, xshift=23]{$\bta$} 
-	}
-child{node(3)[solid node,label=above:{$\infty$}]{}
-}
-;
-% information set
-    \draw[solid,bend right](1)to(3);
-		\draw[solid,bend right](4)to(6);
-		\draw[solid,bend right](7)to(9);
-		\draw[solid,bend right](13)to(14);
-		\draw[solid,bend right](16)to(17);
-% labels
-		\node[above,xshift=5,yshift=5]at(2){$L$}; 
-		\node[above,xshift=5,yshift=5]at(5){$N$}; 
-		\node[above,xshift=8,yshift=5]at(8){$Leg$}; 
-		\node[above,xshift=5,yshift=5]at(12){$L$}; 
-		\node[above,xshift=7,yshift=5]at(15){$Leg$}; 
-		\node[left, xshift=-2]at(18){$\tau^n$}; 
-		\node[below left,yshift=-10]at(12){Break}; 
-		\node[below left,yshift=1]at(10){Abide}; 
-		\draw[solid](5)circle(.05cm);
-		\draw[solid](0)circle(.15cm);
-		\node[right]at (10) {$W_E\left(\bta\right),$};
-		\node[right,yshift=-10]at (10) {$\pi\left(\tau^a\right)-e_b,$};
-		\node[right,yshift=-20]at (10) {$W_{ML}\left(\ga(e_b,\ta_b),\bta\right)$};
-		\node[right]at (18) {$W_E\left(\btn\right),$};
-		\node[right,yshift=-10]at (18) {$\pi\left(\tau^n\right)-e_b -e_n,$};
-		\node[right,yshift=-20]at (18) {$W_{ML}\left(\ga(e_n,\ta_n),\btn\right)$};
-\end{tikzpicture}
-
-\end{center}
-\caption{Extensive Form\label{fig:ext}}
+	\begin{center}
+		\input{game-tree.tex}
+	\end{center}
+	\caption{Extensive Form\label{fig:ext}}
 \end{figure}
 
 I next describe the politically-relevant actors. In order to focus attention on protectionist political forces, I assume that only the import-competing industry in each country is politically-organized and able to lobby and that it is represented by a single lobbying organization (see Footnote~\ref{fn:lobby} for discussion of additional lobbies). Each country's government is composed of two branches: an executive who can conclude trade agreements and a legislature that has final say on trade policy. In summary, the political process is modeled as involving three players in each country: the lobby, the executive, and the legislature.
