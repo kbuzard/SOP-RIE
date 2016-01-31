@@ -144,23 +144,6 @@ $P_X^W$ and $P_Y^W$ are decreasing in $\tau$ and $\tau^*$ respectively, while $P
 
 {\color{blue} The timing is as follows. First, the executives set trade policy cooperatively within the context of an international agreement. After the trade agreement is concluded, the lobbies attempt to persuade the legislators in their respective countries to vote ``no'' on the ratification of the agreement; or alternatively, if there is no ratification hurdle, to break the trade agreement.\footnote{As will be seen shortly, these two interpretations are equivalent in this setting because tariffs in a ``trade war'' are assumed to be set non-cooperatively in the same manner as if there were no trade agreement. For simplicity, I refer to this as the ``break'' decision throughout.} Next, the uncertainty about the the median legislator's identity is resolved and the legislatures decide whether to abide by the agreement or to provoke a trade war. In the event that the trade agreement does not enter into or remain in force, there is a final stage of lobbying, resolution of the uncertainty surrounding this decision, and voting to set the trade-war tariffs.\footnote{Alternatively, one can model the lobbying for the ratification decision as determining the potential non-cooperative tariff; this changes behavior slightly depending on the relationship between the lobby and the legislature's preferences, but does not change the fundamental dynamics of the model. Yet another possibility is to replace the trade-war phase with the ex-ante status quo, which would most naturally be the non-cooperative equilibrium. This is precisely the outcome that obtains in the trade-war phase, so the results of the model are unaltered.} Once all political decisions are taken, producers and consumers make their decisions. }
 
-
-
-\subsection{Preferences}
-\label{sec:pref}
-
-\subsection{Information and Equilibrium Selection}
-\label{sec:info}
-
-Although uncertainty is present, information about it is symmetric, so the appropriate solution concept is subgame perfect Nash equilibrium. As this game is solved by backward induction, it is intuitive to start by describing the incentives of the legislatures, whose decisions I model as being taken by a median legislator. As the economy is fully separable and the economic and political structures are symmetric, I focus here on the home country and the $X$-sector. The details are analogous for $Y$ and foreign.\footnote{\textbf{These are the relevant sectors for analysis because they are the sectors in which there are lobbies.}}
-
-I assume that an external authority can ensure enforcement of the agreement in the one-shot game analyzed here.\footnote{Buzard (2014b) extends the analysis to a repeated-game context and can therefore remove this restriction.} 
-
-\subsection{Modeling Choices}
-\label{sec:choices}
-
-
-
 \begin{figure}
 	\begin{center}
 		\input{game-tree.tex}
@@ -168,24 +151,16 @@ I assume that an external authority can ensure enforcement of the agreement in t
 	\caption{Extensive Form\label{fig:ext}}
 \end{figure}
 
-In modeling the objective of the legislature, I introduce a variant of the general political support function introduced by Hillman (1982). While Hillman is credited with first proposing that policy makers choose tariffs in order to maximize their own political support, the PFS model contributed the explicit specification that lobbying contributions enter the political support function with constant marginal utility as $C + aW$.
 
-Dixit, Grossman and Helpman (1997) point out that linearity in contributions prevents complete analysis of distributional questions; the PFS form also restricts the returns to lobbying activity to be constant.\footnote{See Section \ref{sec:gh} for further discussion of this point and an in-depth discussion of the relationship between the functional form presented herein and the PFS form. Note that the assumption of diminishing returns to lobbying effort has been present in the literature going back at least to Findlay and Wellisz (1982).} They show that the PFS equilibrium analysis can be extended to a more general setting where, among other features, returns to lobbying are not restricted to be constant. 
 
-For the case of trade policy, I specify the welfare function of the home legislature as
+\subsection{Preferences}
+\label{sec:pref}
+I specify the welfare function of the home legislature as
 \begin{equation}
   W_{\mathit{ML}} = \mathit{CS}_X(\tau) + \ga(e,\ve) \cdot \mathit{PS}_X(\tau) + \mathit{CS}_Y(\tau^*) + \mathit{PS}_Y(\tau^*) + \mathit{TR}(\tau)
   \label{eq:ml}
 \end{equation}
-where $\mathit{CS}$ is consumer surplus, $\mathit{PS}$ is producer surplus, $\ga(e,\ta)$ is the weight placed on producer surplus (profits) in the import-competing industry, $e$ is lobbying effort, $\ta$ is a random variable, and $\mathit{TR}$ is tariff revenue.\footnote{\textbf{Labor income $l$ could also be included in both median legislator and executive welfare. This alters none of the results and so would only serve to complicate the exposition.}}
-
-Notice that, aside from the endogeneity of the weight the legislature places on the lobbying industry's profits, this is precisely the \textit{deus ex machina} government objective function popularized by Baldwin (1987) that is commonly employed in the literature on the political economy of trade agreements. Since trade policies are overwhelmingly determined within the context of trade agreements, it is useful to have a framework to bring together the endogenous political pressure of PFS-style modeling with the trade agreements approach; the formulation in Equation~\ref{eq:ml} is intended as a bridge between the two. Buzard (2014a) for an example of how this form can be used to integrate the analysis of endogenous political activity and exogenous shocks to the political welfare of governments.
-
-In this formulation, the weight the median legislator places on the profits of the import-competing industry, $\ga(e,\ve)$, is affected by the level of lobbying effort and a random variable $\ta$. This allows for the analysis of endogenous lobbying to be integrated with the standard political economy shocks in the trade agreements literature. Alternatively, as motivated below, it can represent reduced-form modeling of political uncertainty arising from a complex decision-making process within a legislature. Modeling the objective function so closely on the standard in the trade agreements literature allows for direct comparisons to the large extant body of work that studies exogenous shocks only, revealing cleanly the effects of the addition of endogenous lobbying---and if one wants---this different kind of political uncertainty.
-
-I allow for the possibility of this political uncertainty, which can be interpreted as uncertainty over the identity of the median legislator, in order to model the idea that the lobbying and voting ``game'' that goes on within legislatures is often complex enough that none of the actors know precisely what the outcome will be---that is, no one can predict exactly which legislator will be the median and therefore what weight will be placed on import-industry profits at the time of the vote. Thus one way we can think about $\ta$ is as an additional influence on the legislature's preferences about which all parties---executives, legislators and lobbies alike---are uncertain. It is this interpretation of $\ta$ I take throughout the paper.
-
-One can conceptualize this uncertainty as being a result of the lobby's strategic choice to engage with only some key members of the legislature who wield significant influence but who cannot deliver policy decisions without the cooperation of others within the legislature, which is in turn uncertain. Different assumptions on $\ga(\cdot,\cdot)$ correspond to different institutional features and will affect optimal lobbying- and tariff-setting behavior. While a structural model of the legislative process might be more satisfying, the reduced form can deliver the key insights without distracting from the central policy choice and lobbying dynamics that take place at the level of the executives and lobbies, to which we turn next. 
+where $\mathit{CS}$ is consumer surplus, $\mathit{PS}$ is producer surplus, $\ga(e,\ta)$ is the weight placed on producer surplus (profits) in the import-competing industry, $e$ is lobbying effort, $\ta$ is a random variable, and $\mathit{TR}$ is tariff revenue.\footnote{\textbf{Labor income $l$ could also be included in both median legislator and executive welfare. This alters none of the results and so would only serve to complicate the exposition.}} The weight the median legislator places on the profits of the import-competing industry, $\ga(e,\ve)$, is affected by the level of lobbying effort and a random variable $\ta$. 
 
 Given its expectations and the legislature's preferences, the home lobby chooses its lobbying effort ($e_b$ to influence the break/ratification decision, which for simplicity, I will refer to henceforth simply as ``break,'' and $e_n$ to influence the trade war tariff) to maximize the welfare function:
 \begin{equation}
@@ -193,8 +168,6 @@ Given its expectations and the legislature's preferences, the home lobby chooses
   \label{eq:lv}
 \end{equation}
 where $\pi(\cdot)$ is the current-period profit and $\tau^a \ (\tau^\mathit{n})$ is the home country's tariff on the import good under a trade agreement (war). I use the convention throughout of representing a vector of tariffs for both countries $(\tau,\tau^*)$ as a single bold $\bm{\tau}$. 
-
-I assume the lobby's contribution is not observable to the foreign legislature. The implication is that the lobby can directly influence only the home legislature, and so the influence of one country's lobby on the other country's legislature occurs only through the tariffs selected.\footnote{cfr. Grossman and Helpman (1995b), page 685.}
 
 In the first stage, the executives choose the trade agreement tariffs $\bta=\left(\tau^a,\tau^{*a} \right)$ via a negotiating process that I assume to be efficient. In this symmetric environment, it therefore maximizes the expected joint payoffs:
 \begin{multline}
@@ -209,6 +182,40 @@ The home executive's welfare is specified as follows:
   W_E = \mathit{CS}_X(\tau) + \ga_E \cdot \mathit{PS}_X(\tau) + \mathit{CS}_Y(\tau^*) + \mathit{PS}_Y(\tau^*) + \mathit{TR}(\tau)
 \]
 Note that this is identical to the welfare function for the legislature aside from the weight $\ga_E$ the executive places on the profits of the import industry, which is not a function of lobbying effort. This construction permits me to integrate the influence of the import-competing industry on negotiations prior to the formation of the trade agreement while also reflecting the idea that the mechanisms through which political considerations influence the executives' preferences appear to be quite different from those at the legislative level (the electoral college and primary/caucus systems for instance).
+
+
+
+
+
+
+\subsection{Information and Equilibrium Selection}
+\label{sec:info}
+
+Although uncertainty is present, information about it is symmetric, so the appropriate solution concept is subgame perfect Nash equilibrium. As this game is solved by backward induction, it is intuitive to start by describing the incentives of the legislatures, whose decisions I model as being taken by a median legislator. As the economy is fully separable and the economic and political structures are symmetric, I focus here on the home country and the $X$-sector. The details are analogous for $Y$ and foreign.\footnote{\textbf{These are the relevant sectors for analysis because they are the sectors in which there are lobbies.}}
+
+I assume that an external authority can ensure enforcement of the agreement in the one-shot game analyzed here.\footnote{Buzard (2014b) extends the analysis to a repeated-game context and can therefore remove this restriction.} 
+
+I assume the lobby's contribution is not observable to the foreign legislature. The implication is that the lobby can directly influence only the home legislature, and so the influence of one country's lobby on the other country's legislature occurs only through the tariffs selected.\footnote{cfr. Grossman and Helpman (1995b), page 685.}
+
+
+\subsection{Modeling Choices}
+\label{sec:choices}
+
+
+
+In modeling the objective of the legislature, I introduce a variant of the general political support function introduced by Hillman (1982). While Hillman is credited with first proposing that policy makers choose tariffs in order to maximize their own political support, the PFS model contributed the explicit specification that lobbying contributions enter the political support function with constant marginal utility as $C + aW$.
+
+Dixit, Grossman and Helpman (1997) point out that linearity in contributions prevents complete analysis of distributional questions; the PFS form also restricts the returns to lobbying activity to be constant.\footnote{See Section \ref{sec:gh} for further discussion of this point and an in-depth discussion of the relationship between the functional form presented herein and the PFS form. Note that the assumption of diminishing returns to lobbying effort has been present in the literature going back at least to Findlay and Wellisz (1982).} They show that the PFS equilibrium analysis can be extended to a more general setting where, among other features, returns to lobbying are not restricted to be constant. 
+
+For the case of trade policy, ...
+
+Notice that, aside from the endogeneity of the weight the legislature places on the lobbying industry's profits, this is precisely the \textit{deus ex machina} government objective function popularized by Baldwin (1987) that is commonly employed in the literature on the political economy of trade agreements. Since trade policies are overwhelmingly determined within the context of trade agreements, it is useful to have a framework to bring together the endogenous political pressure of PFS-style modeling with the trade agreements approach; the formulation in Equation~\ref{eq:ml} is intended as a bridge between the two. Buzard (2014a) for an example of how this form can be used to integrate the analysis of endogenous political activity and exogenous shocks to the political welfare of governments.
+
+the weight the median legislator places on the profits of the import-competing industry, $\ga(e,\ve)$, is affected by the level of lobbying effort and a random variable $\ta$. This allows for the analysis of endogenous lobbying to be integrated with the standard political economy shocks in the trade agreements literature. Alternatively, as motivated below, it can represent reduced-form modeling of political uncertainty arising from a complex decision-making process within a legislature. Modeling the objective function so closely on the standard in the trade agreements literature allows for direct comparisons to the large extant body of work that studies exogenous shocks only, revealing cleanly the effects of the addition of endogenous lobbying---and if one wants---this different kind of political uncertainty.
+
+I allow for the possibility of this political uncertainty, which can be interpreted as uncertainty over the identity of the median legislator, in order to model the idea that the lobbying and voting ``game'' that goes on within legislatures is often complex enough that none of the actors know precisely what the outcome will be---that is, no one can predict exactly which legislator will be the median and therefore what weight will be placed on import-industry profits at the time of the vote. Thus one way we can think about $\ta$ is as an additional influence on the legislature's preferences about which all parties---executives, legislators and lobbies alike---are uncertain. It is this interpretation of $\ta$ I take throughout the paper.
+
+One can conceptualize this uncertainty as being a result of the lobby's strategic choice to engage with only some key members of the legislature who wield significant influence but who cannot deliver policy decisions without the cooperation of others within the legislature, which is in turn uncertain. Different assumptions on $\ga(\cdot,\cdot)$ correspond to different institutional features and will affect optimal lobbying- and tariff-setting behavior. While a structural model of the legislative process might be more satisfying, the reduced form can deliver the key insights without distracting from the central policy choice and lobbying dynamics that take place at the level of the executives and lobbies, to which we turn next. 
 
 This does \textit{not} require that the executives are not lobbied; only that their preferences are not directly altered in a significant way by lobbying over trade---that they do not sell protection in order to finance their re-election campaigns. In the case of the post-war United States, where the Congress has consistently been significantly more protectionist than the President, this seems to reasonably reflect the political reality. For trade policy, where there are concentrated benefits but harm is diffuse, there are good reasons for this to be the case. Because the President has the largest constituency possible, delegating authority to the executive branch may simply be a mechanism for ``concentrating'' the benefits since consumers seem unable to overcome the free-riding problem. In fact, a strong argument can be made that power over trade policy has been delegated to the executive branch precisely \textit{because} it is less susceptible to the influence of special interests (Destler (2005)).
 
