@@ -160,7 +160,7 @@ I specify the welfare function of the home legislature as
   W_{\mathit{ML}} = \mathit{CS}_X(\tau) + \ga(e,\ve) \cdot \mathit{PS}_X(\tau) + \mathit{CS}_Y(\tau^*) + \mathit{PS}_Y(\tau^*) + \mathit{TR}(\tau)
   \label{eq:ml}
 \end{equation}
-where $\mathit{CS}$ is consumer surplus, $\mathit{PS}$ is producer surplus, $\ga(e,\ta)$ is the weight placed on producer surplus (profits) in the import-competing industry, $e$ is lobbying effort, $\ta$ is a random variable, and $\mathit{TR}$ is tariff revenue.\footnote{\textbf{Labor income $l$ could also be included in both median legislator and executive welfare. This alters none of the results and so would only serve to complicate the exposition.}} The weight the median legislator places on the profits of the import-competing industry, $\ga(e,\ve)$, is affected by the level of lobbying effort and a random variable $\ta$. 
+where $\mathit{CS}$ is consumer surplus, $\mathit{PS}$ is producer surplus, $\ga(e,\ta)$ is the weight placed on producer surplus (profits) in the import-competing industry, $e$ is lobbying effort, $\ta$ is a random variable, and $\mathit{TR}$ is tariff revenue.\footnote{\textbf{Labor income $l$ could also be included in both median legislator and executive welfare. I omit it because its inclusion alters none of the results and only serves to complicate the exposition.}} Notice that the weight the median legislator places on the profits of the import-competing industry, $\ga(e,\ve)$, is affected by the level of lobbying effort and a random variable $\ta$. 
 
 Given its expectations and the legislature's preferences, the home lobby chooses its lobbying effort ($e_b$ to influence the break/ratification decision, which for simplicity, I will refer to henceforth simply as ``break,'' and $e_n$ to influence the trade war tariff) to maximize the welfare function:
 \begin{equation}
@@ -169,7 +169,7 @@ Given its expectations and the legislature's preferences, the home lobby chooses
 \end{equation}
 where $\pi(\cdot)$ is the current-period profit and $\tau^a \ (\tau^\mathit{n})$ is the home country's tariff on the import good under a trade agreement (war). I use the convention throughout of representing a vector of tariffs for both countries $(\tau,\tau^*)$ as a single bold $\bm{\tau}$. 
 
-In the first stage, the executives choose the trade agreement tariffs $\bta=\left(\tau^a,\tau^{*a} \right)$ via a negotiating process that I assume to be efficient. In this symmetric environment, it therefore maximizes the expected joint payoffs:
+In the first stage of the game, the executives choose the trade agreement tariffs $\bta=\left(\tau^a,\tau^{*a} \right)$ via a negotiating process that I assume to be efficient. In this symmetric environment, it therefore maximizes the expected joint payoffs:
 \begin{multline}
   {\color{blue}\expect \left[W_E(\bta) \right] + \expect \left[ W_E^{*}(\bta) \right]} = \Pr\left[ \text{TradeWar}(\bta) \right] \left[W_E(\bm{\tau}^{\mathit{n}}) + W_E^*(\bm{\tau}^{\mathit{n}}) \right] + \\ \Pr\left[ \text{TradeAgreement}(\bta) \right] \left[W_E(\bta) + W_E^*(\bta) \right]
   \label{eq:jv}
@@ -181,11 +181,7 @@ The home executive's welfare is specified as follows:
 \[
   W_E = \mathit{CS}_X(\tau) + \ga_E \cdot \mathit{PS}_X(\tau) + \mathit{CS}_Y(\tau^*) + \mathit{PS}_Y(\tau^*) + \mathit{TR}(\tau)
 \]
-Note that this is identical to the welfare function for the legislature aside from the weight $\ga_E$ the executive places on the profits of the import industry, which is not a function of lobbying effort. This construction permits me to integrate the influence of the import-competing industry on negotiations prior to the formation of the trade agreement while also reflecting the idea that the mechanisms through which political considerations influence the executives' preferences appear to be quite different from those at the legislative level (the electoral college and primary/caucus systems for instance).
-
-
-
-
+Note that this is identical to the welfare function for the legislature aside from the weight $\ga_E$ the executive places on the profits of the import industry, which is not a function of lobbying effort. 
 
 
 \subsection{Information and Equilibrium Selection}
@@ -216,6 +212,8 @@ the weight the median legislator places on the profits of the import-competing i
 I allow for the possibility of this political uncertainty, which can be interpreted as uncertainty over the identity of the median legislator, in order to model the idea that the lobbying and voting ``game'' that goes on within legislatures is often complex enough that none of the actors know precisely what the outcome will be---that is, no one can predict exactly which legislator will be the median and therefore what weight will be placed on import-industry profits at the time of the vote. Thus one way we can think about $\ta$ is as an additional influence on the legislature's preferences about which all parties---executives, legislators and lobbies alike---are uncertain. It is this interpretation of $\ta$ I take throughout the paper.
 
 One can conceptualize this uncertainty as being a result of the lobby's strategic choice to engage with only some key members of the legislature who wield significant influence but who cannot deliver policy decisions without the cooperation of others within the legislature, which is in turn uncertain. Different assumptions on $\ga(\cdot,\cdot)$ correspond to different institutional features and will affect optimal lobbying- and tariff-setting behavior. While a structural model of the legislative process might be more satisfying, the reduced form can deliver the key insights without distracting from the central policy choice and lobbying dynamics that take place at the level of the executives and lobbies, to which we turn next. 
+
+This construction (exec vs. leg weight on X profits) permits me to integrate the influence of the import-competing industry on negotiations prior to the formation of the trade agreement while also reflecting the idea that the mechanisms through which political considerations influence the executives' preferences appear to be quite different from those at the legislative level (the electoral college and primary/caucus systems for instance).
 
 This does \textit{not} require that the executives are not lobbied; only that their preferences are not directly altered in a significant way by lobbying over trade---that they do not sell protection in order to finance their re-election campaigns. In the case of the post-war United States, where the Congress has consistently been significantly more protectionist than the President, this seems to reasonably reflect the political reality. For trade policy, where there are concentrated benefits but harm is diffuse, there are good reasons for this to be the case. Because the President has the largest constituency possible, delegating authority to the executive branch may simply be a mechanism for ``concentrating'' the benefits since consumers seem unable to overcome the free-riding problem. In fact, a strong argument can be made that power over trade policy has been delegated to the executive branch precisely \textit{because} it is less susceptible to the influence of special interests (Destler (2005)).
 
