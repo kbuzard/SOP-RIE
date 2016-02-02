@@ -224,7 +224,21 @@ In addition, letting the weight the median legislator places on the profits of t
 
 Alternatively, the integration of the random variable $\ta$ can represent reduced-form modeling of political uncertainty arising from a complex decision-making process within a legislature. One can interpret $\ta$ as measuring uncertainty over the identity of the median legislator in order to represent the idea that the lobbying and voting ``game'' that goes on within legislatures is often complex enough that none of the actors know precisely what the outcome will be---that is, no one can predict exactly which legislator will be the median and therefore what weight will be placed on import-industry profits at the time of the vote. Thus one way we can think about $\ta$ is as an additional influence on the legislature's preferences about which all parties---executives, legislators and lobbies alike---are uncertain. It is this interpretation of $\ta$ I take throughout this paper.
 
-One can conceptualize this uncertainty as being a result of the lobby's strategic choice to engage with only some key members of the legislature who wield significant influence but who cannot deliver policy decisions without the cooperation of others within the legislature, which is in turn uncertain. Different assumptions on $\ga(\cdot,\cdot)$ correspond to different institutional features and will affect optimal lobbying- and tariff-setting behavior. While a structural model of the legislative process might be more satisfying, the reduced form can deliver the key insights without distracting from the central policy choice and lobbying dynamics that take place at the level of the executives and lobbies, to which we turn next. 
+One can conceptualize this uncertainty as being a result of the lobby's strategic choice to engage with only some key members of the legislature who wield significant influence but who cannot deliver policy decisions without the cooperation of others within the legislature, which is in turn uncertain. Different assumptions on $\ga(\cdot,\cdot)$ correspond to different institutional features and will affect optimal lobbying- and tariff-setting behavior. I make the following two basic assumptions on the weight on import-industry profits:
+
+\begin{assumption}
+  $\ga(e,\ta)$ is increasing and concave in $e$ for every $\ta \in \Theta$.
+  \label{as:ga_c}
+\end{assumption}
+
+\begin{assumption}
+  $\ga(e,\ta)$ is increasing in $\ta$.
+  \label{as:ga_ta}
+\end{assumption}
+
+Assumption~\ref{as:ga_c} formalizes the intuition that the legislature favors the import-competing industry more the higher is its lobbying effort, but that there are diminishing returns to lobbying activity.\footnote{The diminishing returns here take the form of declining increments to the lobby's influence as effort increases; in Ethier (2012), the returns to lobbying decline as the level of protection increases.} It allows the political uncertainty inherent in $\ta$ to be correlated in interesting ways with the level of $e$, ruling out only (i) that higher effort levels make lower $\ga$-weights more likely and (ii) that effort and uncertainty are correlated in such a way that increasing lobbying effort changes the structure of uncertainty so that higher $\ga$-weights become more likely at an accelerating pace. Assumption~\ref{as:ga_ta} formalizes the intuition that larger realization of the uncertainty variable $\ta$ increase the value of the political economy weight.
+
+While a structural model of the legislative process might be more satisfying, the reduced form can deliver the key insights without distracting from the central policy choice and lobbying dynamics that take place at the level of the executives and lobbies, to which we turn next. 
 
 The executives' objective function is taken to be identical to the legislatures' except that profits in the import-competing industry receive a fixed, exogenous weight. This construction permits me to integrate the influence of the import-competing industry on negotiations prior to the formation of the trade agreement while also reflecting the idea that the mechanisms through which political considerations influence the executives' preferences appear to be quite different from those at the legislative level---the electoral college and primary/caucus systems for instance.
 
@@ -232,7 +246,7 @@ This setup does not strictly require that the executives are not lobbied. The as
 
 In the case of the post-war United States, where the Congress has consistently been significantly more protectionist than the President, this seems to reasonably reflect the political reality. For trade policy, where there are concentrated benefits but harm is diffuse, there are good reasons for this to be the case. Because the President has the largest constituency possible, delegating authority to the executive branch may simply be a mechanism for ``concentrating'' the benefits since consumers seem unable to overcome the free-riding problem. In fact, a strong argument can be made that power over trade policy has been delegated to the executive branch precisely \textit{because} it is less susceptible to the influence of special interests (Destler (2005)).
 
-Therefore, in line with both the theoretical and empirical literature, I make the following assumption:
+Therefore, in line with both the theoretical and empirical literature, I make the following, final assumption on $\ga(e,\ta)$:
 
 \begin{assumption}
   $\ga(e,\ta) \geq \ga_E \geq 1 \ \forall \bm{e},\ta$.
@@ -294,21 +308,7 @@ The legislature's decisions are stochastic, so the outcome of the vote on whethe
   \label{eq:b}
 \end{multline}
 
-Note that the legislature's best response functions---both for whether to break the agreement, and at what level to set the tariff if it does---will be affected by the shape of $\ga(e,\ve)$. I make the following further assumptions on the weight on import-industry profits:
-
-\begin{assumption}
-  $\ga(e,\ta)$ is increasing and concave in $e$ for every $\ta \in \Theta$.
-  \label{as:ga_c}
-\end{assumption}
-
-\begin{assumption}
-  $\ga(e,\ta)$ is increasing in $\ta$.
-  \label{as:ga_ta}
-\end{assumption}
-
-Assumption~\ref{as:ga_c} formalizes the intuition that the legislature favors the import-competing industry more the higher is its lobbying effort, but that there are diminishing returns to lobbying activity.\footnote{The diminishing returns here take the form of declining increments to the lobby's influence as effort increases; in Ethier (2012), the returns to lobbying decline as the level of protection increases.} It allows the political uncertainty inherent in $\ta$ to be correlated in interesting ways with the level of $e$, ruling out only (i) that higher effort levels make lower $\ga$-weights more likely and (ii) that effort and uncertainty are correlated in such a way that increasing lobbying effort changes the structure of uncertainty so that higher $\ga$-weights become more likely at an accelerating pace.
-
-Assumption~\ref{as:ga_ta} formalizes the intuition that larger realization of the uncertainty variable $\ta$ increase the value of the political economy weight.
+Note that the legislature's best response functions---both for whether to break the agreement, and at what level to set the tariff if it does---will be affected by the shape of $\ga(e,\ve)$. Recall that we have made three basic assumptions on $\ga(e,\ve)$ in Section~\ref{sec:choices}. More restrictions could be added to deliver further results.
 
 %Assumption~\ref{as:ga_l_e} ensures that $\tau^a < \tau^n$, and more generally, that the legislature's incentives are more closely aligned with the lobby's than are those of the executive. This is not essential but simplifies the analysis and matches well the empirical findings that politicians with larger constituencies are less sensitive to special interests (See Destler (2005) and footnote~\ref{fn:ga_l_e} above).
 
