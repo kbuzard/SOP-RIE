@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+
+\addtolength{\textwidth}{1.4in}
+\addtolength{\oddsidemargin}{-.7in} %left margin
+\addtolength{\evensidemargin}{-.7in}
+\setlength{\textheight}{8.5in}
+\setlength{\topmargin}{0.0in}
+\setlength{\headsep}{0.0in}
+\setlength{\headheight}{0.0in}
+\setlength{\footskip}{.5in}
+\renewcommand{\baselinestretch}{1.0}
+\setlength{\parindent}{0pt}
+\linespread{1.1}
+
+\usepackage{amssymb, amsmath, amsthm, bm}
+\usepackage{graphicx,csquotes,verbatim}
+\usepackage[backend=biber,block=space,style=authoryear]{biblatex}
+\setlength{\bibitemsep}{\baselineskip}
+\usepackage[american]{babel}
+%dell laptop
+\addbibresource{C:/Users/Kristy/Dropbox/Research/xBibs/tradeagreements.bib}
+%\addbibresource{C:/Users/Kristy/Documents/Dropbox/Research/xBibs/tradeagreements.bib}
+\renewcommand{\newunitpunct}{,}
+\renewbibmacro{in:}{}
+
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\usepackage{xcolor}
+\hbadness=10000
+
+\newcommand{\ve}{\varepsilon}
+\newcommand{\ov}{\overline}
+\newcommand{\un}{\underline}
+\newcommand{\ta}{\theta}
+\newcommand{\al}{\alpha}
+\newcommand{\Ta}{\Theta}
+\newcommand{\expect}{\mathbb{E}}
+\newcommand{\Bt}{B(\bm{\tau^a})}
+\newcommand{\bta}{\bm{\tau^a}}
+\newcommand{\btn}{\bm{\tau^n}}
+\newcommand{\ga}{\gamma}
+\newcommand{\Ga}{\Gamma}
+\newcommand{\de}{\delta}
+
+\begin{document}
+\begin{center}
+RIE R$\&$R of SOP, 2nd Round\\
+February 22, 2016
+\end{center}
+
+\vskip.1in
+
+\begin{enumerate}
+  \item What I would like you to do is write a much more focused, crispier version of the paper. The idea is sufficiently straightforward that it does not need 28 pages of exposition. Please reduce the length of the paper by half.
+	\item Avoid changes of notation as you go along. This is totally unhelpful to the reader. Please pick one and stick to it throughout the paper.
+	\item Avoid digressions, lengthy discussions, and overreach: you stretch your model far too much. Stick to the main story. The paper still degenerates far too often into a series of discussions that bring little additional insight.
+	\item Section 2.4 either belongs to section 1.1 or should move as section 1.2.
+	\item Section 2.3 is far too long.
+	\item Your recall stuff far too often. Not all readers suffer from memory losses.
+	\item Assuming that lobbies represent only import-competing interests is a strong assumption and it requires theoretical and/or empirical justification.
+	\item Your model is static, so claiming that it rationalizes the four-year delay and eventual ratification of the US-SK FTA is a stretch. In particular, the interactions with automakers suggests a that a bargaining game under incomplete information would be more appropriate.
+	\item Your assumption that the identity of the median voter is not known a priori is standard in probability voting models, so you may want to stress the analogy between your setting and such models.
+  \item You claim that trade agreements act as a domestic political commitment device. To make this point formally, it would be nice to establish conditions under which, in equilibrium, “fast track authority” dominates cherry picking ex ante (in a version of your model with several import competing sectors).
+	\item I don’t see how the move of Nature (which determines the probabilities o and o* is consistent with the idea that there is uncertainty about who is the median voter (which was part of your motivation). Assuming that o and o* are mutually exclusive is not great. It would be better to assume some timing (rather than have a simultaneous choice). Since the game is symmetric, assuming that Home’s legislature moves before Foreign’s would be without further loss of generality.
+	\item “the uncertainty about the median legislator’s identity is resolved.” What is this uncertainty really about?
+	\item The equilibrium selection criterion requires justification and motivation.
+	\item Assumption 2 does not formalize any intuition: it is just a labelling.
+	\item I feel uneasy about Assumption 3. I would rather have it as an outcome and, if it is not the only possibly one, a discussion of the conditions under which this arises.
+	\item The full separability of sectors implies very minimal interactions already. Assuming a fully symmetric model is then highly restrictive. How difficult would it be to relax the latter assumption?
+	\item Expression 6 establishes that the necessary second order condition holds by assumption 1, does not it?
+	\item Writing that lobbying expenditures are equal to 0.0007 is meaningless absent units. Are these cents? Trillions of dollars? It would be much more informative if these were expressed as a fraction of equilibrium profits.
+	\item The last paragraph of section 4 is quite a stretch; is there any evidence in the political science literature that the separation of power is correlated with trade openness among democracies?
+\end{enumerate}
+\end{document}
