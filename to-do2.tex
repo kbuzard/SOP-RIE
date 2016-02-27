@@ -74,10 +74,37 @@ February 22, 2016
 				\end{enumerate}
 			\item Only difference in proof of existence is addition of $- Br \cdot Br^*$ term. Looks like I just distribute it out into the two earlier terms and have $(1 - Br)$ times the derivative, for example, which doesn't change the sign.
 			\item Current results should hold for second mover (foreign, WLOG). Either gets a chance to move, or is agreement is already broken and does nothing. But if it moves, decisions aren't conditioned on choice variables of home lobby (only legislature through break decision)
+			\item Results need to be modified for first mover (home)
 				\begin{itemize}
-					\item I don't see why the legislature should make a different choice just because the foreign lobby/legislature may do something in the future
+					\item Legislature (equations 7 and 8 in the draft):
+						\begin{equation}
+							W_{ML}(\btn,\ga(e_b,\ve_b)) > W_{ML}\left(\bta,\ga(e_b,\ve_b)\right)
+							\label{eq:lwcg}
+						\end{equation}
+						becomes
+						\[ 
+						  W_{ML}(\btn,\ga(e_b,\ve_b)) > b^* W_{ML}\left(\btn,\ga(e_b,\ve_b)\right) + (1-b^*) W_{ML}\left(\bta,\ga(e_b,\ve_b)\right)
+						\]
+						This can be arranged as 
+						\[ 
+						  W_{ML}(\btn,\ga(e_b,\ve_b)) - W_{ML}(\bta,\ga(e_b,\ve_b)) > b^* \left[ W_{ML}\left(\btn,\ga(e_b,\ve_b)\right) - W_{ML}\left(\bta,\ga(e_b,\ve_b)\right) \right]
+						\]
+						This has the interesting structure that it is always true when (\ref{eq:lwcg}) is true, and is false whenever (\ref{eq:lwcg}) is false. So all the same results go through after modifying the objective function for the legislature
+					\item Lobby: objective function was
+					  \[
+							\max_{e_b} b(e_b,\bta) \left[\pi(\tau^n) - e_n \right] + [1 - b(e_b,\bta)] \pi(\tau^a) - e_b
+						\]
+						Now it's 
+						\begin{multline*}
+							\max_{e_b} \left\{ b(e_b,\bta) + b^*(1-b(e_b,\bta)) \right\} \left[\pi(\tau^n) - e_n \right] + \\
+							[1 - b(e_b,\bta) - b^* + b(e_b,\bta) b^*] \pi(\tau^a) - e_b
+						\end{multline*}
+						So the first order condition becomes 
+						\begin{equation}
+							\frac{\partial b(e_b,\bta)}{\partial e_b} \left[1-b^*(e_b^*,\bta)\right] \left[ \pi(\tau^n) -e_n - \pi(\tau^a) \right] = 1 
+						\end{equation}
+						I just need to check that the extra $\bta$ will not mess up any results.
 				\end{itemize}
-			\item Need to explore for first mover (home)
 		\end{itemize}
 	\item[26.] The full separability of sectors implies very minimal interactions already. Assuming a fully symmetric model is then highly restrictive. How difficult would it be to relax the latter assumption?
 \end{enumerate}
