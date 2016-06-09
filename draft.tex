@@ -379,23 +379,19 @@ We can now proceed to the central result concerning the lobby's behavior.
 \textit{Note that the symmetric increase in the foreign tariff does not impact profits in the import-competing industry, but it can impact lobbying incentives through the break probability. However, there is an analogous effect on the break probability from raising $\tau^a$ and the net effect is negative given Assumption~\ref{as:ga_c} on the probability distribution function of $\ga(e,\ta)$, which ensures that the effect of lobbying effort on the break probability does not increase as $\bta$ increases. This assumption can be significantly weakened: this effect can be positive as long as it is smaller in absolute value than the negative effect on trade agreement profits.}
 
 \subsubsection{Foreign Legislature (First Mover)}
-The only strategic difference between the first mover and the second mover is that the first mover faces uncertainty about whether the other legislature will break the trade agreement.
-		
+The only strategic difference between the first-moving legislature and the second moving legislature is that the first mover faces uncertainty about whether the other legislature will break the trade agreement. In constructing the break probability for the foreign legislature $b^*(e_b^*,\bta)$, Expression~\ref{eq:lwcg} becomes
+		\[ 
+		  W_{ML}^*(\btn,\ga(e_b^*,\ve_b^*)) > b(e_b,\bta) W_{ML}^*\left(\btn,\ga(e_b^*,\ve_b^*)\right) + \left[1-b(e_b,\bta)\right] W_{ML}^*\left(\bta,\ga(e_b^*,\ve_b^*)\right)
+		\]
+	This inequality determining when the foreign legislature prefers to break the trade agreement can be arranged as 
+		\begin{equation}
+						  W_{ML}^*(\btn,\ga(e_b^*,\ve_b^*)) - W_{ML}^*(\bta,\ga(e_b^*,\ve_b^*)) > b(e_b,\bta) \left[ W_{ML}^*\left(\btn,\ga(e_b^*,\ve_b^*)\right) - W_{ML}^*\left(\bta,\ga(e_b^*,\ve_b^*)\right) \right]
+			\label{eq:lwcg_for}
+		\end{equation}
+	Given symmetry, Expression~\ref{eq:lwcg_for} is true precisely when Expression~\ref{eq:lwcg} is true and false whenever Expression~\ref{eq:lwcg}) is false. 
 				\begin{itemize}
-					\item Legislature (equations 7 and 8 in the draft):
-						\begin{equation}
-							W_{ML}(\btn,\ga(e_b,\ve_b)) > W_{ML}\left(\bta,\ga(e_b,\ve_b)\right)
-							\label{eq:lwcg}
-						\end{equation}
-						becomes
-						\[ 
-						  W_{ML}(\btn,\ga(e_b,\ve_b)) > b^* W_{ML}\left(\btn,\ga(e_b,\ve_b)\right) + (1-b^*) W_{ML}\left(\bta,\ga(e_b,\ve_b)\right)
-						\]
-						This can be arranged as 
-						\[ 
-						  W_{ML}(\btn,\ga(e_b,\ve_b)) - W_{ML}(\bta,\ga(e_b,\ve_b)) > b^* \left[ W_{ML}\left(\btn,\ga(e_b,\ve_b)\right) - W_{ML}\left(\bta,\ga(e_b,\ve_b)\right) \right]
-						\]
-						This has the interesting structure that it is always true when (\ref{eq:lwcg}) is true, and is false whenever (\ref{eq:lwcg}) is false. So all the same results go through after modifying the objective function for the legislature
+										
+					\item	So all the same results go through after modifying the objective function for the legislature
 					\item Lobby: objective function was
 					  \[
 							\max_{e_b} b(e_b,\bta) \left[\pi(\tau^n) - e_n \right] + [1 - b(e_b,\bta)] \pi(\tau^a) - e_b
