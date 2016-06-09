@@ -276,7 +276,7 @@ In the event that the trade agreement is broken, the legislature sets its tariff
 		\label{eq:legfoc}
 \end{equation}
 
-In the event of a trade war, the lobby chooses its effort $e_n$ given this tariff-setting behavior by maximizing its profits net of effort: $\pi\left(\tau^n\left(\ga\left(e_n,\ve_n\right)\right)\right) - e_n$. (Note this is Equation~\ref{eq:lv} simplified by the resolution of uncertainty over the legislature's decision on the trade agreement). This implies a first order condition for the lobby of
+In the event of a trade war, the lobby chooses its effort $e_n$ given this tariff-setting behavior by maximizing its profits net of effort: $\pi\left(\tau^n\left(\ga\left(e_n,\ve_n\right)\right)\right) - e_n$. This implies a first order condition for the lobby of
 \begin{equation}
 	\frac{\partial \pi(\tau^n)}{\partial \tau^n}\frac{\partial \tau^n}{\partial \ga} \frac{\partial \ga}{\partial e_n} = 1
   \label{eq:lobtw}
@@ -297,7 +297,6 @@ since $\frac{\partial \ga}{\partial e_n}$ is positive by Assumption~\ref{as:ga_c
 With trade-war decisions specified, we can proceed by backward induction to analyze the incentives regarding the legislatures' decisions to uphold or break the trade agreement. I assume that the form of the political weighting function is the same regardless of the break decision, but the model could be extended to allow the two to differ. What is in principle different are the lobbying efforts toward influencing the break decision, denoted $e_b$ and $e_b^*$ at this stage to distinguish them from those that are made to influence the Nash tariff, $e_n$ and $e_n^*$. The realization of uncertainty about the identity of the median legislator in each country will similarly be denoted $\ve_b$ and $\ve_b^*$ so as to distinguish them from $\ve_n$ and $\ve_n^*$ at the trade-war stage. 
 
 \subsubsection{Home Legislature (Second Mover)}
-
 I begin with the second-moving home legislature. The home legislature's decision only has consequence if the foreign legislature does not break the trade agreement. I assume that there is no political activity in home if the foreign legislature breaks the trade agreement.
 
 The home legislature will break the agreement and set the tariff at $\tau^n$ if the home median legislator's utility from the Nash tariffs is higher than his utility from the trade agreement tariffs, i.e. if
@@ -313,7 +312,7 @@ Each legislature's decisions are stochastic, so the outcome of the vote on wheth
   \label{eq:b}
 \end{multline}
 
-Note that the legislatures' best response functions---both for whether to break the agreement, and at what level to set the tariff if it does---will be affected by the shape of $\ga(e,\ve)$.
+Note that the legislatures' best response functions---both for whether to break the agreement, and at what level to set the tariff if it does---will be affected by the shape of $\ga(e,\ve)$. I suppress the Nash tariffs in the expression of the break probability since they do not vary from the point of view of earlier stages.
 
 We are now in a position to examine the home legislature's decision more closely. Of central concern is how the probability that the legislature will break the trade agreement varies with lobbying effort: 
 
@@ -351,12 +350,9 @@ In the symmetric equilibria that are focal in the analysis that follows, any inc
 
 \noindent When any change in one of the trade agreement tariffs must be met with an equal change in the other (as in a symmetric agreement), the negative impact on the home legislature's propensity to break the trade agreement of raising the home tariff always outweighs the positive impact of raising the foreign tariff because of the home legislature's bias toward its import-competing industry.
 
-
-\subsubsection{Foreign Legislature (First Mover)}
-
-\subsubsection{Lobby}
+\subsubsection{Second-Mover Lobby}
 \label{sec:lob_un}
-The lobby chooses its level of effort $e_b$ as a function of $\bta$, given the implications of that choice on the legislature's probability of breaking the agreement, $b(e_b,\bta,\btn)$. I will henceforth suppress the Nash tariffs in the expression of the break probability to simplify notation.\footnote{Since the decisions over the Nash tariffs are taken in the final period, they do not vary from the point of view of earlier stages. Similarly, because the lobbying effort made in that period does not interact with other decision variables in earlier periods, I suppress the dependence of the Nash tariffs on $e_n$.} Recalling that if the lobby has the chance to act, there is no chance for the foreign legislature to break the agreement, the lobby's decision is
+The home lobby chooses its level of effort $e_b$ as a function of $\bta$, given the implications of that choice on the home legislature's probability of breaking the agreement. The lobby's decision can be written as
 \[
   \max_{e_b} b(e_b,\bta) \left[\pi(\tau^n) - e_n \right] + [1 - b(e_b,\bta)] \pi(\tau^a) - e_b
 \]
@@ -374,13 +370,49 @@ For instance, if the executives were to set $\tau^a = \tau^n$, there would be no
   
 We can now proceed to the central result concerning the lobby's behavior. 
 \begin{result}
-  When the trade agreement remains in force with positive probability, lobbying effort is weakly decreasing in trade agreement tariffs.\footnote{See Section~\ref{sec:uncertainty} for a detailed account of behavior when the lobby is able to induce a trade war with probability 1.}
+  When the trade agreement remains in force with positive probability, home lobbying effort is weakly decreasing in trade agreement tariffs.\footnote{See Section~\ref{sec:uncertainty} for a detailed account of behavior when the lobby is able to induce a trade war with probability 1.}
   \label{res:lobby}
 \end{result}
 
 \noindent Raising the trade agreement tariff decreases the benefit of inducing a break in the trade agreement by raising profits under the trade agreement. This is in many ways the key result of this paper: the executives can reduce lobbying effort by setting higher tariffs in their trade agreement. We will see in the next section how this shapes the executives' joint decision. 
 
-Note that the symmetric increase in the foreign tariff does not impact profits in the import-competing industry, but it can impact lobbying incentives through the break probability. However, there is an analogous effect on the break probability from raising $\tau^a$ and the net effect is negative given Assumption~\ref{as:ga_c} on the probability distribution function of $\ga(e,\ta)$, which ensures that the effect of lobbying effort on the break probability does not increase as $\bta$ increases. This assumption can be significantly weakened: this effect can be positive as long as it is smaller in absolute value than the negative effect on trade agreement profits.
+\textit{Note that the symmetric increase in the foreign tariff does not impact profits in the import-competing industry, but it can impact lobbying incentives through the break probability. However, there is an analogous effect on the break probability from raising $\tau^a$ and the net effect is negative given Assumption~\ref{as:ga_c} on the probability distribution function of $\ga(e,\ta)$, which ensures that the effect of lobbying effort on the break probability does not increase as $\bta$ increases. This assumption can be significantly weakened: this effect can be positive as long as it is smaller in absolute value than the negative effect on trade agreement profits.}
+
+\subsubsection{Foreign Legislature (First Mover)}
+The only strategic difference between the first mover and the second mover is that the first mover faces uncertainty about whether the other legislature will break the trade agreement.
+		
+				\begin{itemize}
+					\item Legislature (equations 7 and 8 in the draft):
+						\begin{equation}
+							W_{ML}(\btn,\ga(e_b,\ve_b)) > W_{ML}\left(\bta,\ga(e_b,\ve_b)\right)
+							\label{eq:lwcg}
+						\end{equation}
+						becomes
+						\[ 
+						  W_{ML}(\btn,\ga(e_b,\ve_b)) > b^* W_{ML}\left(\btn,\ga(e_b,\ve_b)\right) + (1-b^*) W_{ML}\left(\bta,\ga(e_b,\ve_b)\right)
+						\]
+						This can be arranged as 
+						\[ 
+						  W_{ML}(\btn,\ga(e_b,\ve_b)) - W_{ML}(\bta,\ga(e_b,\ve_b)) > b^* \left[ W_{ML}\left(\btn,\ga(e_b,\ve_b)\right) - W_{ML}\left(\bta,\ga(e_b,\ve_b)\right) \right]
+						\]
+						This has the interesting structure that it is always true when (\ref{eq:lwcg}) is true, and is false whenever (\ref{eq:lwcg}) is false. So all the same results go through after modifying the objective function for the legislature
+					\item Lobby: objective function was
+					  \[
+							\max_{e_b} b(e_b,\bta) \left[\pi(\tau^n) - e_n \right] + [1 - b(e_b,\bta)] \pi(\tau^a) - e_b
+						\]
+						Now it's 
+						\begin{multline*}
+							\max_{e_b} \left\{ b(e_b,\bta) + b^*(1-b(e_b,\bta)) \right\} \left[\pi(\tau^n) - e_n \right] + \\
+							[1 - b(e_b,\bta) - b^* + b(e_b,\bta) b^*] \pi(\tau^a) - e_b
+						\end{multline*}
+						So the first order condition becomes 
+						\begin{equation}
+							\frac{\partial b(e_b,\bta)}{\partial e_b} \left[1-b^*(e_b^*,\bta)\right] \left[ \pi(\tau^n) -e_n - \pi(\tau^a) \right] = 1 
+						\end{equation}
+						I believe that only Result 2 is in peril. A new term is added in the numerator (the denominator just gets a $(1-b^*)$; by the product rule, there are two terms after differentiating. The first is negative, the second is positive but can be combined with the pre-existing second term which just becomes less negative now. Should write all this up.
+				\end{itemize}
+
+
 
 
 
