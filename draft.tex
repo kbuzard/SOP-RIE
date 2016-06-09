@@ -294,29 +294,31 @@ since $\frac{\partial \ga}{\partial e_n}$ is positive by Assumption~\ref{as:ga_c
 \bigskip
 \subsection{To Break or Not to Break?}
 \label{sec:break}
-With trade-war decisions specified, we can proceed by backward induction to analyze the incentives regarding the legislature's decision to uphold or break the trade agreement. I assume that the form of the political weighting function is the same regardless of the break decision, but the model could be extended to allow the two to differ. What is in principle different are the lobbying efforts toward influencing the break decision, denoted $e_b$ at this stage to distinguish them from those that are made to influence the Nash tariff, $e_n$. The realization of uncertainty about the median legislator's identity will similarly be denoted $\ve_b$ so as to distinguish it from $\ve_n$ at the trade-war stage. 
+With trade-war decisions specified, we can proceed by backward induction to analyze the incentives regarding the legislatures' decisions to uphold or break the trade agreement. I assume that the form of the political weighting function is the same regardless of the break decision, but the model could be extended to allow the two to differ. What is in principle different are the lobbying efforts toward influencing the break decision, denoted $e_b$ and $e_b^*$ at this stage to distinguish them from those that are made to influence the Nash tariff, $e_n$ and $e_n^*$. The realization of uncertainty about the identity of the median legislator in each country will similarly be denoted $\ve_b$ and $\ve_b^*$ so as to distinguish them from $\ve_n$ and $\ve_n^*$ at the trade-war stage. 
 
-The legislature will break the agreement and set the tariff at $\tau^n$ if the median legislator's utility from the Nash tariffs is higher than his utility from the trade agreement tariffs, i.e. if
+\subsubsection{Home Legislature (Second Mover)}
+
+I begin with the second-moving home legislature. The home legislature's decision only has consequence if the foreign legislature does not break the trade agreement. I assume that there is no political activity in home if the foreign legislature breaks the trade agreement.
+
+The home legislature will break the agreement and set the tariff at $\tau^n$ if the home median legislator's utility from the Nash tariffs is higher than his utility from the trade agreement tariffs, i.e. if
 \begin{equation}
   W_{ML}(\btn,\ga(e_b,\ve_b)) > W_{ML}\left(\bta,\ga(e_b,\ve_b)\right)
   \label{eq:lwcg}
 \end{equation}
 \noindent Recall that a bold $\bm{\tau}$ represents a vector of tariffs for both countries $(\tau,\tau^*)$.
   
-The legislature's decisions are stochastic, so the outcome of the vote on whether or not to break the trade agreement, as well as the level at which the tariff will be set in the case of a disruption, is not known to \textit{any} player until the uncertainty over the identity of the median legislator is resolved at the moment the vote takes place on each issue.\footnote{We might think of the trade-war tariff as being set in the legislation before a vote takes place in the case of administered protection for instance; the results are robust to this variant.} I represent the probability that the home legislature breaks the trade agreement and sets the tariff at $\tau^n$ as:
+Each legislature's decisions are stochastic, so the outcome of the vote on whether or not to break the trade agreement, as well as the level at which the tariff will be set in the case of a disruption, is not known to \textit{any} player until the uncertainty over the identity of the median legislator is resolved at the moment the vote takes place on each issue.\footnote{We might think of the trade-war tariff as being set in the legislation before a vote takes place in the case of administered protection for instance; the results are robust to this variant.} I represent the probability that the home legislature breaks the trade agreement and sets the tariff at $\tau^n$ as:
 \begin{multline}
   b(e_b,\bta,\btn) = \expect_{\ga|e_b} \bm{1} [ W_{ML}(\btn,\ga(e_b,\ve_b)) > W_{ML}\left(\bta,\ga(e_b,\ve_b)\right) ] \\ = \Pr [ W_{ML}(\btn,\ga(e_b,\ve_b)) > W_{ML}\left(\bta,\ga(e_b,\ve_b)\right) | e_b]
   \label{eq:b}
 \end{multline}
 
-Note that the legislature's best response functions---both for whether to break the agreement, and at what level to set the tariff if it does---will be affected by the shape of $\ga(e,\ve)$. Recall that we have made three basic assumptions on $\ga(e,\ve)$ in Section~\ref{sec:choices}. More restrictions could be added to deliver further results.
+Note that the legislatures' best response functions---both for whether to break the agreement, and at what level to set the tariff if it does---will be affected by the shape of $\ga(e,\ve)$.
 
-%Assumption~\ref{as:ga_l_e} ensures that $\tau^a < \tau^n$, and more generally, that the legislature's incentives are more closely aligned with the lobby's than are those of the executive. This is not essential but simplifies the analysis and matches well the empirical findings that politicians with larger constituencies are less sensitive to special interests (See Destler (2005) and footnote~\ref{fn:ga_l_e} above).
-
-We are now in a position to examine the legislature's decision more closely. Of central concern is how the probability that the legislature will break the trade agreement varies with lobbying effort: 
+We are now in a position to examine the home legislature's decision more closely. Of central concern is how the probability that the legislature will break the trade agreement varies with lobbying effort: 
 
 \begin{result}
-  The probability that the legislature breaks a trade agreement is increasing and concave in $e_b$.
+  The probability that the home legislature breaks a trade agreement is increasing and concave in $e_b$.
   \label{res:bincC}
 \end{result}
 
