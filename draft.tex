@@ -353,9 +353,10 @@ In the symmetric equilibria that are focal in the analysis that follows, any inc
 \subsubsection{Second-Mover Lobby}
 \label{sec:lob_un}
 The home lobby chooses its level of effort $e_b$ as a function of $\bta$, given the implications of that choice on the home legislature's probability of breaking the agreement. The lobby's decision can be written as
-\[
+\begin{equation}
   \max_{e_b} b(e_b,\bta) \left[\pi(\tau^n) - e_n \right] + [1 - b(e_b,\bta)] \pi(\tau^a) - e_b
-\]
+	\label{eq:lobby}
+\end{equation}
 The lobby simply maximizes probability-weighted profits net of effort. From its first order condition, we can see that the lobby balances the cost of an extra dollar of lobbying expenditure with the higher profits from a trade war weighted by the increase in the probability of receiving the higher profit level that expenditure induces:
 \begin{equation}
 	\frac{\partial b(e_b,\bta)}{\partial e_b} \left[ \pi(\tau^n) -e_n - \pi(\tau^a) \right] = 1 
@@ -383,30 +384,46 @@ The only strategic difference between the first-moving legislature and the secon
 		\[ 
 		  W_{ML}^*(\btn,\ga(e_b^*,\ve_b^*)) > b(e_b,\bta) W_{ML}^*\left(\btn,\ga(e_b^*,\ve_b^*)\right) + \left[1-b(e_b,\bta)\right] W_{ML}^*\left(\bta,\ga(e_b^*,\ve_b^*)\right)
 		\]
-	This inequality determining when the foreign legislature prefers to break the trade agreement can be arranged as 
+	This inequality determining when the foreign legislature prefers to break the trade agreement can be rearranged as 
 		\begin{equation}
-						  W_{ML}^*(\btn,\ga(e_b^*,\ve_b^*)) - W_{ML}^*(\bta,\ga(e_b^*,\ve_b^*)) > b(e_b,\bta) \left[ W_{ML}^*\left(\btn,\ga(e_b^*,\ve_b^*)\right) - W_{ML}^*\left(\bta,\ga(e_b^*,\ve_b^*)\right) \right]
+			W_{ML}^*(\btn,\ga(e_b^*,\ve_b^*)) - W_{ML}^*(\bta,\ga(e_b^*,\ve_b^*)) > b(e_b,\bta) \left[ W_{ML}^*\left(\btn,\ga(e_b^*,\ve_b^*)\right) - W_{ML}^*\left(\bta,\ga(e_b^*,\ve_b^*)\right) \right]
 			\label{eq:lwcg_for}
 		\end{equation}
-	Given symmetry, Expression~\ref{eq:lwcg_for} is true precisely when Expression~\ref{eq:lwcg} is true and false whenever Expression~\ref{eq:lwcg}) is false. 
-				\begin{itemize}
-										
-					\item	So all the same results go through after modifying the objective function for the legislature
-					\item Lobby: objective function was
-					  \[
-							\max_{e_b} b(e_b,\bta) \left[\pi(\tau^n) - e_n \right] + [1 - b(e_b,\bta)] \pi(\tau^a) - e_b
-						\]
-						Now it's 
-						\begin{multline*}
-							\max_{e_b} \left\{ b(e_b,\bta) + b^*(1-b(e_b,\bta)) \right\} \left[\pi(\tau^n) - e_n \right] + \\
-							[1 - b(e_b,\bta) - b^* + b(e_b,\bta) b^*] \pi(\tau^a) - e_b
-						\end{multline*}
-						So the first order condition becomes 
-						\begin{equation}
-							\frac{\partial b(e_b,\bta)}{\partial e_b} \left[1-b^*(e_b^*,\bta)\right] \left[ \pi(\tau^n) -e_n - \pi(\tau^a) \right] = 1 
-						\end{equation}
+	This is equivalent to 	
+		\[
+			W_{ML}^*(\btn,\ga(e_b^*,\ve_b^*)) > W_{ML}^*\left(\bta,\ga(e_b^*,\ve_b^*)\right)
+		\]
+	Then given symmetry, the foreign legislature's incentives to break the trade agreement are identical to the home legislature's incentives to break the trade agreement given in Expression~\ref{eq:lwcg}. We can therefore state propositions analogous to Result~\ref{res:bincC} and Lemma~\ref{res:bcomb} for the foreign legislature. The proofs are identical modulo symmetry.
+
+\begin{result}
+  The probability that the foreign legislature breaks a trade agreement is increasing and concave in $e_b^*$.
+  \label{res:bincCforeign}
+\end{result}
+
+\begin{lemma}
+	Holding lobbying effort constant, the probability the foreign legislature breaks a trade agreement is weakly decreasing in $\bta$ (i.e. $\frac{\partial b^*(e^*,\bta)}{\partial  \tau^a} + \frac{\partial b^*(e^*,\bta)}{\partial  \tau^{*a}} \leq 0$).
+	\label{res:bcombforeign}
+\end{lemma}
+
+\subsubsection{First Mover Lobby}
+The lobby in the foreign country likewise has a more complex decision. The second-moving lobby's objective function in Expression~\ref{eq:lobby} becomes
+  \begin{multline*}
+		\max_{e_b} \left\{ b(e_b,\bta) + b^*(1-b(e_b,\bta)) \right\} \left[\pi(\tau^n) - e_n \right] + \\
+							[1 - b(e_b,\bta) - b^* + b(e_b,\bta) b^*] \pi(\tau^a) - e_b.
+	\end{multline*}
+The first order condition is 	
+  \begin{equation}
+		\frac{\partial b(e_b,\bta)}{\partial e_b} \left[1-b^*(e_b^*,\bta)\right] \left[ \pi(\tau^n) -e_n - \pi(\tau^a) \right] = 1 
+	\end{equation}
+	
+\begin{result}
+  When the trade agreement remains in force with positive probability, home lobbying effort is weakly decreasing in trade agreement tariffs.
+  \label{res:lobbyforeign}
+\end{result}
+						
+						
 						I believe that only Result 2 is in peril. A new term is added in the numerator (the denominator just gets a $(1-b^*)$; by the product rule, there are two terms after differentiating. The first is negative, the second is positive but can be combined with the pre-existing second term which just becomes less negative now. Should write all this up.
-				\end{itemize}
+	
 
 
 
@@ -787,6 +804,26 @@ Then $\frac{\partial^2 b}{\partial e_b \partial \tau^a} + \frac{\partial^2 b}{\p
 	   - f_\ga \left[\frac{\partial^2 Z(\bta)}{\partial \tau^a \partial e} + \frac{\partial^2 Z(\bta)}{\partial \tau^{*a} \partial e} \right] - \left[\frac{\partial Z(\bta)}{\partial \tau^a} + \frac{\partial Z(\bta)}{\partial \tau^{*a}} \right] \frac{\partial f_\ga}{\partial e} = - \left[\frac{\partial Z(\bta)}{\partial \tau^a} + \frac{\partial Z(\bta)}{\partial \tau^{*a}} \right] \frac{\partial f_\ga}{\partial e} 
 $
 where the above equality holds because $Z(\bta)$ does not depend on $e$. Lemma~\ref{res:bcomb} shows that $\frac{\partial Z(\bta)}{\partial \tau^a} + \frac{\partial Z(\bta)}{\partial \tau^{*a}} \geq 0$, so $\frac{\partial f_\ga}{\partial e} \geq 0$ ensures that $\left\{\frac{\partial^2 b}{\partial e_b \partial \tau^a} + \frac{\partial^2 b}{\partial e_b \partial \tau^{*a}} \right\} \leq 0$. Thus $\frac{\partial e_b}{\partial \tau^a} + \frac{\partial e_b}{\partial \tau^{*a}} \leq 0$.  $\hfill\blacksquare$
+
+
+
+\vskip.4in
+\noindent \textbf{\hypertarget{Pr_lobbyforeign}{Proof of Result~\ref{res:lobbyforeign}}}:\\
+Proof is via the Implicit Function Theorem using the lobby's first order condition, Equation~\ref{eq:lobbyfoc}, referred to here as $FOC_L$.
+  \[
+		\frac{\partial e_b}{\partial \tau^a} + \frac{\partial e_b}{\partial \tau^{*a}} = - \left[ \frac{\frac{\partial FOC_L}{\partial \tau^a}}{\frac{\partial FOC_L}{\partial e_b}} + \frac{\frac{\partial FOC_L}{\partial \tau^{*a}}}{\frac{\partial FOC_L}{\partial e_b}} \right] = \frac{ \frac{\partial b}{\partial e_b} \frac{\partial \pi(\bta)}{\partial \tau^a} + \frac{\partial b}{\partial e_b} \frac{\partial \pi(\bta)}{\partial \tau^{*a}} - \left\{\frac{\partial^2 b}{\partial e_b \partial \tau^a} + \frac{\partial^2 b}{\partial e_b \partial \tau^{*a}}   \right\}\left[ \pi(\tau^n) - e_n - \pi(\tau^a) \right]}{\frac{\partial^2 b}{\partial e_b{}^2} \left[ \pi(\tau^n) - e_n - \pi(\tau^a) \right]}
+	\]
+Beginning with the denominator: because $\pi(\tau)$ is increasing everywhere, $\left[\pi(\tau^n) - e_n - \pi(\tau^a) \right]$ is positive for all but very large values of $\tau^a$, that is for all $\tau^a$ such that $\pi(\tau^n) - e_n > \pi(\tau^a)$. When $\tau^a$ rises above this level, it is no longer in the lobby's interest to ask to have the agreement broken so $e_b=0$ and $\frac{\partial e_b}{\partial \tau^a} = 0$. $\frac{\partial^2 b}{\partial e_b{}^2}$ negative by Result~\ref{res:bincC}, so the denominator is negative for all values of $\tau^a$ at which $e_b$ is not constant.
+
+$\frac{\partial b}{\partial e_b}$ is positive, $\frac{\partial \pi(\bta)}{\partial \tau^a}$ is positive by construction, and $\frac{\partial \pi(\bta)}{\partial \tau^{*a}}$ is zero: separability between the sectors implies that profits in the import-competing sector do not depend on $\tau^{*a}$. 
+
+We can rewrite $\frac{\partial b(e,\bta)}{\partial  \tau^a} + \frac{\partial b(e,\bta)}{\partial  \tau^{*a}} = -\frac{\partial F_\ga (Z(\bta))}{\partial \tau^a} -\frac{\partial F_\ga (Z(\bta))}{\partial \tau^{*a}} = -\frac{\partial F_\ga (Z(\bta))}{\partial Z(\bta)}\left[\frac{\partial Z(\bta)}{\partial \tau^a} + \frac{\partial Z(\bta)}{\partial \tau^{*a}} \right] = - f_\ga \left[\frac{\partial Z(\bta)}{\partial \tau^a} + \frac{\partial Z(\bta)}{\partial \tau^{*a}} \right]$, where $F_\ga (Z(\bta))$ is the CDF of $\ga$ and $f_\ga (Z(\bta))$ is the pdf of $\ga$ and $Z(\bta)$ represents the left hand side of the inequality in Expression~\ref{eq:b_ex}.
+	
+Then $\frac{\partial^2 b}{\partial e_b \partial \tau^a} + \frac{\partial^2 b}{\partial e_b \partial \tau^{*a}} = 	- \frac{\partial}{\partial e} \left( \frac{\partial F_\ga (Z(\bta))}{\partial \tau^a} + \frac{\partial F_\ga (Z(\bta))}{\partial \tau^{*a}} \right) = 
+	   - f_\ga \left[\frac{\partial^2 Z(\bta)}{\partial \tau^a \partial e} + \frac{\partial^2 Z(\bta)}{\partial \tau^{*a} \partial e} \right] - \left[\frac{\partial Z(\bta)}{\partial \tau^a} + \frac{\partial Z(\bta)}{\partial \tau^{*a}} \right] \frac{\partial f_\ga}{\partial e} = - \left[\frac{\partial Z(\bta)}{\partial \tau^a} + \frac{\partial Z(\bta)}{\partial \tau^{*a}} \right] \frac{\partial f_\ga}{\partial e} 
+$
+where the above equality holds because $Z(\bta)$ does not depend on $e$. Lemma~\ref{res:bcomb} shows that $\frac{\partial Z(\bta)}{\partial \tau^a} + \frac{\partial Z(\bta)}{\partial \tau^{*a}} \geq 0$, so $\frac{\partial f_\ga}{\partial e} \geq 0$ ensures that $\left\{\frac{\partial^2 b}{\partial e_b \partial \tau^a} + \frac{\partial^2 b}{\partial e_b \partial \tau^{*a}} \right\} \leq 0$. Thus $\frac{\partial e_b}{\partial \tau^a} + \frac{\partial e_b}{\partial \tau^{*a}} \leq 0$.  $\hfill\blacksquare$
+
 
 
 
