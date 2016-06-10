@@ -276,7 +276,7 @@ In the event that the trade agreement is broken, the legislature sets its tariff
 		\label{eq:legfoc}
 \end{equation}
 
-In the event of a trade war, the lobby chooses its effort $e_n$ given this tariff-setting behavior by maximizing its profits net of effort: $\pi\left(\tau^n\left(\ga\left(e_n,\ve_n\right)\right)\right) - e_n$. (Note this is Equation~\ref{eq:lv} simplified by the resolution of uncertainty over the legislature's decision on the trade agreement). This implies a first order condition for the lobby of
+In the event of a trade war, the lobby chooses its effort $e_n$ given this tariff-setting behavior by maximizing its profits net of effort: $\pi\left(\tau^n\left(\ga\left(e_n,\ve_n\right)\right)\right) - e_n$. This implies a first order condition for the lobby of
 \begin{equation}
 	\frac{\partial \pi(\tau^n)}{\partial \tau^n}\frac{\partial \tau^n}{\partial \ga} \frac{\partial \ga}{\partial e_n} = 1
   \label{eq:lobtw}
@@ -309,9 +309,7 @@ The legislature's decisions are stochastic, so the outcome of the vote on whethe
   \label{eq:b}
 \end{multline}
 
-Note that the legislature's best response functions---both for whether to break the agreement, and at what level to set the tariff if it does---will be affected by the shape of $\ga(e,\ve)$. Recall that we have made three basic assumptions on $\ga(e,\ve)$ in Section~\ref{sec:choices}. More restrictions could be added to deliver further results.
-
-%Assumption~\ref{as:ga_l_e} ensures that $\tau^a < \tau^n$, and more generally, that the legislature's incentives are more closely aligned with the lobby's than are those of the executive. This is not essential but simplifies the analysis and matches well the empirical findings that politicians with larger constituencies are less sensitive to special interests (See Destler (2005) and footnote~\ref{fn:ga_l_e} above).
+Note that the legislature's best response functions---both for whether to break the agreement, and at what level to set the tariff if it does---will be affected by the shape of $\ga(e,\ve)$. I suppress the Nash tariffs in the expression of the break probability since they do not vary from the point of view of earlier stages.
 
 We are now in a position to examine the legislature's decision more closely. Of central concern is how the probability that the legislature will break the trade agreement varies with lobbying effort: 
 
@@ -332,7 +330,7 @@ Turning to the effects of the trade-agreement tariffs on the probability that th
   \label{lem:leg_astar}
 \end{lemma}
 
-Because the home country is an exporter of good $Y$, the lower world price for $Y$ has a negative effect on producer surplus that is larger than the positive effect on consumer surplus. Thus the net effect of an increase in foreign trade-agreement tariffs on legislative (and home country) welfare is negative, leading to an increased probability that the trade agreement will be broken.
+Because the home country is an exporter of good $Y$, the lower world price for $Y$ has a negative effect on producer surplus that is larger than the positive effect on consumer surplus. Thus the net effect of an increase in foreign trade-agreement tariffs on both home legislative and home total social welfare is negative, leading to an increased probability that the trade agreement will be broken.
 
 The relationship between the home country's trade-agreement tariff $\tau^a$ and the legislature's probability of breaking the agreement is slightly more complex because $\tau^a$ interacts directly with $\ga(e_b,\ta_b)$. The intuition is as follows. The median legislator will vote to break the agreement if it receives higher welfare from the trade war tariff than the trade agreement tariff. For any given level of effort $e_b$, when the trade agreement tariff is very low, only a small set of realizations of $\ta_b$ that lead to the lowest values of $\ga(e_b,\ta_b)$ will lead to approval of the trade agreement. Thus the break probability is high. As the trade agreement tariff rises, larger values of $\ga(e_b,\ta_b)$ are consistent with approving the trade agreement, so the set of $\ta_b$'s that lead to trade agreement approval is larger. That is, the break probability decreases as $\tau^a$ increases. Even if the trade agreement tariff is so high that it is disliked by most, or even all, potential median legislators, it is preferable to the --- even higher --- trade war tariff, so the probability of breaking either becomes zero or continues to decrease in $\tau^a$.
 
@@ -351,7 +349,7 @@ In the symmetric equilibria that are focal in the analysis that follows, any inc
 
 \subsubsection{Lobby}
 \label{sec:lob_un}
-The lobby chooses its level of effort $e_b$ as a function of $\bta$, given the implications of that choice on the legislature's probability of breaking the agreement, $b(e_b,\bta,\btn)$. I will henceforth suppress the Nash tariffs in the expression of the break probability to simplify notation.\footnote{Since the decisions over the Nash tariffs are taken in the final period, they do not vary from the point of view of earlier stages. Similarly, because the lobbying effort made in that period does not interact with other decision variables in earlier periods, I suppress the dependence of the Nash tariffs on $e_n$.} Recalling that if the lobby has the chance to act, there is no chance for the foreign legislature to break the agreement, the lobby's decision is
+The lobby chooses its level of effort $e_b$ as a function of $\bta$, given the implications of that choice on the legislature's probability of breaking the agreement. The lobby's decision is taken according to
 \[
   \max_{e_b} b(e_b,\bta) \left[\pi(\tau^n) - e_n \right] + [1 - b(e_b,\bta)] \pi(\tau^a) - e_b
 \]
