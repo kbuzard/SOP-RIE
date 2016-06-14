@@ -303,21 +303,21 @@ In the symmetric equilibria that are focal in the analysis that follows, any inc
 
 \subsubsection{Lobby}
 \label{sec:lob_un}
-The lobby chooses its level of effort $e_b$ as a function of $\bta$, given the implications of that choice on the legislature's probability of breaking the agreement. The lobby's decision is taken according to
+The lobby chooses its level of effort as a function of $\bta$, given the implications of that choice on the legislature's probability of breaking the agreement. The lobby maximizes probability-weighted profits net of effort:
 \[
   \max_{e_b} b(e_b,\bta) \left[\pi(\tau^n) - e_n \right] + [1 - b(e_b,\bta)] \pi(\tau^a) - e_b
 \]
-The lobby simply maximizes probability-weighted profits net of effort. From its first order condition, we can see that the lobby balances the cost of an extra dollar of lobbying expenditure with the higher profits from a trade war weighted by the increase in the probability of receiving the higher profit level that expenditure induces:
+The first order condition shows that the lobby balances the cost of an extra dollar of expenditure with the higher profits from a trade war weighted by the increase in the probability of receiving the higher profit level induced by that expenditure:
 \begin{equation}
 	\frac{\partial b(e_b,\bta)}{\partial e_b} \left[ \pi(\tau^n) -e_n - \pi(\tau^a) \right] = 1 
 	\label{eq:lobbyfoc}
 \end{equation}
-The second order condition is satisfied given Assumption~\ref{as:ga_l_e} and Result~\ref{res:bincC}. However, the solution is not guaranteed to be interior, for which we need
+The second order condition is satisfied given Assumption~\ref{as:ga_l_e} and Result~\ref{res:bincC}. To guarantee an interior solution, we need
   \begin{equation}
 	  \frac{\partial b(0,\bta)}{\partial e_b} \left[ \pi(\tau^n) -e_n- \pi(\tau^a) \right] > 1.
 		\label{ine:lobint}	
   \end{equation}
-For instance, if the executives were to set $\tau^a = \tau^n$, there would be no incentive for the lobby to make a positive contribution. We will see that there are some cases in which it may be in the executives' joint interest to set trade agreement tariffs so as to completely disengage the lobby. The following results thus only hold when Condition~\ref{ine:lobint} is satisfied, that is, when the marginal impact of the first lobbying dollar on the break probability is sufficiently high to make engaging in the political process worthwhile for the lobby.\footnote{This is primarily a condition on the curvature of the political weighting function but also involves the production and demand structure.}
+If the executives were to set $\tau^a = \tau^n$, there would be no incentive for the lobby to make a positive contribution. There are some cases in which it is in the executives' interest to set trade agreement tariffs so as to completely disengage the lobby. The following results only hold when the marginal impact of the first lobbying dollar on the break probability is sufficiently high to make engaging in the political process worthwhile for the lobby.
   
 We can now proceed to the central result concerning the lobby's behavior. 
 \begin{result}
@@ -325,10 +325,7 @@ We can now proceed to the central result concerning the lobby's behavior.
   \label{res:lobby}
 \end{result}
 
-\noindent Raising the trade agreement tariff decreases the benefit of inducing a break in the trade agreement by raising profits under the trade agreement. This is in many ways the key result of this paper: the executives can reduce lobbying effort by setting higher tariffs in their trade agreement. We will see in the next section how this shapes the executives' joint decision. 
-
-Note that the symmetric increase in the foreign tariff does not impact profits in the import-competing industry, but it can impact lobbying incentives through the break probability. However, there is an analogous effect on the break probability from raising $\tau^a$ and the net effect is negative given Assumption~\ref{as:ga_c} on the probability distribution function of $\ga(e,\ta)$, which ensures that the effect of lobbying effort on the break probability does not increase as $\bta$ increases. This assumption can be significantly weakened: this effect can be positive as long as it is smaller in absolute value than the negative effect on trade agreement profits.
-
+\noindent Raising the trade agreement tariffs decreases the benefit of inducing a break in the trade agreement by raising profits under the trade agreement.\footnote{Note that the symmetric increase in the foreign tariff does not impact profits in the import-competing industry, but it can impact lobbying incentives through the break probability. However, there is an analogous effect on the break probability from raising $\tau^a$ and the net effect is negative given Assumption~\ref{as:ga_c}. This assumption can be significantly weakened: this effect can be positive as long as it is smaller in absolute value than the negative effect on trade agreement profits.} This key result implies that the executives can reduce lobbying effort by setting higher tariffs in their trade agreement. We will see in the next section how this shapes the executives' joint decision. 
 
 
 \subsection{The Trade Agreement}
