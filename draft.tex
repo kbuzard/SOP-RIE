@@ -350,33 +350,30 @@ To solve for the trade agreement tariffs, one must maximize the following modifi
 \end{equation}
 where $\bm{W_E}(\cdot)$ is the sum of the home and foreign executives' utilities.
 
-Of central concern is how the break probabilities behave as a function of the trade agreement tariffs given the lobby's optimal response. Recalling the definition of the total break probability, $B(\bta)=b(e_b(\bta),\bta)$, we must combine the direct effect of tariffs on the legislature's break decision with the indirect effect through the impact on the lobby's choice of $e_b$.
+Of central concern is how the break probability varies as both a direct and indirect function of $\bta$ given the lobby's optimal response. Result~\ref{res:bcomB} takes into effect both the direct and indirect effects:
 
-The direct effect is negative by Lemma~\ref{res:bcomb}. The fact that the indirect effect of raising tariffs leads to a reduction in lobbying (Result~\ref{res:lobby}) and therefore a further reduction in the propensity of the legislature to break the agreement (Result~\ref{res:bincC}) leads to the following key result: the overall probability that the trade agreement will be broken is decreasing in the trade agreement tariffs.
- 
 \begin{result}
 	The total probability that the trade agreement will be broken is decreasing in $\bta$ (i.e. $\frac{\partial B(\bta)}{\partial  \tau^a} + \frac{\partial B(\bta)}{\partial  \tau^{*a}} \leq 0$).
 	\label{res:bcomB}
 \end{result}
 
-\noindent That is, when the executives raise the trade agreement tariffs the legislature becomes less likely to abrogate the agreement, for three reasons. First, the legislature prefers a higher domestic tariff \textbf{(Lemma~\ref{res:leg_a})}; second, the higher tariff discourages lobbying \textbf{(Result~\ref{res:lobby})}; and finally, the lower lobbying effort reduces the legislature's preferred tariff further \textbf{(Lemma~\ref{res:bcomb})}. Thus, beyond promising a lower tariff from the trading partner, we can think of the trade agreement as a sort of political commitment device that can be used to reduce political pressure and therefore get the legislature to maintain a lower tariff than it otherwise would.
+\noindent When the executives raise $\bta$ the legislature becomes less likely to abrogate the agreement, for three reasons. First, the legislature prefers a higher domestic tariff \textbf{(Lemma~\ref{res:leg_a})}; second, the higher tariff discourages lobbying, reducing $B(\bta)$ indirectly \textbf{(Result~\ref{res:lobby})}; and finally, the lower lobbying effort directly reduces the legislature's preferred tariff further \textbf{(Lemma~\ref{res:bcomb})}. Thus, beyond promising a lower tariff from the trading partner, we can think of the trade agreement as a sort of political commitment device that can be used to reduce political pressure and therefore get the legislature to maintain a lower tariff than it otherwise would.
 
 We are now prepared to examine the executives' optimal choice of trade agreement tariffs. Because joint executive welfare is decreasing in trade agreement tariffs for $\bta$ above the executives' preferred tariffs, we have the following fundamental feature of the executives' problem:
 \begin{lemma}
   The executives face the following trade off when choosing $\bta$: higher tariffs decrease the probability that the trade agreement will be broken but also decrease welfare when the agreement is in force.
   \label{res:to}
 \end{lemma}
-I define the tariff the executives prefer in the absence of legislative constraints as $\bm{\tau^E}$ and show in the \hyperlink{int_soln}{Appendix} that it is never optimal in a symmetric equilibrium for the executives to choose $\bm{\tau^a} < \bm{\tau^E}$ if there is a positive probability that the legislatures will have an opportunity to break the trade agreement. This is the result of an envelope-like result: there are only second-order losses from raising tariffs slightly from the most-preferred level yet there are first-order gains in reducing the probability that the agreement will be broken.
+I show in the \hyperlink{int_soln}{Appendix} that it is never optimal in a symmetric equilibrium for the executives to choose $\bm{\tau^a}$ below the executives' most preferred level if the legislatures will have an opportunity to break the trade agreement. This is because there are only second-order losses from raising tariffs slightly from the most-preferred level yet there are first-order gains in reducing the probability that the agreement will be broken.
 
-The executives will also always choose $\bta < \btn$ unless the legislature breaks even agreements with tariffs very close to the Nash level with certainty, in which case the problem is not interesting so I will ignore this case. Thus there is an interior solution in all cases of interest, but this solution may be of two different forms. First, it could be at the point that maximizes the concave portion of the executives' welfare function (Equation~\ref{eq:jv2}). Here, the optimal tariffs are chosen to balance concerns for trade-agreement welfare against those for discouraging lobbying activity aimed at breaking the agreement.
+The executives will also always choose $\bta < \btn$ unless the legislature breaks even agreements with tariffs very close to the Nash level with certainty. In this case the problem is not interesting so I ignore this case. Thus there is an interior solution in all cases of interest, but this solution may be of two different forms. First, it could be at the point that maximizes the concave portion of the executives' welfare function (Equation~\ref{eq:jv2}).
 
-But there is an alternative. For some specifications, high enough tariffs can disengage the lobby sufficiently so that the probability that the trade agreement will be broken is reduced to zero. Interestingly, if this occurs at a low enough tariff level, executive welfare can be maximized at this point. 
+For some specifications, however, high enough tariffs can disengage the lobby sufficiently so that the probability that the trade agreement will be broken is zero. If this occurs at a low enough tariff level, executive welfare can be maximized at this point. 
 \begin{result}
   The executives maximize their welfare by either (a) raising tariffs sufficiently high to ensure that the trade agreement will remain in force or (b) trading off reductions in the probability that the agreement will be broken with reductions in welfare under the agreement.
   \label{res:execsoln}
 \end{result}
-%Can I say when one would happen versus the other?
-This seems to accord well with observations of trade policy politics, in that some lobbies appear to exert significant effort toward disrupting trade agreements (often in the form of some kind of individual administrative remedy such as anti-dumping duties) whereas others apparently do not contest the levels of protection granted them. The current model points to differences across industries in production and demand structure, as well as political weighting ($\ga$), to help explain these variations.
+This accords well with observations of trade policy politics, in that some lobbies exert significant effort toward disrupting trade agreements whereas others apparently do not engage in the political process. The current model points to differences across industries in production and demand structure, as well as political weighting ($\ga$), to help explain these variations.
 
 
 \section{An Example}
