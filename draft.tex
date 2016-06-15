@@ -164,7 +164,7 @@ Next, nature determines with probabilities $o$ and $o^*$ whether each legislatur
 
 After this, the uncertainty about the the median legislator's identity is resolved. This is modeled as the realization of a random variable $\ta_b$, the value of which all players observe simultaneously. The ``break stage'' concludes with the legislature making a choice to abide by the agreement or to break the agreement.
 
-In the event that the trade agreement does not enter into or remain in force, there is a final stage of lobbying, resolution of the uncertainty surrounding this decision, and voting to set the trade-war tariffs.\footnote{Alternatively, one can model the lobbying for the ratification decision as determining the potential non-cooperative tariff; this changes behavior slightly not the fundamental dynamics. Another possibility is to replace the trade-war phase with the ex-ante status quo, which would most naturally be the non-cooperative equilibrium. This is precisely the outcome that obtains in the trade-war phase, so the results of the model are unaltered.} Once all political decisions are taken, producers and consumers make their decisions.
+In the event that the trade agreement does not enter into or remain in force, there is a final stage of lobbying, resolution of the uncertainty surrounding this decision, and voting to set the trade-war tariffs $\btn$.\footnote{Alternatively, one can model the lobbying for the ratification decision as determining the potential non-cooperative tariff; this changes behavior slightly not the fundamental dynamics. Another possibility is to replace the trade-war phase with the ex-ante status quo, which would most naturally be the non-cooperative equilibrium. This is precisely the outcome that obtains in the trade-war phase, so the results of the model are unaltered.} Once all political decisions are taken, producers and consumers make their decisions.
 
 
 \subsection{Preferences}
@@ -193,14 +193,25 @@ Given its expectations and the legislature's preferences, the home lobby chooses
   \expect \left[U_L \right] = \Pr\left[ \text{TradeWar}(\bta,e_b,e_n) \right] \left[ \pi(\tau^{\mathit{n}}) - e_n \right] + \Pr\left[ \text{TradeAgreement}(\bta,e_b,e_n) \right] \pi(\tau^a) - e_b
   \label{eq:lv}
 \end{equation}
-where $\pi(\cdot)$ is the current-period profit and $\tau^a \ (\tau^\mathit{n})$ is the home country's tariff on the import good under a trade agreement (war). 
+where $\pi(\cdot)$ is the current-period profit. 
 
-In the first stage, the executives choose the trade agreement tariffs. I model this choice via the Nash bargaining solution with a disagreement point of executive welfare in the non-cooperative game between the legislatures. In this symmetric environment, the executives maximize their expected joint payoffs:
+In the first stage, the executives choose the trade agreement tariffs. With executive welfare in a trade war the disagreement point, the division of surplus according to the Nash bargaining solution is
+\[
+  V_E(\bta) + t = W_E(\btn) + \frac{1}{2} \left( MV(\bta) - W_E(\btn) - W_E^*(\btn) \right)
+\]
+\[
+  V_E^*(\bta) - t = W_E^*(\btn) + \frac{1}{2} \left( MV(\bta) - W_E(\btn) - W_E^*(\btn) \right)
+\]
+where expectation operators are dropped for convenience, $MV(\bta)$ is the maximized joint value and $t$ is an intergovernmental transfer.\footnote{While direct monetary transfers have to date rarely been used in practice, it seems appropriate to interpret linked concessions on non-trade issues as indirect transfers (Klimenko, Ramey and Watson (2008); Maggi and Staiger (2011)). Here, transfers do not occur as long as the full set of symmetry assumptions are maintained but are an important consideration in asymmetric environments.} The solution to this system of equations determines the trade agreement tariffs.
+
+I simplify the problem by assuming that political constraints prevent the executives from choosing asymmetric tariffs. This implies that the executives simply maximize their expected joint payoffs:\footnote{I have assumed that $W_E(\tau) = W_E^*(\tau) \ \forall \tau$; further in a symmetric equilibrium, $\tau^n =\tau^{*n}$ and $\tau^a =\tau^{*a}$, so 
+\[
+  V_E(\bta) + t = W_E(\btn) + \frac{1}{2} \left( MV(\bta) - W_E(\btn) - W_E^*(\btn) \right) = W_E(\btn) + \frac{1}{2} \left( MV(\bta) - 2W_E(\btn) \right) = \frac{1}{2}\expect MV(\bta)
+\]}
 \begin{multline}
   \expect \left[W_E(\bta) \right] + \expect \left[ W_E^{*}(\bta) \right] = \Pr\left[ \text{TradeWar}(\bta) \right] \left[W_E(\bm{\tau}^{\mathit{n}}) + W_E^*(\bm{\tau}^{\mathit{n}}) \right] + \\ \Pr\left[ \text{TradeAgreement}(\bta) \right] \left[W_E(\bta) + W_E^*(\bta) \right]
   \label{eq:jv}
 \end{multline}
-
 The home executive's welfare is specified as follows:
 \[
   W_E = \mathit{CS}_X(\tau) + \ga_E \cdot \mathit{PS}_X(\tau) + \mathit{CS}_Y(\tau^*) + \mathit{PS}_Y(\tau^*) + \mathit{TR}(\tau)
@@ -284,7 +295,7 @@ Turning to the effects of the trade-agreement tariffs on the probability that th
   \label{lem:leg_astar}
 \end{lemma}
 
-The lower world price for home's export good has a negative effect on producer surplus that is larger than the positive effect on consumer surplus. Thus the net effect of an increase in foreign trade-agreement tariffs on both home legislative and home total social welfare is negative, leading to an increased probability that the trade agreement will be broken.
+The lower world price for home's export good has a larger negative effect on producer surplus than the positive effect on consumer surplus. The net effect of an increase in foreign trade-agreement tariffs on home legislative welfare is negative, leading to an increased probability that the trade agreement will be broken.
 
 The relationship between the home country's trade-agreement tariff and the legislature's probability of breaking the agreement is more complex. For any given level of effort $e_b$, when the trade agreement tariff is very low, only a small set of realizations of $\ta_b$ that lead to the lowest values of $\ga(e_b,\ta_b)$ will lead to approval of the trade agreement, implying a high break probability. As the trade agreement tariff rises, larger values of $\ga(e_b,\ta_b)$ are consistent with approving the trade agreement, so the set of $\ta_b$'s that lead to trade agreement approval is larger. That is, the break probability decreases as $\tau^a$ increases. Even if the trade agreement tariff is so high that it is disliked by all potential median legislators, it is preferable to the trade war tariff, which is even higher. Thus the probability of a break eventually falls to zero.
 
@@ -330,27 +341,14 @@ We can now proceed to the central result concerning the lobby's behavior.
 
 \subsection{The Trade Agreement}
 \label{sec:ta}
-The executives choose trade agreement tariffs $\bta=\left(\tau^a,\tau^{*a} \right)$ to maximize Equation \ref{eq:jv}. I call the maximized joint value $MV(\bta)$ and write the division of surplus according to the Nash bargaining solution, which, due to symmetry, can be simplified from its general multiplicative form as
-\[
-  V_E(\bta) + t = W_E(\btn) + \frac{1}{2} \left( MV(\bta) - W_E(\btn) - W_E^*(\btn) \right)
-\]
-\[
-  V_E^*(\bta) - t = W_E^*(\btn) + \frac{1}{2} \left( MV(\bta) - W_E(\btn) - W_E^*(\btn) \right)
-\]
-where expectation operators have been dropped for convenience and $t$ is an intergovernmental transfer.\footnote{While direct monetary transfers have to date rarely been used in practice, it seems appropriate to interpret linked concessions on non-trade issues as indirect transfers (Klimenko, Ramey and Watson (2008); Maggi and Staiger (2011)). Here, transfers do not occur as long as the full set of symmetry assumptions are maintained but are an important consideration in asymmetric environments.} The solution to this system of equations determines the tariffs $\bta$ that will be set in the trade agreement.
+I represent the probability that the trade agreement will be broken as $B(\bta)=b(e(\bta),\bta)$ where $e(\bta)$ is the best response function implicit in Equation \ref{eq:lobbyfoc}, the lobby's first order condition.
 
-I simplify the problem by assuming that political constraints prevent the executives from choosing asymmetric tariffs. This restricts attention to symmetric solutions in the fully symmetric environment under consideration, which means that the trade agreement tariffs for which we're looking are simply those that maximize the joint welfare of the executives.\footnote{I have assumed that $W_E(\tau) = W_E^*(\tau) \ \forall \tau$; further in a symmetric equilibrium, $\tau^n =\tau^{*n}$ and $\tau^a =\tau^{*a}$, so 
-\[
-  V_E(\bta) + t = W_E(\btn) + \frac{1}{2} \left( MV(\bta) - W_E(\btn) - W_E^*(\btn) \right) = W_E(\btn) + \frac{1}{2} \left( MV(\bta) - 2W_E(\btn) \right) = \frac{1}{2}\expect MV(\bta)
-\]}
-In order to solve for them, I represent the probability that the trade agreement will be broken as $B(\bta)=b(e(\bta),\bta)$ where $e(\bta)$ is the best response function implicit in Equation \ref{eq:lobbyfoc}, the lobby's first order condition.
-
-The problem then becomes to maximize the following modified version of Equation \ref{eq:jv}:
+To solve for the trade agreement tariffs, one must maximize the following modified version of Equation \ref{eq:jv}:
 \begin{equation}
     \left\{ o \cdot B(\bta) + o^* \cdot B^*(\bta) \right\} \bm{W_E}(\btn) + \left\{ 1- o \cdot B(\bta) - o^* \cdot B^*(\bta) \right\} \bm{W_E}(\bta)  
   \label{eq:jv2}
 \end{equation}
-where I have written the sum of the home and foreign executives' utilities as $\bm{W_E}(\cdot)$. Here $o$ and $o^*$ are the probabilities that the home and foreign legislatures, respectively, will have the opportunity to break the trade agreement; these are assumed to be mutually exclusive events that are realized after the conclusion of the trade agreement.
+where $\bm{W_E}(\cdot)$ is the sum of the home and foreign executives' utilities.
 
 Of central concern is how the break probabilities behave as a function of the trade agreement tariffs given the lobby's optimal response. Recalling the definition of the total break probability, $B(\bta)=b(e_b(\bta),\bta)$, we must combine the direct effect of tariffs on the legislature's break decision with the indirect effect through the impact on the lobby's choice of $e_b$.
 
