@@ -270,9 +270,7 @@ We are now in a position to examine the legislature's decision more closely. Of 
   \label{res:bincC}
 \end{result}
 
-\noindent All proofs are in the Appendix.
-
-Lobbying affects only the weight the legislature places on the profits of the import-competing industry. These profits are higher in a trade war than under a trade agreement. Assumption~\ref{as:ga_c} implies that the legislature becomes more favorably inclined---albeit at a decreasing rate---toward the high trade-war tariff and associated profits as lobbying increases and therefore more likely to break the trade agreement. 
+\noindent All proofs are in the Appendix. Lobbying affects only the weight the legislature places on the profits of the import-competing industry. These profits are higher in a trade war than a trade agreement. Assumption~\ref{as:ga_c} implies that the legislature becomes more favorably inclined---albeit at a decreasing rate---toward the high trade-war tariff and associated profits as lobbying increases and thus more likely to break the trade agreement. 
 
 Turning to the effects of the trade-agreement tariffs on the probability that the agreement will be abrogated, it is straightforward that the legislature always prefers lower levels of the foreign tariff:
 \begin{lemma}
@@ -282,7 +280,7 @@ Turning to the effects of the trade-agreement tariffs on the probability that th
 
 The lower world price for home's export good has a larger negative effect on producer surplus than the positive effect on consumer surplus. The net effect of an increase in foreign trade-agreement tariffs on home legislative welfare is negative, leading to an increased probability that the trade agreement will be broken.
 
-The relationship between the home country's trade-agreement tariff and the legislature's probability of breaking the agreement is more complex. For any given level of effort $e_b$, when the trade agreement tariff is very low, only a small set of realizations of $\ta_b$ associated with the lowest values of $\ga(e_b,\ta_b)$ will lead to approval of the trade agreement, implying a high break probability. As the trade agreement tariff rises, larger values of $\ga(e_b,\ta_b)$ are consistent with approving the trade agreement, so the set of $\ta_b$'s that lead to trade agreement approval is larger. That is, the break probability decreases as $\tau^a$ increases. 
+The relationship between $\tau^a$ and break probability is more complex. For any effort level $e_b$, when the trade agreement tariff is very low, only a small set of realizations of $\ta_b$ associated with the lowest values of $\ga(e_b,\ta_b)$ will lead to approval of the trade agreement, implying a high break probability. As the trade agreement tariff rises, larger values of $\ga(e_b,\ta_b)$ are consistent with approving the trade agreement, so the set of $\ta_b$'s that lead to trade agreement approval is larger. That is, the break probability decreases as $\tau^a$ increases. 
 
 \begin{lemma}
   Holding lobbying effort constant, the probability the legislature breaks a trade agreement is weakly decreasing in $\tau^a$.
@@ -308,7 +306,7 @@ The first order condition shows that the lobby balances the cost of an extra dol
 	\frac{\partial b(e_b,\bta)}{\partial e_b} \left[ \pi(\tau^n) -e_n - \pi(\tau^a) \right] = 1 
 	\label{eq:lobbyfoc}
 \end{equation}
-The second order condition is satisfied given Assumption~\ref{as:ga_l_e} and Result~\ref{res:bincC}. To guarantee an interior solution, we need
+Assumption~\ref{as:ga_l_e} and Result~\ref{res:bincC} ensure the second order condition. To guarantee an interior solution, we need
   \begin{equation}
 	  \frac{\partial b(0,\bta)}{\partial e_b} \left[ \pi(\tau^n) -e_n- \pi(\tau^a) \right] > 1.
 		\label{ine:lobint}	
@@ -320,7 +318,7 @@ If the executives were to set $\tau^a = \tau^n$, there would be no incentive for
   \label{res:lobby}
 \end{result}
 
-\noindent Raising the trade agreement tariffs decreases the benefit of inducing a break in the trade agreement by raising profits under the trade agreement. This key result implies that the executives can reduce lobbying effort by setting higher tariffs in their trade agreement. We will see in the next section how this shapes the executives' joint decision. 
+\noindent Raising the trade agreement tariffs decreases the benefit of a break in the trade agreement by raising trade agreement profits. This key result implies that the executives can reduce lobbying effort by setting higher tariffs in their trade agreement. We will see in the next section how this shapes the executives' joint decision. 
 
 
 \subsection{The Trade Agreement}
@@ -360,7 +358,7 @@ This accords well with observations of trade policy politics, in that some lobbi
 
 \section{An Example}
 \label{sec:example}
-Examining a simple parameterization of the model economy is instructive. The fundamentals are chosen to match Bagwell and Staiger (2005) with $D(P_i) = 1 - P_i$, $Q_X(P_X) = \frac{P_X}{2}$, $Q_Y(P_Y) = P_Y$, $\Pi_X(P_X) = \frac{(P_X)^2}{4}$, and $\Pi_Y(P_Y) = \frac{(P_Y)^2}{2}$. Home-country imports of $X$ and exports of $Y$ are $M_X(P_X)= 1 - \frac{3}{2}P_X$ and $E_Y(P_Y)= 2P_Y -1$. Market clearing implies that world and home prices of $X$ are $P_X^W = \frac{4-3\tau}{7}$ and $P_X = \frac{4+4\tau}{7}$. Foreign is taken to be symmetric.
+In this simple parameterization of the model, the fundamentals are chosen to match Bagwell and Staiger (2005): $D(P_i) = 1 - P_i$, $Q_X(P_X) = \frac{P_X}{2}$, $Q_Y(P_Y) = P_Y$, $\Pi_X(P_X) = \frac{(P_X)^2}{4}$, and $\Pi_Y(P_Y) = \frac{(P_Y)^2}{2}$. Home-country imports of $X$ and exports of $Y$ are $M_X(P_X)= 1 - \frac{3}{2}P_X$ and $E_Y(P_Y)= 2P_Y -1$. Market clearing implies that world and home prices of $X$ are $P_X^W = \frac{4-3\tau}{7}$ and $P_X = \frac{4+4\tau}{7}$. Foreign is taken to be symmetric.
 
 \subsection{Trade War Tariffs}
 The median legislator's welfare can be written as 
@@ -374,7 +372,7 @@ The Nash tariff that results from unilateral maximization is\footnote{The second
   \tau^n = \frac{8\ga(e,\ve)-5}{68-8\ga(e,\ve)}
 \]
 
-In order to predict the Nash tariff, the political weighting function and form of political uncertainty must be specified. Take for instance $\ga(e,\ve) = 1.25 + e^{.2} + \ta$ with $\ve$ distributed uniformly on $[-0.25,0.25]$. Facing this specification of the political process, the lobby maximizes its objective function at $e_n = 0.00166$, which produces an expected Nash tariff of $0.129$. Here net profits are $0.10239$ in terms of the numeraire and lobbying effort is $1.60\%$ of gross profits.
+To predict the Nash tariff, the political weighting function and form of political uncertainty must be specified. Take $\ga(e,\ve) = 1.25 + e^{.2} + \ta$ with $\ve$ distributed uniformly on $[-0.25,0.25]$. Facing this specification of the political process, the lobby maximizes its objective function at $e_n = 0.00166$, producing an expected Nash tariff of $0.129$. Net profits are $0.10239$ in terms of the numeraire and lobbying effort is $1.60\%$ of gross profits.
 
 \subsection{Break Decision}
 
@@ -426,13 +424,13 @@ Given the impact of lobbying on the legislature's break decision, the lobby's op
 \subsection{Trade Agreement}
 The break probability never reaches zero for this parameterization so the executives' welfare function is concave everywhere. Assuming that each legislature has the opportunity to break the agreement with probability $\frac{1}{2}$ and that the executives are social-welfare maximizers, they set trade agreements tariffs of $\tau^a = \tau^{*a} = 0.078$, with lobbying expenditures at the trade maintenance phase of $0.0007$ and a total break probability of $0.505$. Total lobbying expenditure is $1.54\%$ of the expected profits of $0.98591$. The expected tariff is $0.103$.
 
-We can compare this against several different benchmarks. The most stark is the trade-war outcome, which is the outcome that would prevail in the absence of any trade agreement. The tariff in the executive-formed trade agreement is about 60$\%$ of the Nash tariff of $0.129$, and the expected tariff given the probability that the agreement will be broken is 80$\%$ of the Nash level. Lobbying expenditures in the agreement-maintenance phase are about 40$\%$ of the those in the Nash game, while expected expenditures in the executive-led trade-agreement scenario are 90$\%$ of what they would be if the legislatures set tariffs unilaterally. Although the welfare-maximizing governments here are not able to set and maintain tariffs at zero as they would like, they are able to achieve significant reductions in tariff levels through the use of the trade agreement.
+We can compare this against different benchmarks. The most stark is the trade-war outcome, which is the outcome that would prevail in the absence of any trade agreement. The tariff in the executive-formed trade agreement is about 60$\%$ of the Nash tariff of $0.129$, and the expected tariff given the probability that the agreement will be broken is 80$\%$ of the Nash level. Lobbying expenditures in the agreement-maintenance phase are about 40$\%$ of the those in the Nash game, while expected expenditures in the executive-led trade-agreement scenario are 90$\%$ of what they would be if the legislatures set tariffs unilaterally. Although the welfare-maximizing governments here are not able to set and maintain tariffs at zero as they would like, they are able to achieve significant reductions in tariff levels through the use of the trade agreement.
 
-Another interesting benchmark is the scenario in which no executives are involved in trade policy, but in which the politically-susceptible legislatures can make use of a trade agreement. As in Bagwell and Staiger (2005), I find when maximizing their joint welfare in a legislature-led trade agreement, the cooperative tariff levels will be set at
+Another benchmark is the scenario in which the legislatures make use of a trade agreement without the involvement of the executives. As in Bagwell and Staiger (2005), I find when maximizing their joint welfare in a legislature-led trade agreement, the cooperative tariff levels will be set at
 \[
   \tau^L = \frac{4\ga(e,\ve)-4}{25-4\ga(e,\ve)}, \ \tau^{*L} = \frac{4\ga(e^*,\ve)-4}{25-4\ga(e^*,\ve)}
 \]
-The legislatures are able to use the agreement to internalize the terms of trade externality, making political influence more expensive for the lobbies. Indeed, lobbying expenditures rise to $0.0027$---60$\%$ higher than in the Nash case and $2.64\%$ of the gross profits of $0.10204$---while the agreement tariffs are set at $0.118$, only slightly lower than the Nash tariffs of $0.129$ and still higher than even the expected tariffs from the trade agreement scenario in which the executives choose the tariffs. Comparing net (expected profits) across the three scenarios, they are highest in the Nash game ($0.1024$), lowest under the trade agreement ($0.9789$) and intermediate when the legislatures make policy directly ($0.0993$).
+The legislatures are able to use the agreement to internalize the terms of trade externality, making political influence more expensive for the lobbies. Lobbying expenditures rise to $0.0027$---60$\%$ higher than in the Nash case and $2.64\%$ of the gross profits of $0.10204$---while the agreement tariffs are set at $0.118$, only slightly lower than the Nash tariffs of $0.129$ and still higher than in the executive-led trade agreement. Comparing net expected profits across the three scenarios, they are highest in the Nash game, lowest under the trade agreement and intermediate when the legislatures make policy directly.
 
 
 \section{Discussion}
@@ -442,18 +440,16 @@ The legislatures are able to use the agreement to internalize the terms of trade
 \label{sec:sep_powers}
 We can isolate the results that derive from the assumption that power over trade policy is shared between the executive and legislative branches if we assume that there is no uncertainty at the break stage. 
 
-Now $\ga(e_b)$ is deterministic, so the lobby knows the precise contribution it must make for any given trade agreement tariffs $\bta$ to induce the legislature to break the agreement. Here, the lobby's contribution \textit{increases} in $\bta$ since the higher are the trade agreement tariffs, the larger is the political weight that is required to induce the legislature to find them unsatisfactorily low. As long as trade war profits net of the required contribution are greater than trade agreement profits, the lobby will induce a trade war; otherwise, it is not in the lobby's interest to make any contribution. Facing this behavior, the executives set the lowest trade agreement tariffs that make it prohibitively expensive for the lobby to have the agreement broken.
+When $\ga(e_b)$ is deterministic, the lobby knows the precise contribution it must make for any given trade agreement tariffs $\bta$ to induce the legislature to break the agreement. Here, the lobby's contribution \textit{increases} in $\bta$ since the higher are the trade agreement tariffs, the larger is the political weight that is required to induce the legislature to find them unsatisfactorily low. As long as trade war profits net of the required contribution are greater than trade agreement profits, the lobby will induce a trade war; otherwise, it is not in the lobby's interest to make any contribution. Facing this behavior, the executives set the lowest trade agreement tariffs that make it prohibitively expensive for the lobby to have the agreement broken.
 
 In the example of Section~\ref{sec:example}, if the executives set the trade agreement facing no uncertainty, the tariff level is $0.106$, the lobby exerts zero effort, and the agreement remain in force with probability 1. If instead the executives were to set trade-agreement tariffs of $0.105$, the lobby would contribute $0.0025$ and the legislature would break the agreement with probability 1. This demonstrates both the agenda-setting power of the executives and the stark discontinuities induced when political uncertainty is not an issue.
 
-Moreover, this case highlights the manipulation of the tariff level to discourage lobbying and therefore the disconnect that can arise between the tariffs that are chosen and the preferences of the governmental actors. In the example, the executive is a social welfare maximizer and so prefers zero tariffs, while the legislators with $\ga(e) = 1.25 + e^{.2}$ with $e_b = 0$ prefer $\tau^a = 0.05$. However, the trade agreement tariffs are set at $0.106$ precisely to ensure that $e_b =0$ so that we have a relatively free-trading legislature that upholds the agreement.
+This case highlights the manipulation of tariffs to discourage lobbying and the disconnect that can arise between the tariffs that are chosen and the preferences of governmental actors. The executives here prefers zero tariffs while the legislators prefer $\tau^a = 0.05$ when $e_b = 0$. However, the trade agreement tariffs are set at $0.106$ precisely to ensure that $e_b =0$ so that we have a legislature that upholds the agreement.
 
 
 \subsection{The Role of Political Uncertainty}
 \label{sec:uncertainty}
-Adding political uncertainty allows for positive lobbying on the equilibrium path, but this is not the only additional insight. For simplicity, I assume uncertainty is mean-zero. In particular, lobbying behavior in a trade war is not altered by mean-zero uncertainty and so neither are expected trade-war tariffs.
-
-At earlier stages, uncertainty alters optimizing behavior by both the lobby and the executives. Consider adding a very small amount of uncertainty to the example of the previous section: take $\ve$ distributed uniformly on $[-0.01,0.01]$. Here, the executives find it optimal to set the tariffs to completely disengage the lobby, ensuring the agreement remains in force. However, the tariff level will be different than when $\ta_b=0$ because instead of making the lobbying decision according to the certainty condition $\pi(\tau^n) - e_n - \pi(\tau^a) > e_b$, the lobby makes this decision according to Condition~\ref{ine:lobint}. Relative to the example with $\ta_b=0$, the tariff can be reduced slightly to $0.105$. Interestingly, the optimal tariff does not decrease monotonically.
+Adding political uncertainty allows for positive lobbying on the equilibrium path, but this is not the only additional insight. For simplicity, I assume uncertainty is mean-zero. Lobbying behavior in a trade war is not altered by mean-zero uncertainty and so neither are expected trade-war tariffs. At earlier stages, uncertainty alters optimizing behavior by both the lobby and the executives. Consider adding a very small amount of uncertainty to the example of the previous section: take $\ve$ distributed uniformly on $[-0.01,0.01]$. Here, the executives find it optimal to set the tariffs to completely disengage the lobby, ensuring the agreement remains in force. However, the tariff level will be different than when $\ta_b=0$ because instead of making the lobbying decision according to the certainty condition $\pi(\tau^n) - e_n - \pi(\tau^a) > e_b$, the lobby makes this decision according to Condition~\ref{ine:lobint}. Relative to the example with $\ta_b=0$, the tariff can be reduced slightly to $0.105$.
 
 \begin{figure}
 \begin{center}
@@ -462,7 +458,7 @@ At earlier stages, uncertainty alters optimizing behavior by both the lobby and 
 \caption{Lobby's Optimal Expenditure Function (Low and Intermediate Uncertainty)\label{fig:lobby_br}}
 \end{figure}
 
-Figure~\ref{fig:lobby_br} shows the lobby's reaction function at this very low level of uncertainty as well as the intermediate level when $\ve$ is distributed uniformly on $[-0.14,0.14]$ where the executives set the highest tariff level of $0.107$. For the former, the range of tariff levels to which the lobby responds with an intermediate contribution that leaves open the possibility of a break is very small: only those between 0.103 and 0.104. The lobby disengages completely at $\bta=0.105$. In contrast, when uncertainty is increased to the interval $[-0.14,0.14]$, the lobby begins to leave open the possibility of a break at $\bta = 0.048$. It disengages at $0.107$ and this is the tariff level that the executives find optimal. At intermediate uncertainly levels, both portions of the best response curve are steeper and the lobby disengages at slightly lower tariff levels---as low as $0.099$ when $\ve \sim U[-0.06,0.06]$.
+Figure~\ref{fig:lobby_br} shows the lobby's reaction function at this very low level of uncertainty as well as the intermediate level when $\ve$ is distributed uniformly on $[-0.14,0.14]$ where the executives set the highest tariff level of $0.107$. For the former, the range of tariff levels to which the lobby responds with a contribution that leaves open the possibility of a break is very small: only those between 0.103 and 0.104. The lobby disengages completely at $\bta=0.105$. When uncertainty is increased to the interval $[-0.14,0.14]$, the lobby begins to leave open the possibility of a break at $\bta = 0.048$. It disengages at the optimal tariff level of $0.107$. At intermediate uncertainly levels, both portions of the best response curve are steeper and the lobby disengages at lower tariff levels---as low as $0.099$ when $\ve \sim U[-0.06,0.06]$.  The optimal tariff does not decrease monotonically.
 
 This illustrates Part (a) of Result~\ref{res:execsoln}: here the executives maximize their welfare by raising tariffs to the point where the import-competing industry ceases to lobby and the agreement remains in force for sure. Although lobbying expenditures are zero, the potential for lobbying behavior is essential in shaping the trade agreement.
 
@@ -482,14 +478,9 @@ We see from this example that variations in uncertainty lead to very different o
 \label{sec:gh}
 I have introduced a legislative welfare function that admits a wide range of political processes within a non-unitary legislature as well as unitary policy-making when special interests face non-constant returns to lobbying activity. The non-linear relationship between lobbying effort and tariffs follows Dixit, Grossman and Helpman (1997) and is a departure from the `Protection for Sale' welfare function, which assumes that a unitary government maximizes the sum of contributions and some fraction, $a$, of social welfare.
 
-I show in the \hyperlink{pfs}{Appendix} that choosing the following political weighting function aligns the political objective function used in the current model with the PFS framework:
-		    \begin{equation}
-		      \ga(e) = 1 + \frac{e}{a\pi_X(\tau)} .
-		      \label{eq:gh}
-		    \end{equation}
-Although using the $\ga$-weighted government welfare function is a reduced-form approach in the sense that legislative dynamics are not fully modeled, a benefit is that it does not require returns to lobbying effort to be constant. The more flexible form of the weighting function also removes the equilibrium indeterminacies and inability to speak to distributional questions that are implied by the linear form and its transferable utility (Dixit, Grossman and Helpman 1997).
+I show in the \hyperlink{pfs}{Appendix} that choosing $\ga(e) = 1 + \frac{e}{a\pi_X(\tau)}$ aligns the political objective function used in the current model with the PFS framework. Although using the $\ga$-weighted government welfare function is a reduced-form approach in the sense that legislative dynamics are not fully modeled, a benefit is that it does not require returns to lobbying effort to be constant. The more flexible form of the weighting function also removes the equilibrium indeterminacies and inability to speak to distributional questions that are implied by the linear form and its transferable utility (Dixit, Grossman and Helpman 1997).
 
-The linear PFS form provides for an almost unmatched simplicity and elegance that is able to capture key cross-industry predictions on import tariffs. A perhaps unintended byproduct in the subsequent literature seems to have arisen in the form of a focus on matching fine details of governments' welfare-mindedness using a model that has a very simple unitary government and is thus better suited for other purposes.
+The elegant PFS form is able to capture key cross-industry predictions on import tariffs. A perhaps unintended byproduct in the subsequent literature seems to have arisen in the form of a focus on matching fine details of governments' welfare-mindedness using a model that has a very simple unitary government and is thus better suited for other purposes.
 
 It is clear that trade policy is often shaped in a complicated process involving multiple actors (see, for instance, Destler (2005) for the U.S.). The model presented herein is a first attempt to more richly model the policy-making process and thus shed light on open questions surrounding how government preferences and the details of political institutions impact trade policy outcomes.
 
@@ -554,7 +545,7 @@ I have shown that the legislature both breaks trade agreements with a higher pro
 
 I have also shown that in a policy-making structure in which power is shared, a less politically-motivated executive can utilize an international trade agreement to reduce the political pressure on the ratifying body and therefore increase the probability that the agreement will remain in force. Thus, in a model with a richer description of government structure, a broad political-commitment role for trade agreements can arise.
 
-The executives' incentive to raise tariffs in order to reduce lobbying effort provides insight into the empirical puzzle in the Protection for Sale literature that levels of protection and associated deadweight losses are too high relative to lobbying expenditure given the high estimates for governments' weighting of social welfare. I have shown that this serves to mediate the relationship between preferences for contributions relative to social welfare and the tariffs that are provided. The intuition is clear: the observed lobbying expenditure levels may in fact be low \textit{because} tariffs have been raised sufficiently high to prevent political pressure and the increased risk of a costly trade disruption it engenders.
+The executives' incentive to raise tariffs in order to reduce lobbying effort provides insight into the empirical puzzle in the Protection for Sale literature that levels of protection and associated deadweight losses are too high relative to lobbying expenditure given the high estimates for governments' weighting of social welfare. The intuition is clear: the observed lobbying expenditure levels may in fact be low \textit{because} tariffs have been raised sufficiently high to prevent political pressure and the increased risk of a costly trade disruption it engenders.
 
 That lobbying and tariff levels are related in systematic ways to the amount of political uncertainty present suggests interesting avenues for future empirical work. Several directions for future theoretical work also seem potentially fruitful, including removing the assumption of perfect enforceability and supporting cooperation through repeated interaction and generalizing the model to the case of multiple lobbies.
 
