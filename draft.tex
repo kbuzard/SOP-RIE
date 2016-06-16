@@ -154,7 +154,7 @@ In each country, there is an executive who concludes trade agreements and a legi
 
 Figure~\ref{fig:ext} illustrates the timing of the game from the perspective of the home country.\footnote{This extensive form is for the case where the foreign legislature does not break the trade agreement.} First, the executives set trade policy cooperatively within the context of an international agreement by choosing the trade agreement tariffs $\bta = \left(\tau^a,\tau^{*a}\right)$.\footnote{I use the convention throughout of representing a vector of tariffs for both countries $(\tau,\tau^*)$ as a single bold $\bm{\tau}$.} Then the lobbies attempt to persuade the legislators in their respective countries to break the trade agreement by choice of lobbying effort $e_b$. Next, nature determines with probabilities $o$ and $o^*$ whether each legislature will have the opportunity to take a vote to break the agreement. I assume that these probabilities are less than one-half and mutually exclusive.\footnote{While this assumption is made for purposes of exposition and tractability, one can think of $o$ and $o^*$ as being determined by events beyond the executives' or legislatures' control that determine whether or not the legislatures will be willing to consider the lobby's request; for example, they would be affected by the occurrence of an economic crisis that diverts the legislature's attention from less-pressing matters.} This allows me to focus on the key interaction between the domestic actors and abstract from the strategic interaction between the lobbies.\footnote{\textbf{If the break decisions in the two countries are sequential with the executives behind a veil of ignorance about which legislature moves first, the end results are the same but additional intermediate results are needed.} The optimization problem of the executives becomes more complex as they decide how best to exploit the second lobby's incentive to free ride on the effort of the first-mover lobby.}
 
-After this, uncertainty about the the median legislator's identity is resolved. All players simultaneously observe the realization of the random variable $\ta_b$ that represents this uncertainty. The ``break stage'' concludes with the legislature making a choice to abide by the agreement or to break the agreement. In the event that the legislature breaks the agreement, there is a final stage of lobbying, resolution of the uncertainty surrounding this decision, and voting to set the trade-war tariffs $\btn$.\footnote{Alternatively, one can model the non-cooperative tariff as being determined by the break decision lobbying or the ex-ante status quo. This does not change the fundamental dynamics of the model.} Finally, producers and consumers make their decisions.
+After this, uncertainty about the the median legislator's identity is resolved. All players simultaneously observe the realization of the random variable $\ta_b$ that represents this uncertainty. The ``break stage'' concludes with the legislature making a choice to abide by the agreement or to break the agreement. In the event that the legislature breaks the agreement, there is a final stage of lobbying, resolution of the uncertainty surrounding this decision, and voting to set the trade-war tariffs $\btn$.\footnote{Alternatively, one can model the non-cooperative tariff as being determined by the break decision lobbying, through a separate process in the case of administered protection, or the ex-ante status quo. This does not change the fundamental dynamics of the model.} Finally, producers and consumers make their decisions.
 
 
 \subsection{Preferences}
@@ -257,13 +257,11 @@ We can now proceed by backward induction to analyze the legislature's incentives
   \label{eq:lwcg}
 \end{equation}
   
-The outcome of the vote on whether or not to break the trade agreement is not known to \textit{any} player until the uncertainty over the identity of the median legislator is resolved at the moment the vote takes place.\footnote{We might think of the trade-war tariff as being set in the legislation before a vote takes place in the case of administered protection for instance; the results are robust to this variant.} I represent the probability that the home legislature breaks the trade agreement and sets the tariff at $\tau^n$ as:
+The outcome of the vote on whether or not to break the trade agreement is not known to \textit{any} player until the uncertainty over the identity of the median legislator is resolved at the moment the vote takes place. I represent the probability that the home legislature breaks the trade agreement and sets the tariff at $\tau^n$ as:\footnote{I suppress the Nash tariffs in the expression of the break probability since they do not vary from the point of view of earlier stages.}
 \begin{multline}
   b(e_b,\bta) = \expect_{\ga|e_b} \bm{1} [ W_{ML}(\btn,\ga(e_b,\ve_b)) > W_{ML}\left(\bta,\ga(e_b,\ve_b)\right) ] \\ = \Pr [ W_{ML}(\btn,\ga(e_b,\ve_b)) > W_{ML}\left(\bta,\ga(e_b,\ve_b)\right) | e_b]
   \label{eq:b}
 \end{multline}
-
-Note that the legislature's best response functions---both for whether to break the agreement, and at what level to set the tariff if it does---will be affected by the shape of $\ga(e,\ve)$. I suppress the Nash tariffs in the expression of the break probability since they do not vary from the point of view of earlier stages.
 
 We are now in a position to examine the legislature's decision more closely. Of central concern is how the probability that the legislature will break the trade agreement varies with lobbying effort: 
 
@@ -284,20 +282,20 @@ Turning to the effects of the trade-agreement tariffs on the probability that th
 
 The lower world price for home's export good has a larger negative effect on producer surplus than the positive effect on consumer surplus. The net effect of an increase in foreign trade-agreement tariffs on home legislative welfare is negative, leading to an increased probability that the trade agreement will be broken.
 
-The relationship between the home country's trade-agreement tariff and the legislature's probability of breaking the agreement is more complex. For any given level of effort $e_b$, when the trade agreement tariff is very low, only a small set of realizations of $\ta_b$ that lead to the lowest values of $\ga(e_b,\ta_b)$ will lead to approval of the trade agreement, implying a high break probability. As the trade agreement tariff rises, larger values of $\ga(e_b,\ta_b)$ are consistent with approving the trade agreement, so the set of $\ta_b$'s that lead to trade agreement approval is larger. That is, the break probability decreases as $\tau^a$ increases. Even if the trade agreement tariff is so high that it is disliked by all potential median legislators, it is preferable to the trade war tariff, which is even higher. Thus the probability of a break eventually falls to zero.
+The relationship between the home country's trade-agreement tariff and the legislature's probability of breaking the agreement is more complex. For any given level of effort $e_b$, when the trade agreement tariff is very low, only a small set of realizations of $\ta_b$ associated with the lowest values of $\ga(e_b,\ta_b)$ will lead to approval of the trade agreement, implying a high break probability. As the trade agreement tariff rises, larger values of $\ga(e_b,\ta_b)$ are consistent with approving the trade agreement, so the set of $\ta_b$'s that lead to trade agreement approval is larger. That is, the break probability decreases as $\tau^a$ increases. 
 
 \begin{lemma}
   Holding lobbying effort constant, the probability the legislature breaks a trade agreement is weakly decreasing in $\tau^a$.
   \label{res:leg_a}
 \end{lemma}
 
-In the symmetric equilibria that are focal in the analysis that follows, any increase in $\tau^a$ is accompanied by an equal increase in $\tau^{*a}$. Combining the impact of the home and foreign tariff when the two are constrained to be equal:
+Since I focus on symmetric equilibria, any increase in $\tau^a$ is accompanied by an equal increase in $\tau^{*a}$. Combining the impact of the home and foreign tariff when the two are constrained to be equal:
 \begin{lemma}
 	Holding lobbying effort constant, the probability the legislature breaks a trade agreement is weakly decreasing in $\bta$ (i.e. $\frac{\partial b(e,\bta)}{\partial  \tau^a} + \frac{\partial b(e,\bta)}{\partial  \tau^{*a}} \leq 0$).
 	\label{res:bcomb}
 \end{lemma}
 
-\noindent When a change in one of the trade agreement tariffs must be met with an equal change in the other, the negative impact on the legislature's propensity to break the agreement of raising the home tariff outweighs the positive impact of raising the foreign tariff because of the legislature's bias toward the import-competing industry.
+\noindent The legislature's bias toward the import-competing industry overweights the negative impact of the home tariff on the break probability and ensures this result. 
 
 \subsubsection{Lobby}
 \label{sec:lob_un}
@@ -305,7 +303,7 @@ The lobby chooses its level of effort as a function of $\bta$, given the implica
 \[
   \max_{e_b} b(e_b,\bta) \left[\pi(\tau^n) - e_n \right] + [1 - b(e_b,\bta)] \pi(\tau^a) - e_b
 \]
-The first order condition shows that the lobby balances the cost of an extra dollar of expenditure with the higher profits from a trade war weighted by the increase in the probability of receiving the higher profit level induced by that expenditure:
+The first order condition shows that the lobby balances the cost of an extra dollar of expenditure with the higher profits from a trade war weighted by the increase in the probability of provoking the trade war:
 \begin{equation}
 	\frac{\partial b(e_b,\bta)}{\partial e_b} \left[ \pi(\tau^n) -e_n - \pi(\tau^a) \right] = 1 
 	\label{eq:lobbyfoc}
@@ -315,15 +313,14 @@ The second order condition is satisfied given Assumption~\ref{as:ga_l_e} and Res
 	  \frac{\partial b(0,\bta)}{\partial e_b} \left[ \pi(\tau^n) -e_n- \pi(\tau^a) \right] > 1.
 		\label{ine:lobint}	
   \end{equation}
-If the executives were to set $\tau^a = \tau^n$, there would be no incentive for the lobby to make a positive contribution. There are some cases in which it is in the executives' interest to set trade agreement tariffs so as to completely disengage the lobby. The following results only hold when the marginal impact of the first lobbying dollar on the break probability is sufficiently high to make engaging in the political process worthwhile for the lobby.
+If the executives were to set $\tau^a = \tau^n$, there would be no incentive for the lobby to make a positive contribution. There are some other cases in which it is in the executives' interest to set trade agreement tariffs so as to disengage the lobby. The following results only hold when the marginal impact of the first lobbying dollar on the break probability is sufficiently high to make engaging in the political process worthwhile for the lobby.
   
-We can now proceed to the central result concerning the lobby's behavior. 
 \begin{result}
   When the trade agreement remains in force with positive probability, lobbying effort is weakly decreasing in trade agreement tariffs.\footnote{See Section~\ref{sec:uncertainty} for a detailed account of behavior when the lobby is able to induce a trade war with probability 1.}
   \label{res:lobby}
 \end{result}
 
-\noindent Raising the trade agreement tariffs decreases the benefit of inducing a break in the trade agreement by raising profits under the trade agreement.\footnote{Note that the symmetric increase in the foreign tariff does not impact profits in the import-competing industry, but it can impact lobbying incentives through the break probability. However, there is an analogous effect on the break probability from raising $\tau^a$ and the net effect is negative given Assumption~\ref{as:ga_c}. This assumption can be significantly weakened: this effect can be positive as long as it is smaller in absolute value than the negative effect on trade agreement profits.} This key result implies that the executives can reduce lobbying effort by setting higher tariffs in their trade agreement. We will see in the next section how this shapes the executives' joint decision. 
+\noindent Raising the trade agreement tariffs decreases the benefit of inducing a break in the trade agreement by raising profits under the trade agreement. This key result implies that the executives can reduce lobbying effort by setting higher tariffs in their trade agreement. We will see in the next section how this shapes the executives' joint decision. 
 
 
 \subsection{The Trade Agreement}
@@ -337,7 +334,7 @@ To solve for the trade agreement tariffs, one must maximize the following modifi
 \end{equation}
 where $\bm{W_E}(\cdot)$ is the sum of the home and foreign executives' utilities.
 
-Of central concern is how the break probability varies as both a direct and indirect function of $\bta$ given the lobby's optimal response. Result~\ref{res:bcomB} takes into effect both the direct and indirect effects:
+Of central concern is how the break probability varies as both a direct and indirect function of $\bta$ given the lobby's optimal response. Result~\ref{res:bcomB} takes into account both the direct and indirect effects:
 
 \begin{result}
 	The total probability that the trade agreement will be broken is decreasing in $\bta$ (i.e. $\frac{\partial B(\bta)}{\partial  \tau^a} + \frac{\partial B(\bta)}{\partial  \tau^{*a}} \leq 0$).
@@ -351,11 +348,9 @@ We are now prepared to examine the executives' optimal choice of trade agreement
   The executives face the following trade off when choosing $\bta$: higher tariffs decrease the probability that the trade agreement will be broken but also decrease welfare when the agreement is in force.
   \label{res:to}
 \end{lemma}
-I show in the \hyperlink{int_soln}{Appendix} that it is never optimal in a symmetric equilibrium for the executives to choose $\bm{\tau^a}$ below the executives' most preferred level if the legislatures will have an opportunity to break the trade agreement. This is because there are only second-order losses from raising tariffs slightly from the most-preferred level yet there are first-order gains in reducing the probability that the agreement will be broken.
+I show in the \hyperlink{int_soln}{Appendix} that it is never optimal in a symmetric equilibrium for the executives to choose $\bm{\tau^a}$ at or below the executives' most preferred level if the legislatures will have an opportunity to break the trade agreement. This is because there are only second-order losses from raising tariffs slightly from the most-preferred level yet there are first-order gains in reducing the probability that the agreement will be broken.
 
-The executives will also always choose $\bta < \btn$ unless the legislature breaks even agreements with tariffs very close to the Nash level with certainty. In this case the problem is not interesting so I ignore this case. Thus there is an interior solution in all cases of interest, but this solution may be of two different forms. First, it could be at the point that maximizes the concave portion of the executives' welfare function (Equation~\ref{eq:jv2}).
-
-For some specifications, however, high enough tariffs can disengage the lobby sufficiently so that the probability that the trade agreement will be broken is zero. If this occurs at a low enough tariff level, executive welfare can be maximized at this point. 
+The executives will always choose $\bta < \btn$ unless the legislature breaks even agreements with tariffs very close to the Nash level with certainty. In this case the problem is not interesting so I ignore this case. Thus there is an interior solution in all cases of interest, but this solution may be of two different forms. The solution could be at the point that maximizes the concave portion of the executives' welfare function. For some specifications, however, high enough tariffs can disengage the lobby so that the probability that the trade agreement will be broken is zero. If this occurs at a low enough tariff level, executive welfare can be maximized at this point. 
 \begin{result}
   The executives maximize their welfare by either (a) raising tariffs sufficiently high to ensure that the trade agreement will remain in force or (b) trading off reductions in the probability that the agreement will be broken with reductions in welfare under the agreement.
   \label{res:execsoln}
