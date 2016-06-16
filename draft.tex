@@ -400,7 +400,7 @@ In order to predict the Nash tariff, the political weighting function and form o
 
 \begin{figure}
 \begin{center}
-\includegraphics[height=3in, width=4in]{brprob2.jpg}
+\includegraphics[height=2.5in, width=3in]{brprob2.jpg}
 \end{center}
 \caption{Probability Trade Agreement will be Broken\label{fig:br}}
 \end{figure}
@@ -442,7 +442,7 @@ Figure~\ref{fig:br} depicts the probability that the legislature will vote to br
 Given the impact of lobbying on the legislature's break decision, the lobby's optimal contribution level is strongly decreasing in the trade agreement tariffs.%, as shown in Figure~\ref{fig:cont}.
 
 \subsection{Trade Agreement}
-The probability of legislative break never reaches zero for this parameterization so the executives' welfare function is concave everywhere. Assuming that each legislature has the opportunity to vote to break the agreement with probability $\frac{1}{2}$ and that the executives are social-welfare maximizers, they will set trade agreements tariffs of $\tau^a = \tau^{*a} = 0.078$, with lobbying expenditures at the trade maintenance phase of $0.0007$ and a total break probability of $0.505$. Total lobbying expenditure is $1.54\%$ of the expected profits of $0.98591$. The expected tariff is $0.103$.
+The break probability never reaches zero for this parameterization so the executives' welfare function is concave everywhere. Assuming that each legislature has the opportunity to break the agreement with probability $\frac{1}{2}$ and that the executives are social-welfare maximizers, they set trade agreements tariffs of $\tau^a = \tau^{*a} = 0.078$, with lobbying expenditures at the trade maintenance phase of $0.0007$ and a total break probability of $0.505$. Total lobbying expenditure is $1.54\%$ of the expected profits of $0.98591$. The expected tariff is $0.103$.
 
 We can compare this against several different benchmarks. The most stark is the trade-war outcome, which is the outcome that would prevail in the absence of any trade agreement. The tariff in the executive-formed trade agreement is about 60$\%$ of the Nash tariff of $0.129$, and the expected tariff given the probability that the agreement will be broken is 80$\%$ of the Nash level. Lobbying expenditures in the agreement-maintenance phase are about 40$\%$ of the those in the Nash game, while expected expenditures in the executive-led trade-agreement scenario are 90$\%$ of what they would be if the legislatures set tariffs unilaterally. Although the welfare-maximizing governments here are not able to set and maintain tariffs at zero as they would like, they are able to achieve significant reductions in tariff levels through the use of the trade agreement.
 
@@ -469,33 +469,16 @@ Moreover, this case highlights the manipulation of the tariff level to discourag
 
 \subsection{Relation to Grossman and Helpman's `Protection for Sale'}
 \label{sec:gh}
-The legislative welfare function employed in this paper permits flexibility to take account of a wide range of political processes within a non-unitary legislature; alternatively, it can be a model of a unitary policy-maker when special interests face non-constant returns to lobbying activity. As noted in Section 2, the non-linear relationship between lobbying effort and tariffs follows Dixit, Grossman and Helpman (1997) and is a departure from the `Protection for Sale' welfare function, which assumes that a unitary government maximizes the sum of contributions and some fraction, $a$, of social welfare.
+I have introduced a legislative welfare function that admits a wide range of political processes within a non-unitary legislature as well as unitary policy-making when special interests face non-constant returns to lobbying activity. The non-linear relationship between lobbying effort and tariffs follows Dixit, Grossman and Helpman (1997) and is a departure from the `Protection for Sale' welfare function, which assumes that a unitary government maximizes the sum of contributions and some fraction, $a$, of social welfare.
 
-To see the relationship between the two forms, write the PFS welfare function (replacing $C$ with $e$) as
-\[
-  e + aW = e + a \left[ \mathit{CS}_X(\tau) + \mathit{PS}_X(\tau) + \mathit{CS}_Y(\tau^*) + \mathit{PS}_Y(\tau^*) + \mathit{TR}(\tau) \right]
-\]
-The relationship between $e$ and the weight the legislature places on profits is endogenous; because the PFS government welfare function has such an elegant and completely specified form, it is possible to solve for equilibrium behavior to retrieve this relationship directly.
-
-It is easy to describe the equilibrium behavior and thus how lobbying effort will be related to the weight on profits in equilibrium in the PFS model when there is one lobby who makes a take-it-or-leave-it offer. Take the case of no uncertainty and assume that the legislature chooses $\tau=0$ in the absence of lobbying and that $\ga(0)=1$. For any $\tau$ that the lobby desires, it must pay according to the  indifference condition $e(\tau) = a \left[ W(0) - W(\tau) \right]$. That is, the lobby must pay for the $a$-weighted welfare loss caused by the tariff it requests.
-
-In the model of this paper, this indifference condition, rearranged to solve for $\ga(e)$, is
-		    \[
-		      \ga(e) = \frac{\mathit{CS}_X(0) + \pi_X(0) + \mathit{CS}_Y(0) + \pi_Y(0) + \mathit{TR}(0) - \mathit{CS}_X(\tau) - \mathit{CS}_Y(\tau^*) - \pi_Y(\tau^*) - \mathit{TR}(\tau)}{\pi_X(\tau)}
-		    \] 
-In order to match the form of the PFS framework, we must therefore have
+I show in the \hyperlink{psf}{Appendix} that choosing the following political weighting function aligns the political objective function used in the current model with the PFS framework:
 		    \begin{equation}
-		      \ga(e) = 1 + \frac{e}{a\pi_X(\tau)}
+		      \ga(e) = 1 + \frac{e}{a\pi_X(\tau)} .
 		      \label{eq:gh}
 		    \end{equation}
+Although using the $\ga$-weighted government welfare function is a reduced-form approach in the sense that legislative dynamics are not fully modeled, a benefit is that it does not require returns to lobbying effort to be constant. The more flexible form of the weighting function also removes the equilibrium indeterminacies and inability to speak to distributional questions that are implied by the linear form and its transferable utility (Dixit, Grossman and Helpman 1997).
 
-Choosing the political weighting function identified in Equation~\ref{eq:gh} aligns the political objective function used in the current model with the PFS framework. Although using the $\ga$-weighted government welfare function is a reduced-form approach in the sense that legislative dynamics are not fully modeled, a drawback of the PFS welfare function is that it embodies the restriction that returns to lobbying effort must be constant.
-
-As noted in Dixit, Grossman and Helpman (1997), the linear form also implies transferable utility between the lobby and unitary government; this leads to equilibrium indeterminacies and an inability to speak to distributional questions, prompting them to generalize the PFS form. From their results, we have that the same equilibrium analysis holds in the more general environment.
-
-For the trade policy literature, generalizing the linear form in a sense would obviate many of the questions that have been raised by empirical investigations of the PFS model about the relationship of the magnitude of welfare losses relative to the weight placed on social welfare by governments as the $a$ parameter for the constant relative marginal utility provided by social welfare would no longer be present in the model.
-
-The linear PFS form provides for an almost unmatched simplicity and elegance that is able to capture the key cross-industry predictions on import tariffs. A perhaps unintended byproduct in the subsequent literature seems to have arisen in the form of a focus on matching fine details of governments' welfare-mindedness using a model that has a very simple unitary government and is thus better suited for other purposes.
+The linear PFS form provides for an almost unmatched simplicity and elegance that is able to capture key cross-industry predictions on import tariffs. A perhaps unintended byproduct in the subsequent literature seems to have arisen in the form of a focus on matching fine details of governments' welfare-mindedness using a model that has a very simple unitary government and is thus better suited for other purposes.
 
 It is clear that trade policy is often shaped in a complicated process involving multiple actors (see, for instance, Destler (2005) for the U.S.). The model presented herein is a first attempt to more richly model the policy-making process and thus shed light on open questions surrounding how government preferences and the details of political institutions impact trade policy outcomes.
 
@@ -706,7 +689,23 @@ Because there is no benefit to setting $\bta$ below the executives' preferred le
 
 To demonstrate that the executives do not choose $\bta=\bte$, I must show that the left side of the above equation is positive at $\bta=\bte$. Assumption~\ref{as:ga_l_e} and Result~\ref{res:bcomB} combined with symmetry ensure that the first term of the second summand is negative. That executive welfare is maximized at $\bte$ ensures that the term multiplying it is also negative as well as that $\frac{\partial \bm{W_E}(\bte)}{\partial \tau^a} + \frac{\partial \bm{W_E}(\bte)}{\partial \tau^{*a}}$ is zero. Therefore the derivative of joint executive welfare is positive at $\bte$.  $\hfill\blacksquare$
 
-			
+
+\vskip.4in
+\noindent \textbf{\hypertarget{pfs}{Connection to Grossman and Helpman's `Protection for Sale'}} \\
+To see the relationship between the two forms, write the PFS welfare function (replacing $C$ with $e$) as
+\[
+  e + aW = e + a \left[ \mathit{CS}_X(\tau) + \mathit{PS}_X(\tau) + \mathit{CS}_Y(\tau^*) + \mathit{PS}_Y(\tau^*) + \mathit{TR}(\tau) \right]
+\]
+The relationship between $e$ and the weight the legislature places on profits is endogenous; because the PFS government welfare function has such an elegant and completely specified form, it is possible to solve for equilibrium behavior to retrieve this relationship directly.
+
+It is easy to describe the equilibrium behavior and thus how lobbying effort will be related to the weight on profits in equilibrium in the PFS model when there is one lobby who makes a take-it-or-leave-it offer. Take the case of no uncertainty and assume that the legislature chooses $\tau=0$ in the absence of lobbying and that $\ga(0)=1$. For any $\tau$ that the lobby desires, it must pay according to the  indifference condition $e(\tau) = a \left[ W(0) - W(\tau) \right]$. That is, the lobby must pay for the $a$-weighted welfare loss caused by the tariff it requests.
+
+In the model of this paper, this indifference condition, rearranged to solve for $\ga(e)$, is
+		    \[
+		      \ga(e) = \frac{\mathit{CS}_X(0) + \pi_X(0) + \mathit{CS}_Y(0) + \pi_Y(0) + \mathit{TR}(0) - \mathit{CS}_X(\tau) - \mathit{CS}_Y(\tau^*) - \pi_Y(\tau^*) - \mathit{TR}(\tau)}{\pi_X(\tau)}
+		    \] 
+							
+							
 %\section{Acknowledgements}
 %The author thanks the following people for their insightful comments: Joel Watson, Jim Rauch, Marc Muendler, Lawrence Broz, Peter Cowhey, Kyle Bagwell, Andrei Levchenko, Bob Staiger, two anonymous referees, and seminar participants at UC San Diego, Syracuse, Georgetown, Florida International, Brandeis, BGSU, U Mass Amherst, Swarthmore, SUNY Oswego, Kenyon College, and PEIO 2013. All remaining errors are my own.
 
