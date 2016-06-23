@@ -201,7 +201,7 @@ I simplify the problem by assuming that political constraints prevent the execut
 \end{multline}
 The home executive's welfare is specified as
 \[
-  W_E(\bm{\tau}) = \mathit{CS}_X(\tau) + \ga_E \cdot \mathit{PS}_X(\tau) + \mathit{CS}_Y(\tau^*) + \mathit{PS}_Y(\tau^*) + \mathit{TR}(\tau)
+  W_E(\bm{\tau}) = \mathit{CS}_X(\tau) + \ga_E \cdot \pi_X(\tau) + \mathit{CS}_Y(\tau^*) + \pi_Y(\tau^*) + \mathit{TR}(\tau)
 \]
 This is identical to the legislature's welfare function except the weight the executive places on the profits of the import industry is not a function of lobbying effort. This setup does not require that the executives are not lobbied; the assumption is innocuous as long as the executives' preferences are not directly altered in a significant way by lobbying over trade. I make one more related assumption on $\ga(e,\ta)$:
 
@@ -229,7 +229,7 @@ To understand how the executives optimally structure trade agreements, I first e
 \label{sec:twt}
 In the event that the trade agreement is broken, the legislature sets its tariff $\tau$ unilaterally by maximizing Equation~\ref{eq:ml} given $\tau^*$. Because there are no interactions between the home and foreign tariffs, the home country's tariff maximizes weighted home-country welfare in the $X$-sector only. Unilateral optimization leads to what I refer to as the (expected) Nash or trade-war tariffs $\tau^n$ as the solution to the following first order condition:\footnote{Note that the random variable in the median legislator's weight on import profits is written as $\ta_n$ at this stage to distinguish it from $\ta_b$ at the break stage: as two separate votes are taken, there are two distinct realizations of uncertainty.}
 \begin{equation}
-		\frac{\partial \mathit{CS}_X(\tau)}{\partial \tau^n} + \ga(e_n,\ve_n) \cdot \frac{\partial \mathit{PS}_X(\tau)}{\partial \tau^n} +  \frac{\partial \mathit{TR}(\tau)}{\partial \tau^n} = 0 .
+		\frac{\partial \mathit{CS}_X(\tau)}{\partial \tau^n} + \ga(e_n,\ve_n) \cdot \frac{\partial \pi_X(\tau)}{\partial \tau^n} +  \frac{\partial \mathit{TR}(\tau)}{\partial \tau^n} = 0 .
 		\label{eq:legfoc}
 \end{equation}
 
@@ -559,11 +559,11 @@ That lobbying and tariff levels are related in systematic ways to the amount of 
 \noindent \textbf{\hypertarget{Pr_bincC}{Proof of Result~\ref{res:bincC}}}:\\
 Substituting from Equation~\ref{eq:ml}, Equation~\ref{eq:b} can be re-written as
 \begin{multline}  
-  b(e_b,\bta,\btn) = \Pr [ \mathit{CS}_X(\tau^n) + \ga(e_b,\ve_b) \cdot \mathit{PS}_X(\tau^n) + \mathit{CS}_Y(\tau^{*n}) + \mathit{PS}_Y(\tau^{*n}) + \mathit{TR}(\tau^n) >  \\ \mathit{CS}_X(\tau^a) + \ga(e_b,\ve_b) \cdot \mathit{PS}_X(\tau^a) + \mathit{CS}_Y(\tau^{*a}) + \mathit{PS}_Y(\tau^{*a}) + \mathit{TR}(\tau^a) ]
+  b(e_b,\bta,\btn) = \Pr [ \mathit{CS}_X(\tau^n) + \ga(e_b,\ve_b) \cdot \pi_X(\tau^n) + \mathit{CS}_Y(\tau^{*n}) + \pi_Y(\tau^{*n}) + \mathit{TR}(\tau^n) >  \\ \mathit{CS}_X(\tau^a) + \ga(e_b,\ve_b) \cdot \pi_X(\tau^a) + \mathit{CS}_Y(\tau^{*a}) + \pi_Y(\tau^{*a}) + \mathit{TR}(\tau^a) ]
 \end{multline}
 Rearranging, we have $b(e_b,\bta,\btn) = $
 \begin{multline}  
-  \textstyle \Pr \Big[ \frac{\mathit{CS}_X(\tau^n) + \mathit{PS}_X(\tau^n) + \mathit{CS}_Y(\tau^{*n}) + \mathit{PS}_Y(\tau^{*n}) + \mathit{TR}(\tau^n)  -\mathit{CS}_X(\tau^a) - \mathit{PS}_X(\tau^a) - \mathit{CS}_Y(\tau^{*a}) - \mathit{PS}_Y(\tau^{*a}) - \mathit{TR}(\tau^a)}{\mathit{PS}_X(\tau^a) - \mathit{PS}_X(\tau^n)} + 1 \\ \textstyle < \ga(e_b,\ve_b) \Big]
+  \textstyle \Pr \Big[ \frac{\mathit{CS}_X(\tau^n) + \pi_X(\tau^n) + \mathit{CS}_Y(\tau^{*n}) + \pi_Y(\tau^{*n}) + \mathit{TR}(\tau^n)  -\mathit{CS}_X(\tau^a) - \pi_X(\tau^a) - \mathit{CS}_Y(\tau^{*a}) - \pi_Y(\tau^{*a}) - \mathit{TR}(\tau^a)}{\pi_X(\tau^a) - \pi_X(\tau^n)} + 1 \\ \textstyle < \ga(e_b,\ve_b) \Big]
   \label{eq:b_ex}
 \end{multline}
 %\noindent The left side of the inequality in Expression~\ref{eq:b_ex} does not depend on $e_b$. By Assumption~\ref{as:ga_c}, the right side of the inequality is increasing and concave in $e_b$. Thus $b(e_b,\bta,\btn)$ is increasing and concave in $e_b$.    $\hfill\blacksquare$
@@ -575,7 +575,7 @@ Then $\frac{\partial b}{\partial e} = -\frac{\partial F_{\ta}(\ta=h^{-1}(\ga,e))
 \noindent \textbf{\hypertarget{Pr_leg_astar}{Proof of Lemma~\ref{lem:leg_astar}}}:\\
 It must be shown that the left hand side of the inequality in Expression~\ref{eq:b_ex} is decreasing in $\tau^{*a}$. The derivative of this quantity with respect to $\tau^{*a}$ is 
 \begin{equation}
-  \frac{-\left(\mathit{PS}_X(\tau^a) - \mathit{PS}_X(\tau^n)\right)\left(\frac{\partial \mathit{CS}_Y(\tau^{*a})}{\partial \tau^{*a}} + \frac{\partial \mathit{PS}_Y(\tau^{*a})}{\partial \tau^{*a}}\right)}{\left(\mathit{PS}_X(\tau^a) - \mathit{PS}_X(\tau^n)\right)^2} = \frac{\frac{\partial \mathit{CS}_Y(\tau^{*a})}{\partial \tau^{*a}} + \frac{\partial \mathit{PS}_Y(\tau^{*a})}{\partial \tau^{*a}}}{\mathit{PS}_X(\tau^n) - \mathit{PS}_X(\tau^a)}.
+  \frac{-\left(\pi_X(\tau^a) - \pi_X(\tau^n)\right)\left(\frac{\partial \mathit{CS}_Y(\tau^{*a})}{\partial \tau^{*a}} + \frac{\partial \pi_Y(\tau^{*a})}{\partial \tau^{*a}}\right)}{\left(\pi_X(\tau^a) - \pi_X(\tau^n)\right)^2} = \frac{\frac{\partial \mathit{CS}_Y(\tau^{*a})}{\partial \tau^{*a}} + \frac{\partial \pi_Y(\tau^{*a})}{\partial \tau^{*a}}}{\pi_X(\tau^n) - \pi_X(\tau^a)}.
   \label{appex:astar}
 \end{equation}
 
@@ -586,29 +586,29 @@ It must be shown that the left hand side of the inequality in Expression~\ref{eq
 \noindent \textbf{\hypertarget{Pr_leg_a}{Proof of Lemma~\ref{res:leg_a}}}:\\
 Using the logic of the proof of Lemma~\ref{lem:leg_astar}, the effect on the break probability is determined by the sign of the derivative of the left hand side of the inequality in Expression~\ref{eq:b_ex} with respect to $\tau^a$; to show that the break probability is decreasing in $\tau^a$, I must demonstrate that this derivative is positive. Labeling the numerator of that expression $\left[ W(\btn)-W(\bta)\right]$ (for the change in social welfare), this derivative can be written
 \begin{equation}
-  \frac{\left(\mathit{PS}_X(\tau^n) - \mathit{PS}_X(\tau^a)\right)\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \mathit{PS}_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right) - \left[ W(\btn)-W(\bta)\right] \frac{\partial \mathit{PS}_X(\tau^a)}{\partial \tau^a}}{\left(\mathit{PS}_X(\tau^a) - \mathit{PS}_X(\tau^n)\right)^2}.
+  \frac{\left(\pi_X(\tau^n) - \pi_X(\tau^a)\right)\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \pi_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right) - \left[ W(\btn)-W(\bta)\right] \frac{\partial \pi_X(\tau^a)}{\partial \tau^a}}{\left(\pi_X(\tau^a) - \pi_X(\tau^n)\right)^2}.
   \label{appex:a}
 \end{equation}
 
-\noindent $\left(\mathit{PS}_X(\tau^n) - \mathit{PS}_X(\tau^a)\right)$ is always positive by Assumption~\ref{as:ga_l_e}. Because the optimal unilateral tariff for large welfare-maximizing governments is positive (call it $\tau^O$), $\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \mathit{PS}_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right)$ is increasing up to $\tau^O$ and decreasing above it. Thus the first summand is increasing up until $\tau^O$ and decreasing thereafter.
+\noindent $\left(\pi_X(\tau^n) - \pi_X(\tau^a)\right)$ is always positive by Assumption~\ref{as:ga_l_e}. Because the optimal unilateral tariff for large welfare-maximizing governments is positive (call it $\tau^O$), $\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \pi_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right)$ is increasing up to $\tau^O$ and decreasing above it. Thus the first summand is increasing up until $\tau^O$ and decreasing thereafter.
 
 Because total social welfare is maximized at $\tau^a = \tau^{*a} = 0$, $W(\btn)-W(\bta)$ is always negative, whereas \textbf{profits} are increasing in $\tau^a$, so the second summand is positive everywhere. With a positive denominator, we thus have that the derivative is positive on $[0,\tau^O]$.
 
-It is also positive over the remaining $(\tau^O,\tau^n)$. To see this, add $\left(\tilde{\Gamma} - 1 \right) \frac{\partial \mathit{PS}_X(\tau^a)}{\partial \tau^a} \left(\mathit{PS}_X(\tau^n) - \mathit{PS}_X(\tau^a)\right)$ to the first summand and subtract it from the second. For any particular value of $\tilde{\tau}^a$, one can choose the $\tilde{\Gamma}$ weight that would make $\tilde{\tau}^a$ the preferred unilateral tariff; this makes the derivative in the first summand zero. Having subtracted the same quantity from the second summand modifies the welfare difference in the second summand to be maximized at $\tilde{\tau}^a$ so that this term is always negative, thus ensuring the result.  $\hfill\blacksquare$
+It is also positive over the remaining $(\tau^O,\tau^n)$. To see this, add $\left(\tilde{\Gamma} - 1 \right) \frac{\partial \pi_X(\tau^a)}{\partial \tau^a} \left(\pi_X(\tau^n) - \pi_X(\tau^a)\right)$ to the first summand and subtract it from the second. For any particular value of $\tilde{\tau}^a$, one can choose the $\tilde{\Gamma}$ weight that would make $\tilde{\tau}^a$ the preferred unilateral tariff; this makes the derivative in the first summand zero. Having subtracted the same quantity from the second summand modifies the welfare difference in the second summand to be maximized at $\tilde{\tau}^a$ so that this term is always negative, thus ensuring the result.  $\hfill\blacksquare$
 
 
 \vskip.4in
 \noindent \textbf{\hypertarget{Pr_bcomb}{Proof of Lemma~\ref{res:bcomb}}}:\\
 Again, I want to show how the inequality in Expression~\ref{eq:b_ex} changes, now with respect to both $\tau^a$ and $\tau^{*a}$, so I add the derivatives in Expressions~\ref{appex:astar} and \ref{appex:a} to get
 \[
-  \frac{\left(\mathit{PS}_X(\tau^n) - \mathit{PS}_X(\tau^a)\right)\left(\frac{\partial \mathit{W}_X(\bta)}{\partial \tau^{a}} + \frac{\partial \mathit{W}_X(\bta)}{\partial \tau^{*a}}\right) - \left[ W(\btn)-W(\bta)\right] \frac{\partial \mathit{PS}_X(\tau^a)}{\partial \tau^a}}{\left(\mathit{PS}_X(\tau^n) - \mathit{PS}_X(\tau^a)\right)^2}.
+  \frac{\left(\pi_X(\tau^n) - \pi_X(\tau^a)\right)\left(\frac{\partial \mathit{W}_X(\bta)}{\partial \tau^{a}} + \frac{\partial \mathit{W}_X(\bta)}{\partial \tau^{*a}}\right) - \left[ W(\btn)-W(\bta)\right] \frac{\partial \pi_X(\tau^a)}{\partial \tau^a}}{\left(\pi_X(\tau^n) - \pi_X(\tau^a)\right)^2}.
 \]
-where $\frac{\partial \mathit{W}_X(\bta)}{\partial \tau^{a}} + \frac{\partial \mathit{W}_X(\bta)}{\partial \tau^{*a}} = \frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \mathit{PS}_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \mathit{CS}_Y(\tau^{*a})}{\partial \tau^{*a}} + \frac{\partial \mathit{PS}_Y(\tau^{*a})}{\partial \tau^{*a}}$ is the total derivative of social welfare. Since social welfare is maximized at $\bta = (0,0)$,\footnote{Note, this is identical to the result that joint social welfare is maximized at zero tariffs because of symmetry.}  this is negative $\forall \bm{\tau} \in (\bm{0},\btn]$; note that it is 0 at $\bm{0}$ and vanishingly small for very small tariffs.
+where $\frac{\partial \mathit{W}_X(\bta)}{\partial \tau^{a}} + \frac{\partial \mathit{W}_X(\bta)}{\partial \tau^{*a}} = \frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \pi_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \mathit{CS}_Y(\tau^{*a})}{\partial \tau^{*a}} + \frac{\partial \pi_Y(\tau^{*a})}{\partial \tau^{*a}}$ is the total derivative of social welfare. Since social welfare is maximized at $\bta = (0,0)$,\footnote{Note, this is identical to the result that joint social welfare is maximized at zero tariffs because of symmetry.}  this is negative $\forall \bm{\tau} \in (\bm{0},\btn]$; note that it is 0 at $\bm{0}$ and vanishingly small for very small tariffs.
 
 Thus the first summand in the numerator is zero at $\bta = \bm{0}$ and increasingly negative as $\bta$ increases. The second summand is positive everywhere because social welfare, $W$, is lowest at $\btn$ and \textbf{profits} are increasing everywhere. Thus the numerator is positive at $\bm{0}$ and at least for very small $\bta$
 
 It is also positive for all other values of $\bta$ strictly below $\btn$. Just as in the proof of Lemma~\ref{res:leg_a}, one can add
-$\left(\tilde{\Gamma} - 1 \right) \frac{\partial \mathit{PS}_X(\tau^a)}{\partial \tau^a} \left(\mathit{PS}_X(\tau^n) - \mathit{PS}_X(\tau^a)\right)$ to the first summand and subtract it from the second. For any particular value of $\tilde{\bta}$, one can choose the $\tilde{\Gamma}$ weight that would make $\tilde{\bta}$ the politically optimal tariff; this makes the derivative in the first summand zero. Having subtracted the same quantity from the second summand modifies the welfare difference in the second summand to be maximized at $\tilde{\bta}$ so that this term is always negative, thus ensuring the result.
+$\left(\tilde{\Gamma} - 1 \right) \frac{\partial \pi_X(\tau^a)}{\partial \tau^a} \left(\pi_X(\tau^n) - \pi_X(\tau^a)\right)$ to the first summand and subtract it from the second. For any particular value of $\tilde{\bta}$, one can choose the $\tilde{\Gamma}$ weight that would make $\tilde{\bta}$ the politically optimal tariff; this makes the derivative in the first summand zero. Having subtracted the same quantity from the second summand modifies the welfare difference in the second summand to be maximized at $\tilde{\bta}$ so that this term is always negative, thus ensuring the result.
 
 Because the denominator is positive, the entire expression is positive for all $\bta < \btn$.   $\hfill\blacksquare$
 
@@ -654,7 +654,7 @@ To demonstrate that the executives do not choose $\bta=\bte$, I must show that t
 \noindent \textbf{\hypertarget{pfs}{Connection to Grossman and Helpman's `Protection for Sale'}} \\
 To see the relationship between the two forms, write the PFS welfare function (replacing $C$ with $e$) as
 \[
-  e + aW = e + a \left[ \mathit{CS}_X(\tau) + \mathit{PS}_X(\tau) + \mathit{CS}_Y(\tau^*) + \mathit{PS}_Y(\tau^*) + \mathit{TR}(\tau) \right]
+  e + aW = e + a \left[ \mathit{CS}_X(\tau) + \pi_X(\tau) + \mathit{CS}_Y(\tau^*) + \pi_Y(\tau^*) + \mathit{TR}(\tau) \right]
 \]
 The relationship between $e$ and the weight the legislature places on profits is endogenous; because the PFS government welfare function has such an elegant and completely specified form, it is possible to solve for equilibrium behavior to retrieve this relationship directly.
 
