@@ -141,7 +141,7 @@ $$M_X(P_X)= D(P_X)-Q_X(P_X) = Q_X^*(P_X^*) - D(P_X^*) = E_X^*(P_X^*)$$
 $$E_Y(P_Y)=Q_Y(P_Y)-D(P_Y) = D(P_Y^*)-Q_Y^*(P_Y) = M_Y^*(P_Y^*)$$
 where e.g. $M_X$ are home-county imports and $E_X^*$ are foreign exports of good $X$. The price of the numeraire is equal to one in both countries and on the world market.
 
-$P_X^W$ and $P_Y^W$ are decreasing in $\tau$ and $\tau^*$ respectively, while $P_X$ and $P_Y^*$ are increasing in the respective domestic tariff. This gives rise to a terms-of-trade externality. Profits and producer surplus (identical in this model) in a sector are increasing in the price of its good and also in the domestic tariff. This fact, combined with the assumptions on specific factor ownership, motivates political activity by import-competing lobbies.
+$P_X^W$ and $P_Y^W$ are decreasing in $\tau$ and $\tau^*$ respectively, while $P_X$ and $P_Y^*$ are increasing in the respective domestic tariff. This gives rise to a terms-of-trade externality. Profits in a sector are increasing in the price of its good and also in the domestic tariff. This fact, combined with the assumptions on specific factor ownership, motivates political activity by import-competing lobbies.
 
 In each country, there is an executive who concludes trade agreements and a legislature that has final say on trade policy. To focus attention on protectionist political forces, highlight the model's central mechanisms and minimize the number of actors that must be modeled, I assume that only the import-competing industry in each country is politically-organized and that it is represented by a single lobbying organization.\footnote{The model extends easily to the case of multiple lobbies. To illustrate, adding an export lobby with no uncertainty predicts import lobbies remain disengaged while the executives can reduce tariffs by recruiting support from exporters. The Panama Trade Promotion Act follows this pattern, with virtually no lobbying against, significant lobbying in favor, and numerous industries receiving import protection.\label{fn:lobby}} 
 
@@ -161,10 +161,10 @@ After this, uncertainty about the the median legislator's identity is resolved. 
 \label{sec:pref}
 With the structure of politics and the economy symmetric and the latter fully separable, I focus on the home country's and the $X$-sector. The details are analogous for $Y$ and foreign. The home legislature's welfare function is
 \begin{equation}
-  W_{\mathit{ML}} = \mathit{CS}_X(\tau) + \ga(e,\ve) \cdot \mathit{PS}_X(\tau) + \mathit{CS}_Y(\tau^*) + \mathit{PS}_Y(\tau^*) + \mathit{TR}(\tau)
+  W_{\mathit{ML}} = \mathit{CS}_X(\tau) + \ga(e,\ve) \cdot \pi_X(\tau) + \mathit{CS}_Y(\tau^*) + \pi_Y(\tau^*) + \mathit{TR}(\tau)
   \label{eq:ml}
 \end{equation}
-where $\mathit{CS}$ is consumer surplus, $\mathit{PS}$ is producer surplus, $\ga(e,\ta)$ is the weight placed on producer surplus in the import-competing industry, and $\mathit{TR}$ is tariff revenue.\footnote{Labor income $l$ could also be included in both median legislator and executive welfare. I omit it because its inclusion alters none of the results and only serves to complicate the exposition.} I model the decisions of the legislature as being taken by a median legislator with the weight the median legislator places on import-competing industry profits affected by the level of lobbying effort $e$ and a random variable $\ta$. I make the following assumptions on $\ga(e,\ta)$:
+where $\mathit{CS}$ is consumer surplus, $\pi$ are \textbf{profits}, $\ga(e,\ta)$ is the weight placed on \textbf{profits} in the import-competing industry, and $\mathit{TR}$ is tariff revenue.\footnote{Labor income $l$ could also be included in both median legislator and executive welfare. I omit it because its inclusion alters none of the results and only serves to complicate the exposition.} I model the decisions of the legislature as being taken by a median legislator with the weight the median legislator places on import-competing industry profits affected by the level of lobbying effort $e$ and a random variable $\ta$. I make the following assumptions on $\ga(e,\ta)$:
 
 \begin{assumption}
   $\ga(e,\ta)$ is increasing and concave in $e$ for every $\ta \in \Theta$.
@@ -183,7 +183,7 @@ Given its expectations and the legislature's preferences, the home lobby chooses
   \expect \left[U_L \right] = \Pr\left[ \text{TradeWar} \right] \left[ \pi(\tau^{\mathit{n}}) - e_n \right] + \Pr\left[ \text{TradeAgreement} \right] \pi(\tau^a) - e_b
   \label{eq:lv}
 \end{equation}
-where $\pi(\cdot)$ is the current-period profit. 
+where $\pi(\cdot)$ is the current-period profit \textbf{and the subscript $X$ has been dropped for notational convenience}. 
 
 In the first stage, the executives choose the trade agreement tariffs. With executive welfare in a trade war the disagreement point, the division of surplus according to the Nash bargaining solution is
 \[
@@ -278,7 +278,7 @@ Turning to the effects of the trade-agreement tariffs on the probability that th
   \label{lem:leg_astar}
 \end{lemma}
 
-The lower world price for home's export good has a larger negative effect on producer surplus than the positive effect on consumer surplus. The net effect of an increase in foreign trade-agreement tariffs on home legislative welfare is negative, leading to an increased probability that the trade agreement will be broken.
+The lower world price for home's export good has a larger negative effect on \textbf{profits} than the positive effect on consumer surplus. The net effect of an increase in foreign trade-agreement tariffs on home legislative welfare is negative, leading to an increased probability that the trade agreement will be broken.
 
 The relationship between $\tau^a$ and break probability is more complex. For any effort level $e_b$, when the trade agreement tariff is very low, only a small set of realizations of $\ta_b$ associated with the lowest values of $\ga(e_b,\ta_b)$ will lead to approval of the trade agreement, implying a high break probability. As the trade agreement tariff rises, larger values of $\ga(e_b,\ta_b)$ are consistent with approving the trade agreement, so the set of $\ta_b$'s that lead to trade agreement approval is larger. That is, the break probability decreases as $\tau^a$ increases. 
 
@@ -579,7 +579,7 @@ It must be shown that the left hand side of the inequality in Expression~\ref{eq
   \label{appex:astar}
 \end{equation}
 
-\noindent The price of good $Y$ is decreasing in $\tau^{*a}$, so consumer surplus is increasing and producer surplus is decreasing in $\tau^{*a}$. Because $Y$ is being exported, the decrease in producer surplus is larger than the increase in consumer surplus, making the numerator negative. Since producer surplus in the denominator is increasing in $\tau$, the expression in Equation~\ref{appex:astar} is negative for all $\tau^{*a}$.  $\hfill\blacksquare$
+\noindent The price of good $Y$ is decreasing in $\tau^{*a}$, so consumer surplus is increasing and \textbf{profits} are decreasing in $\tau^{*a}$. Because $Y$ is being exported, the decrease in \textbf{profits} is larger than the increase in consumer surplus, making the numerator negative. Since \textbf{profits} in the denominator are increasing in $\tau$, the expression in Equation~\ref{appex:astar} is negative for all $\tau^{*a}$.  $\hfill\blacksquare$
 
 
 \vskip.4in
@@ -592,7 +592,7 @@ Using the logic of the proof of Lemma~\ref{lem:leg_astar}, the effect on the bre
 
 \noindent $\left(\mathit{PS}_X(\tau^n) - \mathit{PS}_X(\tau^a)\right)$ is always positive by Assumption~\ref{as:ga_l_e}. Because the optimal unilateral tariff for large welfare-maximizing governments is positive (call it $\tau^O$), $\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \mathit{PS}_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right)$ is increasing up to $\tau^O$ and decreasing above it. Thus the first summand is increasing up until $\tau^O$ and decreasing thereafter.
 
-Because total social welfare is maximized at $\tau^a = \tau^{*a} = 0$, $W(\btn)-W(\bta)$ is always negative, whereas producer surplus is increasing in $\tau^a$, so the second summand is positive everywhere. With a positive denominator, we thus have that the derivative is positive on $[0,\tau^O]$.
+Because total social welfare is maximized at $\tau^a = \tau^{*a} = 0$, $W(\btn)-W(\bta)$ is always negative, whereas \textbf{profits} are increasing in $\tau^a$, so the second summand is positive everywhere. With a positive denominator, we thus have that the derivative is positive on $[0,\tau^O]$.
 
 It is also positive over the remaining $(\tau^O,\tau^n)$. To see this, add $\left(\tilde{\Gamma} - 1 \right) \frac{\partial \mathit{PS}_X(\tau^a)}{\partial \tau^a} \left(\mathit{PS}_X(\tau^n) - \mathit{PS}_X(\tau^a)\right)$ to the first summand and subtract it from the second. For any particular value of $\tilde{\tau}^a$, one can choose the $\tilde{\Gamma}$ weight that would make $\tilde{\tau}^a$ the preferred unilateral tariff; this makes the derivative in the first summand zero. Having subtracted the same quantity from the second summand modifies the welfare difference in the second summand to be maximized at $\tilde{\tau}^a$ so that this term is always negative, thus ensuring the result.  $\hfill\blacksquare$
 
@@ -605,7 +605,7 @@ Again, I want to show how the inequality in Expression~\ref{eq:b_ex} changes, no
 \]
 where $\frac{\partial \mathit{W}_X(\bta)}{\partial \tau^{a}} + \frac{\partial \mathit{W}_X(\bta)}{\partial \tau^{*a}} = \frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \mathit{PS}_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \mathit{CS}_Y(\tau^{*a})}{\partial \tau^{*a}} + \frac{\partial \mathit{PS}_Y(\tau^{*a})}{\partial \tau^{*a}}$ is the total derivative of social welfare. Since social welfare is maximized at $\bta = (0,0)$,\footnote{Note, this is identical to the result that joint social welfare is maximized at zero tariffs because of symmetry.}  this is negative $\forall \bm{\tau} \in (\bm{0},\btn]$; note that it is 0 at $\bm{0}$ and vanishingly small for very small tariffs.
 
-Thus the first summand in the numerator is zero at $\bta = \bm{0}$ and increasingly negative as $\bta$ increases. The second summand is positive everywhere because social welfare, $W$, is lowest at $\btn$ and producer surplus is increasing everywhere. Thus the numerator is positive at $\bm{0}$ and at least for very small $\bta$
+Thus the first summand in the numerator is zero at $\bta = \bm{0}$ and increasingly negative as $\bta$ increases. The second summand is positive everywhere because social welfare, $W$, is lowest at $\btn$ and \textbf{profits} are increasing everywhere. Thus the numerator is positive at $\bm{0}$ and at least for very small $\bta$
 
 It is also positive for all other values of $\bta$ strictly below $\btn$. Just as in the proof of Lemma~\ref{res:leg_a}, one can add
 $\left(\tilde{\Gamma} - 1 \right) \frac{\partial \mathit{PS}_X(\tau^a)}{\partial \tau^a} \left(\mathit{PS}_X(\tau^n) - \mathit{PS}_X(\tau^a)\right)$ to the first summand and subtract it from the second. For any particular value of $\tilde{\bta}$, one can choose the $\tilde{\Gamma}$ weight that would make $\tilde{\bta}$ the politically optimal tariff; this makes the derivative in the first summand zero. Having subtracted the same quantity from the second summand modifies the welfare difference in the second summand to be maximized at $\tilde{\bta}$ so that this term is always negative, thus ensuring the result.
